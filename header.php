@@ -3,7 +3,7 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="/style.css">
-<title>Johan.Vandegriff.net</title>
+<title>johanv.xyz | Johan Vandegriff</title>
 <meta name="description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
 </head>
@@ -19,7 +19,7 @@
 </a></header>
 <nav><ul>
 <?php
-$filename = 'https://www.johan.vandegriff.net/nav.txt';
+$filename = 'http://johanv.xyz/nav.txt';
 $contents = file($filename);
 
 if (strcmp($pageName, "") == 0) $pageName = $argv[1];
@@ -58,7 +58,7 @@ function hideEmailOpts($email, $text, $options) {
 <p class="monospace green">
 $ cat <a target="_blank" class="green" href="/links.txt">links.txt</a><br/>
 <?php
-$filename = 'https://www.johan.vandegriff.net/links.txt';
+$filename = 'http://johanv.xyz/links.txt';
 $contents = file($filename);
 
 foreach($contents as $line) {
