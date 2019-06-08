@@ -28,7 +28,9 @@
 </a></header>
 <nav><ul>
 <?php
-$filename = '/nav.txt';
+$webroot = 'https://johanv.xyz';
+
+$filename = $webroot . '/nav.txt';
 $contents = file($filename);
 
 if (strcmp($pageName, "") == 0) $pageName = $argv[1];
@@ -67,7 +69,7 @@ function hideEmailOpts($email, $text, $options) {
 <p class="monospace green">
 $ cat <a target="_blank" class="green" href="/links.txt">links.txt</a><br/>
 <?php
-$filename = '/links.txt';
+$filename = $webroot . '/links.txt';
 $contents = file($filename);
 
 foreach($contents as $line) {
