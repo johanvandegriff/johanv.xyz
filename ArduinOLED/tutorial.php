@@ -108,7 +108,7 @@
 <a href="#top">[Back to top]</a>
 <ul>
   <li>Try out the other example sketches</li>
-  <li>Try making some of the projects listed at <a href="/ArduinOLED">the main ArduinOLED page</a></li>
+  <li>Try making some of the projects listed on <a href="/ArduinOLED">the main ArduinOLED page</a></li>
 </ul>
 
 <?php include '../footer.php'; ?>
