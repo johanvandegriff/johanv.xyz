@@ -9,17 +9,26 @@
 </head>
 <body>
 <div class="ribbon"><header><a href="/" class="green"><pre>
+      _         _
+     (_)       | |
+      _  _____ | |___  ___ _  _____ __    __     __  __ _   _  ____
+     | |(  _  )|  _  )(  _` ||  _  )\ \  / / __  \ \/ /| | | |(__  /
+     | || (_) || | | || (_| || | | | \ \/ / |\_\  )  ( | |_| |  / /_
+   _ | |(_____)|_| |_|(___,_||_| |_|  \__/  \|_| /_/\_\(____ | /____)
+  | || |                                                ___| |
+  (____)                                               (_____)</pre>
+<!---<pre>
     _____  _                 __        __           _              _  ___ ___                    
    (_   _)| |                \ \      / /          | |            (_)/  _/  _|                _  
      | |__| |__ __ ______     \ \    / __ ______ __| |____ ___   _ _ | / | /      _____ ____ | | 
      | /  | __ / _` | __ )  __ \ \  / /  ` | __ /  \ /  _ / _ |\/_| |_ _|_ _| __  | __ / __ |_ _|
   /\_| |()| || |(_| | || | |\_\ \ \/ /| -  | || | -  | ___\__ | / | || | | | |\_\ | ||_| \__/| |_
   \____\__|_||_\__,_|_||_| \|_|  \__/ \__,_|_||_\__/_\___/__/ |_| |_||_| |_| \|_| |_||_\____||__/
-                                                         |___/                                   </pre>
+                                                         |___/                                   </pre>--->
 </a></header>
 <nav><ul>
 <?php
-$filename = 'http://johanv.xyz/nav.txt';
+$filename = '/nav.txt';
 $contents = file($filename);
 
 if (strcmp($pageName, "") == 0) $pageName = $argv[1];
@@ -58,7 +67,7 @@ function hideEmailOpts($email, $text, $options) {
 <p class="monospace green">
 $ cat <a target="_blank" class="green" href="/links.txt">links.txt</a><br/>
 <?php
-$filename = 'http://johanv.xyz/links.txt';
+$filename = '/links.txt';
 $contents = file($filename);
 
 foreach($contents as $line) {
