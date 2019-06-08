@@ -2,7 +2,7 @@
 
 <h2>HexaGame</h2>
 <img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="WhackAMole.JPG">
-<p>exagame is a handheld multi-game system that consists of a hexagon of LEDs with buttons surrounding it, as well as a hex-shaped dpad.</p>
+<p>Hexagame is a handheld multi-game system that consists of a hexagon of LEDs with buttons surrounding it, as well as a hex-shaped dpad.</p>
 <h3>Board Designs:</h3>
 <ul>
 <li> <a target="_blank" href="https://easyeda.com/jjvan/HexaGame-20cb40f4409741ecbd005d839ab8d0a7">Version 1.0 on EasyEDA</a></li>
