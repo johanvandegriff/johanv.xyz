@@ -1,10 +1,5 @@
 Home	/
 Blog	https://blog.johanv.xyz
-Boggle	/boggle.py
-Maze	/maze/the_maze.php
-WhAM	/whack.pl
 Calc	/calculator-page.php
-Quest Game	/quest.py
-Configs	/configs
-CARL	/CARL_INTERFACE.py
+Quest Game	/quest.php
 Contact	/contact.php
