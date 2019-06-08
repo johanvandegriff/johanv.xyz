@@ -1,5 +1,5 @@
 Home	/
 Blog	https://blog.johanv.xyz
-Calc	/calculator-page.php
+Calc	/calculator.php
 Quest Game	/quest.php
 Contact	/contact.php
