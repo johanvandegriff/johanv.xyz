@@ -1,5 +1,5 @@
 Home	/
-Blog	/wordpress
+Blog	https://blog.johanv.xyz
 Boggle	/boggle.py
 Maze	/maze/the_maze.php
 WhAM	/whack.pl
