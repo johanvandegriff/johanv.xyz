@@ -1,7 +1,7 @@
 <?php $pageName = "Home"; include 'header.php';
 if (isset($_GET['h']) && !empty($_GET['h'])) {
   $link_name = $_GET['h'];
-  echo '<script>window.location="https://bag.johanv.xyz/f.php?h="' . $link_name . ';</script>';
+  echo '<script>window.location="https://bag.johanv.xyz/f.php?h=' . $link_name . '";</script>';
 }
 ?>
 
