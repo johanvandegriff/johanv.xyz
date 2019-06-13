@@ -54,7 +54,6 @@ function hideEmailOpts($email, $text, $options) {
 
 ?>
 </ul></nav></div>
-<div class="main">
 <aside class="right">
 <p class="monospace green">
 $ cat <a target="_blank" class="green" href="/links.txt">links.txt</a><br/>
@@ -68,6 +67,8 @@ foreach($contents as $line) {
 }
 
 ?>
+
 <br/><br/><a class="green" href="#" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">tutanota</a><br/><a class="green" href="#" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamnotorp'+'&#x40;'+'navjj'+'&#x202d;'">protonmail</a>
 
-</p></aside><section>
+</p></aside>
+<section>

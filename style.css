@@ -49,10 +49,22 @@ div.ribbon {
   margin: 0;
 }
 
-div.main {
+section {
   position: absolute;
   margin: 10px;
-  margin-top: 205px;
+  margin-top: 190px;
+  float: left;
+  width: 70%;
+}
+
+aside {
+  background-color: #000000;
+  /*max-width: 190px;*/
+  margin: 1px;
+  margin-top: 200px;
+  padding: 2px;
+  z-index: -1;
+  width: 25%;
 }
 
 /* @media only screen and (max-width: 800px) {
@@ -64,14 +76,6 @@ div.main {
     margin-right: 0;
   }
 } */
-
-aside {
-  background-color: #000000;
-  max-width: 190px;
-  margin: 1px;
-  padding: 2px;
-  z-index: -1;
-}
 
 aside.left {
   float: left;
