@@ -3,7 +3,7 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 <title>johanv.xyz | Johan Vandegriff</title>
 <meta name="description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
