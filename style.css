@@ -62,30 +62,30 @@ div.ribbon {
 section {
     position: absolute;
     margin: 10px;
-    margin-top: 190px;
+    margin-top: 185px;
     float: left;
     width: 70%;
 }
 
 aside {
     background-color: #000000;
-    /*max-width: 190px;*/
-    margin: 1px;
-    margin-top: 200px;
-    padding: 2px;
+    margin: 0px;
+    margin-top: 180px;
+    padding: 4px;
     z-index: -1;
     width: 25%;
+    max-width: 200px;
 }
 
 /* @media only screen and (max-width: 800px) {
-  aside {
-    display: none;
-  }
-  #middle {
-    margin-left: 0;
-    margin-right: 0;
-  }
-} */
+ * aside {
+ *   display: none;
+ * }
+ * #middle {
+ *   margin-left: 0;
+ *   margin-right: 0;
+ * }
+ } * */
 
 aside.left {
     float: left;
@@ -96,10 +96,10 @@ aside.right {
 }
 
 #middle section {
-    margin-left: 210px;
-    margin-right: 210px;
-    margin: 5px;
-    overflow: hidden;
+margin-left: 210px;
+margin-right: 210px;
+margin: 5px;
+overflow: hidden;
 }
 
 nav ul {
