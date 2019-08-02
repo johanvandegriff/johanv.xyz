@@ -1,6 +1,5 @@
 Home	/
 Blog	https://blog.johanv.xyz
+Videos  /videos
 Configs	/configs
-Calc	/calculator
-Quest	/quest
 Contact	/contact
