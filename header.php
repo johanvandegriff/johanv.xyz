@@ -55,6 +55,7 @@ function hideEmailOpts($email, $text, $options) {
 
 ?>
 </ul></nav></div>
+<div class="main">
 <aside class="right">
 <p class="monospace green">
 $ cat <a target="_blank" class="green" href="/links.txt">links.txt</a><br/>

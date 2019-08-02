@@ -32,4 +32,7 @@
 <li><a href="calculator">Command-line calculator</a></li>
 <li><a href="quest">Quest Game</a></li>
 </ul>
+
+<p>I also have a page describing some of my <a href="/configs">config files</a>.</p>
+
 <?php include '../footer.php'; ?>

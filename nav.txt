@@ -2,5 +2,4 @@ Home	/
 Blog	https://blog.johanv.xyz
 Videos	/videos
 Projects	/projects
-Configs	/configs
 Contact	/contact
