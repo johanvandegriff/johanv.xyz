@@ -1,6 +1,6 @@
 Mastodon	https://fosstodon.org/@johanv
+GitLab	https://gitlab.com/johanvandegriff
 Keybase	https://keybase.io/johanvandegriff
-Github	https://github.com/johanvandegriff
 PeerTube	https://peertube.social/video-channels/jjvantheman_channel/videos
 alt.org/nethack	https://alt.org/nethack/plr.php?player=jjvan
 Instructables	http://www.instructables.com/member/jjvan/
@@ -10,4 +10,5 @@ confuzer.cloud	https://confuzer.cloud/
 Scratch	https://scratch.mit.edu/users/jjvan/
 YouTube	https://www.youtube.com/user/jjvantheman
 FTC Team	http://www.gearbox4h.org/
+Github	https://github.com/johanvandegriff
 Bitbucket	https://bitbucket.org/johanvandegriff/
