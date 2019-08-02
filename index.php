@@ -11,12 +11,14 @@ if (isset($_GET['h']) && !empty($_GET['h'])) {
 
 <h3>Other People's Sites</h3>
 <ul>
+<li><a target="_blank" href="https://joe.vandegriff.net/">https://joe.vandegriff.net/</a></li>
+<li><a target="_blank" href="https://gearbox4h.org/">https://gearbox4h.org/</a></li>
+<li><a target="_blank" href="https://lincoln.vandegriff.net/">https://lincoln.vandegriff.net/</a></li>
 <li><a target="_blank" href="https://hairydiode.xyz/">https://hairydiode.xyz/</a></li>
 <li><a target="_blank" href="https://junktext.com/">https://junktext.com/</a></li>
-<li><a target="_blank" href="https://joe.vandegriff.net/"></a>https://joe.vandegriff.net/</li>
-<li><a target="_blank" href="https://lincoln.vandegriff.net/"></a>https://lincoln.vandegriff.net/</li>
-<li><a target="_blank" href="https://gearbox4h.org/"></a>https://gearbox4h.org/</li>
+<!--
 <li><a target="_blank" href=""></a></li>
 <li><a target="_blank" href=""></a></li>
+-->
 </ul>
 <?php include 'footer.php'; ?>
