@@ -1,5 +1,5 @@
 Home	/
 Blog	https://blog.johanv.xyz
-Videos  /videos
+Videos	/videos
 Configs	/configs
 Contact	/contact
