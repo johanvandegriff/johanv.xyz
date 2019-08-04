@@ -2,11 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  
 <url><loc>https://johanv.xyz/</loc></url>
-<url><loc>https://johanv.xyz/contact/</loc></url>
+<url><loc>https://johanv.xyz/videos/</loc></url>
+<url><loc>https://johanv.xyz/games/</loc></url>
 <url><loc>https://blog.johanv.xyz/</loc></url>
+<url><loc>https://johanv.xyz/projects/</loc></url>
+<url><loc>https://johanv.xyz/contact/</loc></url>
+
+<url><loc>https://johanv.xyz/configs/</loc></url>
 <url><loc>https://johanv.xyz/calculator/</loc></url>
 <url><loc>https://johanv.xyz/quest/</loc></url>
 <url><loc>https://johanv.xyz/ArduinOLED/</loc></url>
 <url><loc>https://johanv.xyz/hexagame/</loc></url>
- 
+<url><loc>https://blog.johanv.xyz/posts</loc></url>
+<url><loc>https://blog.johanv.xyz/about-me</loc></url>
+
 </urlset>

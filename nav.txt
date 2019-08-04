@@ -1,5 +1,6 @@
 Home	/
-Blog	https://blog.johanv.xyz
 Videos	/videos
+Games	https://games.johanv.xyz
+Blog	https://blog.johanv.xyz
 Projects	/projects
 Contact	/contact

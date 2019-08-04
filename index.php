@@ -17,7 +17,7 @@ if (isset($_GET['h']) && !empty($_GET['h'])) {
 <li><a target="_blank" href="https://hairydiode.xyz/">https://hairydiode.xyz/</a></li>
 <li><a target="_blank" href="https://junktext.com/">https://junktext.com/</a></li>
 <!--
-<li><a target="_blank" href=""></a></li>
+<li><a target="_blank" href="/asocialsafety.net">asocialsafety.net (archived)</a></li>
 <li><a target="_blank" href=""></a></li>
 -->
 </ul>
