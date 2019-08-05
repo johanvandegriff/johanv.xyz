@@ -53,7 +53,7 @@
 <img src="BackupCheerios.jpg">
 
 <h1>Chatbot Phrase of the Day</h1>
-<a href="https://johan.vandegriff.net/CARL_INTERFACE.py">CARL says:<br/><embed height="60" width="315" src="https://johan.vandegriff.net/CARL.py"/></a>
+<a href="https://games.johanv.xyz/carl">CARL says:<br/><embed height="60" width="315" src="https://games.johanv.xyz/carl_raw"/></a>
 
 <h6>No hacks, hackers, or hackathons were hacked in the hacking of this hackalicious hack. Happy hacking, hackerary hacketeers!</h6>
 
