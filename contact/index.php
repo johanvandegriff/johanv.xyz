@@ -8,14 +8,16 @@
 <a target=_blank href="https://mail.tutanota.com/signup">
 at tutanota.com</a>
 to send me an encrypted message at:</p>
-<a  href="#" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">[click to show]</a>
+<a  id="9dda4e98_2" href="#9dda4e98_2" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">[click to show]</a>
+<?php $GLOBALS['email_counter']++; ?>
 
 <h3>Protonmail</h3>
 <p>I also have a protonmail account. You can sign up for free at
 <a target=_blank href="https://protonmail.com/signup">
 protonmail.com</a>
 to send me an encrypted message at:</p>
-<a  href="#" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamnotorp'+'&#x40;'+'navjj'+'&#x202d;'">[click to show]</a>
+<a  id="9dda4e98_3" href="#9dda4e98_3" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamnotorp'+'&#x40;'+'navjj'+'&#x202d;'">[click to show]</a>
+<?php $GLOBALS['email_counter']++; ?>
 
 <h3>Keybase</h3>
 <p>Keybase is an encrypted chat app for mobile and desktop. You can install it on

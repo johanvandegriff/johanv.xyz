@@ -45,12 +45,15 @@ function hideEmail($email, $text) {
   hideEmailOpts($email, $text, '');
 }
 
+$GLOBALS['email_counter'] = 0;
+
 function hideEmailOpts($email, $text, $options) {
   $email = strrev($email);
   $email = implode("'+'&#x40;'+'", explode("@", $email));
   $email = implode("'+'&#x2e;'+'", explode(".", $email));
   $email = "'" . $email . "'";
-  echo '<a ' . $options . 'href="#" onclick="this.innerHTML=' . "'&#x202e;'+" . $email . "+'&#x202d;'" . '">' . $text . '</a>';
+  echo '<a ' . $options . 'id="9dda4e98_' . $GLOBALS['email_counter'] . '" href="#9dda4e98_' . $GLOBALS['email_counter'] . '" onclick="this.innerHTML=' . "'&#x202e;'+" . $email . "+'&#x202d;'" . '">' . $text . '</a>';
+  $GLOBALS['email_counter']++;
 }
 
 ?>
@@ -70,7 +73,8 @@ foreach($contents as $line) {
 
 ?>
 
-<br/><br/><a class="green" href="#" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">tutanota</a><br/><a class="green" href="#" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamnotorp'+'&#x40;'+'navjj'+'&#x202d;'">protonmail</a>
+<br/><br/><a class="green" id="9dda4e98_0" href="#9dda4e98_0" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">tutanota</a><br/><a class="green" id="9dda4e98_1" href="#9dda4e98_1" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamnotorp'+'&#x40;'+'navjj'+'&#x202d;'">protonmail</a>
+<?php $GLOBALS['email_counter'] += 2; ?>
 
 </p></aside>
 <section>

@@ -21,16 +21,16 @@
 <br/>
 <p>Here are a few of my other projects:</p>
 
-<h3><a href="ArduinOLED">ArduinOLED</a></h3>
+<h3><a href="/ArduinOLED">ArduinOLED</a></h3>
 <p>A board with an OLED screen, buttons, a joystick, and alligator clip connectors.</p>
 
-<h3><a href="hexagame">HexaGame</a></h3>
+<h3><a href="/hexagame">HexaGame</a></h3>
 <p>A handheld game that consists of a hexagon of LEDs with buttons.</p>
 
 <h3>Python Programs</h3>
 <ul>
-<li><a href="calculator">Command-line calculator</a></li>
-<li><a href="quest">Quest Game</a></li>
+<li><a href="/calculator">Command-line calculator</a></li>
+<li><a href="/quest">Quest Game</a></li>
 </ul>
 
 <p>I also have a page describing some of my <a href="/configs">config files</a>.</p>

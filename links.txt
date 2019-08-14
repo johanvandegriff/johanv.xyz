@@ -3,12 +3,12 @@ GitLab	https://gitlab.com/johanvandegriff
 Keybase	https://keybase.io/johanvandegriff
 PeerTube	https://peertube.social/video-channels/jjvantheman_channel/videos
 alt.org/nethack	https://alt.org/nethack/plr.php?player=jjvan
-Instructables	http://www.instructables.com/member/jjvan/
+Instructables	https://www.instructables.com/member/jjvan/
 EasyEDA	https://easyeda.com/jjvan
 Stack Overflow	https://stackoverflow.com/users/5894048/jjvan
 confuzer.cloud	https://confuzer.cloud/
 Scratch	https://scratch.mit.edu/users/jjvan/
 YouTube	https://www.youtube.com/user/jjvantheman
-FTC Team	http://www.gearbox4h.org/
-Github	https://github.com/johanvandegriff
+FTC Team	https://www.gearbox4h.org/
+GitHub	https://github.com/johanvandegriff
 Bitbucket	https://bitbucket.org/johanvandegriff/
