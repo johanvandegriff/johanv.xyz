@@ -2,6 +2,7 @@ Mastodon	https://fosstodon.org/@johanv
 GitLab	https://gitlab.com/johanvandegriff
 Keybase	https://keybase.io/johanvandegriff
 PeerTube	https://peertube.social/video-channels/jjvantheman_channel/videos
+Devpost	https://devpost.com/johanvandegriff
 alt.org/nethack	https://alt.org/nethack/plr.php?player=jjvan
 Instructables	https://www.instructables.com/member/jjvan/
 EasyEDA	https://easyeda.com/jjvan
