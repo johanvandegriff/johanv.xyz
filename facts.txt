@@ -1,0 +1,39 @@
+I enjoy playing piano! I was classically trained and now I just playand compose for fun. I can't read sheet music in real time so I play mostly by ear.
+My favorite movie is the Incredibles. A great superhero story before the Avengers came and saturated the market and our collective brainspace.
+My favorite color is <span class="blue">blue</span>. No, <span class="orange">orange</span>! No, purple! I'm indecisive...
+Within the span of May-June 2019, my phone, laptop, and tablet all broke. I am currently using a flip phone and borrowed ThinkPad until the <a target="_blank" href="https://puri.sm/products/librem-5/">Librem 5 phone</a> comes out (you can attach a keyboard & screen, so I won't need a laptop).
+I've never been outside the United States. I came close when my family visited Maine and almost stepped over to Canada, but it would have been an extra 2 hour drive, so we decided against it.
+My social security number is 015-68-3185. Just kidding! Or am I? Quick -- reload the page so no-one sees!
+I have never watched an anime. Yes, I know your response: I should watch Full Metal Alchemist. Or Cowboy Bebop. Or Death Note, JoJo's Bizarre Adventure, Pokemon, Naruto, etc. I wish I could too, but I don't have the time, and I know that once I start, there's no going back.
+My favorite Linux distro is Manjaro. With the AUR I can easily install most apps, even the obscure ones. And when I say the obscure ones, I'm talking about Vivaldi (web browser), Frescobalidi (sheet music editor), kaldi (speech recognition), all the -aldi's. Not to mention, Dokku, obscure drivers, Minecraft, Mycroft, etc. All available for any distro but so much easier to install on Manjaro. &lt;/soapbox&gt;
+I installed Arch Linux on Valentine's day 2014. It was a learning experience, to say the least -- thank you, Arch wiki.
+One of my favorite tabletop games is Dominion. My family owns the base set and 9 expansion boxes.
+When I was a baby, I turned <span class="orange">orange</span> because I ate too many carrots and sweet potatoes.
+I love to create electronic games and projects with Arduino boards! My first big project was a Whack-A-Mole game inspired by the Make Magazine volume 24's "Zap-A-Mole."
+I did FTC robotics in highschool on team 7393; I was the co-programmer. Go <a target="_blank" href="https://gearbox4h.org">electron Volts</a>!
+My middle name is NOT Sebastian. My parents weren't that corny.
+I currently technically live in my parents' basement.
+I have run a few D&D one-shot games and I wish I had time for more.
+I still play Minecraft sometimes. These kids with their newfangled comparators and observer blocks put my old redstone contraptions to shame!
+I almost played Fortnite once. But then I uninstalled it from my Windows VM because it was taking up too many BigaBytes.
+My favorite computer game as a kid was The Incredible Machine: Even More Contraptions. I can still play it, now using Wine on Linux -- glad we kept the CD!
+My favorite computer game is Nethack, a roguelike from 1987 that is still being developed today.
+I enjoy making digital art by tracing over pictures -- I'm not quite skilled enough to draw for real yet.
+I try to use mostly open source software, for example Krita instead of Photoshop and Libreoffice instead of Microsoft Office.
+I use Xournal++ for note-taking -- you should try it if you have a drawing tablet or actual tablet!
+My siblings and I have been making and filming little skits and stories since we were young. We used to edit them on Windows Movie Maker (yikes!), but now I use Kdenlive and my brother uses Adobe Premier Elements.
+I probably need glasses... I tried my friend's glasses on and things were just a little bit easier to read from far away.
+I don't drink coffee or tea (except sometimes iced tea).
+I hate skim milk. It's just water lying about being milk.
+For my whole life, my family has lived in Maryland. The longest period of time I've spent outside MD was 7 weeks in summer 2019, when I went on an immersive justice program in DC with the IV Christian Fellowship. Read about it <a target="_blank" href="https://blog.johanv.xyz/bridge-dc">on my blog</a>!
+I have never invested in a pair of earbuds good enough that at least one of the two buds doesn't die within a few weeks. I'm down to my last bud, lads!
+I have stopped buying water bottles because I just keep losing them. Instead I just buy some juice at 7-11 (2 for $2) and reuse the bottles. Hey, at least they're BPA free! (And gluten free, it says on the bottle!)
+I carry around a USB with 15 different boot options, including some Linux distros, utilities, and backup software. It also has a portable version of Libreoffice for Windows in case I need to give a presentation and Powerpoint can't read my .odp files correctly.
+I always wish I had more time for things, but when I sometimes do, I waste it on things I hadn't wished I had time for, like writing these fun facts. (Although sometimes the unintended tasks are fun, like writing these fun facts.)
+My Linux distro hop journey went: Cygwin (on Vista family computer) => Ubuntu (my own desktop!) => Arch (after Ubuntu upgrade killed the OS) => Ubuntu (new laptop for college!) => Mint => Qubes => Manjaro. Before college, I also used our family Windows computer and my robotics team's old Mac laptop.
+These fun facts are stored in johanv.xyz/facts.txt Shh, don't tell anybody, then they could view all the facts! ;)
+I am 1/4 Lebanese and 3/4 white as Swiss cheese.
+My friend and I set up a Nextcloud server in my basement to replace Google Drive, Calendar, etc.
+I was homeschooled until college. Every year, my family would start the first week of school at a remote cabin in the woods. As part of the trip, we always made the "cabin video," documenting the trip and including a skit that we came up with at the cabin and improvised props and costumes based on whatever we happened to have. Gems such as "Goldilocks and the 3 Campers," "Cabin Olympics," "Senior Survivors," "Stories from Summer Camp."
+I was in Boy Scouts as a kid and one of the trips we went on was Philmont, a week of hiking, tomahawk throwing, climbing, and other activities.
+My Mom tells me that when I was 18 months old, I put a 20-piece puzzle together really fast. Guess you could say I'm a prodigy, no big deal.

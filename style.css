@@ -136,3 +136,15 @@ nav ul li a:hover:not(.active) {
   font-weight: bold;
   text-decoration: none;
 }
+
+.blue {
+  color: #1018ee;
+}
+
+.orange {
+  color: #eb7f36;
+}
+
+.purple {
+  color: #631fa3;
+}
