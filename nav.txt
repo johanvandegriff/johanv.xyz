@@ -2,5 +2,6 @@ Home	/
 Videos	/videos
 Games	https://games.johanv.xyz
 Blog	https://blog.johanv.xyz
-Projects	/projects
+Gallery	/gallery
+Resume	/resume
 Contact	/contact

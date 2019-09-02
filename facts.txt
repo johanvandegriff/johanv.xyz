@@ -6,7 +6,7 @@ I've never been outside the United States. I came close when my family visited M
 My social security number is 015-68-3185. Just kidding! Or am I? Quick -- reload the page so no-one sees!
 I have never watched an anime. Yes, I know your response: I should watch Full Metal Alchemist. Or Cowboy Bebop. Or Death Note, JoJo's Bizarre Adventure, Pokemon, Naruto, etc. I wish I could too, but I don't have the time, and I know that once I start, there's no going back.
 My favorite Linux distro is Manjaro. With the AUR I can easily install most apps, even the obscure ones. And when I say the obscure ones, I'm talking about Vivaldi (web browser), Frescobalidi (sheet music editor), kaldi (speech recognition), all the -aldi's. Not to mention, Dokku, obscure drivers, Minecraft, Mycroft, etc. All available for any distro but so much easier to install on Manjaro. &lt;/soapbox&gt;
-I installed Arch Linux on Valentine's day 2014. It was a learning experience, to say the least -- thank you, Arch wiki.
+I installed Arch Linux on Valentine's day 2016. It was a learning experience, to say the least -- thank you, Arch wiki.
 One of my favorite tabletop games is Dominion. My family owns the base set and 9 expansion boxes.
 When I was a baby, I turned <span class="orange">orange</span> because I ate too many carrots and sweet potatoes.
 I love to create electronic games and projects with Arduino boards! My first big project was a Whack-A-Mole game inspired by the Make Magazine volume 24's "Zap-A-Mole."
