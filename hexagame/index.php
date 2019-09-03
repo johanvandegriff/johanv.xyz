@@ -1,4 +1,4 @@
-<?php $pageName = "HexaGame"; include '../header.php'; ?>
+<?php $pageName = "HexaGame"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h2>HexaGame</h2>
 <img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="WhackAMole.JPG">
@@ -16,4 +16,4 @@
 <img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="IncludedParts.JPG">
 <img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="ResetButton.JPG">
 
-<?php include '../footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

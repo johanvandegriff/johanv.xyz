@@ -1,4 +1,4 @@
-<?php $pageName = "ArduinOLED"; include '../header.php'; ?>
+<?php $pageName = "ArduinOLED"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <a href="/ArduinOLED"><-Back to ArduinOLED</a>
 
@@ -111,4 +111,4 @@
   <li>Try making some of the projects listed on <a href="/ArduinOLED">the main ArduinOLED page</a></li>
 </ul>
 
-<?php include '../footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

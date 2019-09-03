@@ -1,4 +1,4 @@
-<?php $pageName = "Calc"; include '../header.php'; ?>
+<?php $pageName = "Calc"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 <h1>Command-line Calculator</h1>
 <p><a href="calculator.zip" target="frame">Download .zip file</a></p>
 <p>This is a calculator that you can run in a terminal.
@@ -32,4 +32,4 @@ cos abc<br/>
 </font></b></td></tr></table>
 <p>To see more of the features, type help in interpreter mode or run <b>./calculator.py help [page #]</b>.</p>
 <p><a href="colors.zip" target="frame">Download terminal colors python module</a></p>
-<?php include '../footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

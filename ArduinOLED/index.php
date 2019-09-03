@@ -1,4 +1,4 @@
-<?php $pageName = "ArduinOLED"; include '../header.php'; ?>
+<?php $pageName = "ArduinOLED"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h1 style="text-align: center; ">ArduinOLED</h1>
 <img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="StackerMenu.JPG">
@@ -26,4 +26,4 @@
 </a>
 <blockquote class="embedly-card"><h4><a href="https://www.instructables.com/id/Build-the-ArduinOLED/">Build the ArduinOLED</a></h4><p>This guide tells how to order and assemble one of these boards yourself.</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-<?php include '../footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

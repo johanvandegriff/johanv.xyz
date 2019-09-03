@@ -1,4 +1,4 @@
-<?php $pageName = "Gallery"; include '../header.php'; ?>
+<?php $pageName = "Gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <?php
 /* Credit to https://github.com/thomassss/OneFileGallery */
@@ -77,4 +77,4 @@ if(isset($_GET['g'])) {
 	</div>
 </div>
 
-<?php include '../footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

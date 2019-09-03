@@ -1,4 +1,4 @@
-<?php $pageName = "Quest"; include '../header.php'; ?>
+<?php $pageName = "Quest"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h1>Quest v0.6.0</h1>
 <p>This is a roguelike I am working on. It is written in Python, using the
@@ -11,4 +11,4 @@ if you want to run it on Windows, you need Cygwin or Powershell.</p>
 <li><a href="quest-0.5.0.zip">Quest v0.5.0</a></li>
 </ul>
 
-<?php include '../footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php $pageName = "Configs"; include '../header.php'; ?>
+<?php $pageName = "Configs"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h1 style="text-align: center; ">Johan's Config Files</h1>
 <p>"You can tell a lot about a woman by the contents of her purse..." ~Mr. Incredible, 2004</p>
@@ -17,4 +17,4 @@
 <p>Since I use /DATA for a lot of my files, I changed <a href="user-dirs.dirs">.config/user-dirs.dirs</a> file to point to directories in /DATA.</p>
 <h2>.nethackrc</h2>
 <p>NetHack is a roguelike dungeoncrawler game released in 1987 (that's older than me!), and after 2003, it stopped getting updates. But in 2016, development began again and NetHack 3.6.0 was released! I've been playing it off and on for a few years, and I've accumulated a growing config file as I discovered useful options or saw other players' setups at <a href="https://alt.org/nethack/">https://alt.org/nethack/</a>. You can see my user page <a href="https://alt.org/nethack/player-all.php?player=jjvan">here</a>, which includes records of all my games, and even a <a href="https://alt.org/nethack/browsettyrec.php?player=jjvan">ttyrec recording</a> of them. When the new version was released, some config options changed, which is why so much of my <a href="nethackrc">.nethackrc</a> is commented out. I made an <a href="https://github.com/johanvandegriff/InstallScript">install script</a> so I could install nethack whenever I install a new Linux distribution.</p>
-<?php include '../footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

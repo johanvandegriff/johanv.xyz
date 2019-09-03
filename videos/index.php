@@ -1,4 +1,4 @@
-<?php $pageName = "Videos"; include '../header.php'; ?>
+<?php $pageName = "Videos"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h1 style="text-align: center; ">Johan's Videos</h1>
 
@@ -25,4 +25,4 @@
 <!--The Untold TRUTH Behind The Parker Solar Probe 2018! | TRUTH DETECTORS-->
 <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://peertube.social/videos/embed/4a8164e1-1ea3-4d26-9505-0d2d7d8d3731" frameborder="0" allowfullscreen></iframe>
 
-<?php include '../footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

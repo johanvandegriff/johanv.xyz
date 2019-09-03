@@ -1,9 +1,4 @@
-<?php $pageName = "Home"; include 'header.php';
-if (isset($_GET['h']) && !empty($_GET['h'])) {
-  $link_name = $_GET['h'];
-  echo '<script>window.location="https://bag.johanv.xyz/f.php?h=' . $link_name . '";</script>';
-}
-?>
+<?php $pageName = "Home"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a>. Here's an random interesting fact about me (reload for another):</p>
 <p class="purple"><?php
@@ -24,4 +19,4 @@ echo $facts[array_rand($facts)];
 <li><a target="_blank" href=""></a></li>
 </ul>
 -->
-<?php include 'footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

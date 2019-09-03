@@ -1,4 +1,4 @@
-<?php $pageName = "Contact"; include '../header.php'; ?>
+<?php $pageName = "Contact"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h2>How to Contact Me Securely</h2>
 <p>These are some easy ways to securely send me a message with end-to-end encryption.</p>
@@ -33,4 +33,4 @@ https://keybase.io/johanvandegriff</a>
 <p>Coming soon once I get a <a target=_blank href="https://puri.sm/products/librem-5/">
 Librem 5 phone</a> in the fall!</p>
 
-<?php include '../footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>
