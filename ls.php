@@ -3,10 +3,11 @@
 <?php
 $fileRoot = $_SERVER['DOCUMENT_ROOT'].'/f';
 $path = preg_replace(",".$fileRoot."/?(.*),", "$1", getcwd());
+
 $path = explode("/", $path);
 
 echo '<h1 style="text-align: center">';
-if (count($path) == 0) {
+if ($path[0] == "") {
     echo "files";
 } else {
     echo '<a href="/f">files</a>';
@@ -38,7 +39,9 @@ foreach($files as $file) {
     } else {
         $trailingSlash = "";
     }
-    echo '  <li><a href="'.$file.'">'.$file.$trailingSlash."</a></li>\n";
+    if ($file != "index.php" && $file != "." && $file != "..") {
+        echo '  <li><a href="'.$file.'">'.$file.$trailingSlash."</a></li>\n";
+    }
 }
 echo "</ul>\n";
 

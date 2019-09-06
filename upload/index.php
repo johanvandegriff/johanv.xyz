@@ -24,14 +24,18 @@
             if(isset($_POST['filename']) && $_POST['filename'] != ""){
                 $file_name = $_POST['filename'];
             }
-            $target_file = $upload_dir.'/'.$file_name;
-            if (file_exists($_SERVER['DOCUMENT_ROOT'].$target_file) && !(isset($_POST['replace']) && $_POST['replace'] == "yes")) {
-                echo 'File <a target="_blank" href="'.$target_file.'">already esists</a>!';
+            if ($file_name == "index.php") {
+                echo "Cannot name file index.php, that filename is reserved.";
             } else {
-                if(move_uploaded_file($file_tmp, $_SERVER['DOCUMENT_ROOT'].$target_file)) {
-                    echo 'Success! File uploaded <a target="_blank" href="'.$target_file.'">here</a>.';
+                $target_file = $upload_dir.'/'.$file_name;
+                if (file_exists($_SERVER['DOCUMENT_ROOT'].$target_file) && !(isset($_POST['replace']) && $_POST['replace'] == "yes")) {
+                    echo 'File <a target="_blank" href="'.$target_file.'">already esists</a>!';
                 } else {
-                    echo "Sorry, there was an error uploading your file.";
+                    if(move_uploaded_file($file_tmp, $_SERVER['DOCUMENT_ROOT'].$target_file)) {
+                        echo 'Success! File uploaded <a target="_blank" href="'.$target_file.'">here</a>.';
+                    } else {
+                        echo "Sorry, there was an error uploading your file.";
+                    }
                 }
             }
         }
