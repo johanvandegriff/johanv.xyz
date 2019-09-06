@@ -1,8 +1,8 @@
 <?php $pageName = "Files"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <?php
-$fileRoot = $_SERVER['DOCUMENT_ROOT'].'/f';
-$path = preg_replace(",".$fileRoot."/?(.*),", "$1", getcwd());
+$file_root = $_SERVER['DOCUMENT_ROOT'].'/f';
+$path = preg_replace(",".$file_root."/?(.*),", "$1", getcwd());
 
 $path = explode("/", $path);
 
@@ -14,33 +14,35 @@ if ($path[0] == "") {
 }
 
 $i = 0;
-$sofar = "/f";
+$so_far = "/f";
 foreach ($path as $dir) {
-    $sofar = $sofar.'/'.$dir;
+    $so_far = $so_far.'/'.$dir;
     if ($i == count($path) - 1) {
         echo ' / '.$dir;
     } else {
-        echo ' / <a href="'.$sofar.'">'.$dir.'</a>';
+        echo ' / <a href="'.$so_far.'">'.$dir.'</a>';
     }
     $i++;
 }
 
 echo '</h1>';
 
-if (empty($listDir)) {
-    $listDir = ".";
-}
 $files = scandir(".");
 
 echo "<ul>\n";
 foreach($files as $file) {
     if (is_dir($file)) {
-        $trailingSlash = "/";
+        $trailing_slash = "/";
+        $target_blank = "";
+        if (!file_exists($file.'/index.php')) {
+            continue;
+        }
     } else {
-        $trailingSlash = "";
+        $trailing_slash = "";
+        $target_blank = ' target="_blank"';
     }
     if ($file != "index.php" && $file != "." && $file != "..") {
-        echo '  <li><a href="'.$file.'">'.$file.$trailingSlash."</a></li>\n";
+        echo '  <li><a'.$target_blank.' href="'.$file.'">'.$file.$trailing_slash."</a></li>\n";
     }
 }
 echo "</ul>\n";

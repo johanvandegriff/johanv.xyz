@@ -12,7 +12,7 @@
 </form>
 
 <?php
-    $upload_dir = '/f';
+    $upload_path = '/f';
     if(isset($_FILES['upload'])){
         $file_name = $_FILES['upload']['name'];
         $file_tmp =$_FILES['upload']['tmp_name'];
@@ -23,12 +23,19 @@
         if ($file_name == "index.php") {
             echo "Cannot name file index.php, that filename is reserved.";
         } else {
-            $target_file = $upload_dir.'/'.$file_name;
-            if (file_exists($_SERVER['DOCUMENT_ROOT'].$target_file) && !(isset($_POST['replace']) && $_POST['replace'] == "yes")) {
-                echo 'File <a target="_blank" href="'.$target_file.'">already esists</a>!';
+            $target_path = $upload_path.'/'.$file_name;
+            $target_file = $_SERVER['DOCUMENT_ROOT'].$target_path;
+            if (file_exists($target_file) && !(isset($_POST['replace']) && $_POST['replace'] == "yes")) {
+                echo 'File <a target="_blank" href="'.$target_path.'">already esists</a>!';
             } else {
-                if(move_uploaded_file($file_tmp, $_SERVER['DOCUMENT_ROOT'].$target_file)) {
-                    echo 'Success! File uploaded <a target="_blank" href="'.$target_file.'">here</a>.';
+                $parent_dir = dirname($target_file);
+                if (!is_dir($parent_dir)) {
+                    if(mkdir($parent_dir , 0777, true)) {
+                        echo 'Created dir: '.$parent_dir."<br/>\n";
+                    }
+                }
+                if(move_uploaded_file($file_tmp, $target_file)) {
+                    echo 'Success! File uploaded <a target="_blank" href="'.$target_path.'">here</a>.';
                 } else {
                     echo "Sorry, there was an error uploading your file.";
                 }
