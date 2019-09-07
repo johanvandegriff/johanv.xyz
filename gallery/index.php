@@ -3,6 +3,9 @@
 <?php
 /* Credit to https://github.com/thomassss/OneFileGallery */
 
+$galleries = '/f/galleries';
+$galleriesPath = $_SERVER['DOCUMENT_ROOT'].$galleries;
+
 function showGallery(){
 	if(isset($_GET['g'])){
 		showDetailPage($_GET['g']);
@@ -12,16 +15,17 @@ function showGallery(){
 }
 
 function showDetailPage($gal){
-	$files = scandir('./galleries/'.$gal.'/');
+    GLOBAL $galleries, $galleriesPath;
+	$files = scandir("$galleriesPath/$gal/");
 
 	foreach($files as $file){
 		if($file == '.') continue;
 		if($file == '..') continue;
 		echo <<<END
 <div class="col-xs-6 col-md-4">
-	<a href="galleries/$gal/$file">
+	<a href="$galleries/$gal/$file">
 		<div class="thumbnail">
-			<img src="galleries/$gal/$file" alt="..." class="img-rounded">
+			<img src="$galleries/$gal/$file" alt="..." class="img-rounded">
 		</div>
 	</a>
 </div>
@@ -30,8 +34,9 @@ END;
 }
 
 function createGallery(){
+    GLOBAL $galleries, $galleriesPath;
 	$out = "";
-	$dir = new DirectoryIterator('./galleries');
+	$dir = new DirectoryIterator($galleriesPath);
 	foreach ($dir as $fileinfo) {
 		if ($fileinfo->isDir() && !$fileinfo->isDot()) {
 			//echo $fileinfo->getFilename().'<br>';
@@ -55,8 +60,9 @@ END;
 }
 
 function getThumb($gal){
-	$files = scandir('./galleries/'.$gal);
-	return('galleries/'.$gal.'/'.$files[2]);
+    GLOBAL $galleries, $galleriesPath;
+	$files = scandir("$galleriesPath/$gal");
+	return("$galleries/$gal/$files[2]");
 }
 ?>
 <link rel="stylesheet" href="gallery.css">
