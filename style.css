@@ -131,6 +131,10 @@ nav ul li a:hover:not(.active) {
   text-align: center;
 }
 
+footer {
+    padding: 10px;
+}
+
 .green {
   color: #0f0;
   font-weight: bold;
