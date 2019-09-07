@@ -4,7 +4,13 @@
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="/style.css">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-<title>johanv.xyz | Johan Vandegriff</title>
+<?php
+if ($pageName == "Home") {
+    echo '<title>johanv.xyz | Johan Vandegriff</title>';
+} else {
+    echo '<title>'.$pageName.' | johanv.xyz | Johan Vandegriff</title>';
+}
+?>
 <meta name="description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
 </head>
