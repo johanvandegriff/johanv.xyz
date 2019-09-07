@@ -152,3 +152,18 @@ footer {
 .purple {
   color: #631fa3;
 }
+
+.terminal {
+    font-family: 'Monospace', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+.img65 {
+    width:65%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}

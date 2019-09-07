@@ -2,7 +2,7 @@
 
 <h1 style="text-align: center">Upload</h1>
 
-<form action="" method="POST" enctype="multipart/form-data">
+<form action="." method="POST" enctype="multipart/form-data">
     <input type="file" name="upload"/>
     <input type="submit"/>
     <br/>

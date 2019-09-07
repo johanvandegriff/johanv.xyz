@@ -1,7 +1,7 @@
 <?php $pageName = "HexaGame"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h2>HexaGame</h2>
-<img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="WhackAMole.JPG">
+<img alt="The HexaGame playing Whack-A-Mole" class="img65" src="WhackAMole.JPG">
 <p>Hexagame is a handheld multi-game system that consists of a hexagon of LEDs with buttons surrounding it, as well as a hex-shaped dpad.</p>
 <h3>Board Designs:</h3>
 <ul>
@@ -10,10 +10,10 @@
 </ul>
 
 <h3>More Photos</h3>
-<img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="Colors.JPG">
-<img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="WithCable.JPG">
-<img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="Hexagame.JPG">
-<img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="IncludedParts.JPG">
-<img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="ResetButton.JPG">
+<img alt="5 HexaGames of different colors" class="img65" src="Colors.JPG">
+<img alt="HexaGame with programming cable" class="img65" src="WithCable.JPG">
+<img alt="The HexaGame" class="img65" src="Hexagame.JPG">
+<img alt="HexaGame and programming cable unplugged" class="img65" src="IncludedParts.JPG">
+<img alt="HexaGame reset button pressed" class="img65" src="ResetButton.JPG">
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

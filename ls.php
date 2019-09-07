@@ -2,7 +2,11 @@
 
 <?php
 $file_root = $_SERVER['DOCUMENT_ROOT'].'/f';
-$path = preg_replace(",".$file_root."/?(.*),", "$1", getcwd());
+$loc = getcwd();
+if ($loc == $_SERVER['DOCUMENT_ROOT']) {
+    $loc = "";
+}
+$path = preg_replace(",".$file_root."/?(.*),", "$1", $loc);
 
 $path = explode("/", $path);
 
