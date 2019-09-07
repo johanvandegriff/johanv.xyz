@@ -32,9 +32,7 @@ if ($pageName == "Home") {
 </a></header>
 <nav><ul>
 <?php
-$webroot = 'https://johanv.xyz';
-
-$filename = $webroot . '/nav.txt';
+$filename = $_SERVER['DOCUMENT_ROOT'].'/nav.txt';
 $contents = file($filename);
 
 if (strcmp($pageName, "") == 0) $pageName = $argv[1];
@@ -74,7 +72,7 @@ function hideEmailOpts($email, $text, $options) {
 <p class="monospace green">
 $ cat <a target="_blank" class="green" href="/links.txt">links.txt</a><br/>
 <?php
-$filename = $webroot . '/links.txt';
+$filename = $_SERVER['DOCUMENT_ROOT'].'/links.txt';
 $contents = file($filename);
 
 foreach($contents as $line) {
