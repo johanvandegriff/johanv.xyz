@@ -1,7 +1,5 @@
 <?php $pageName = "Videos"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
-<h1 style="text-align: center; ">Johan's Videos</h1>
-
 <p>Here are some of my videos! You can see all of them on <a target="_blank" href="https://peertube.social/video-channels/jjvantheman_channel/videos">PeerTube</a> or <a target="_blank" href="https://www.youtube.com/user/jjvantheman">YouTube</a>. PeerTube is an alternative decentralized video platform to YouTube and I use it because I don't have to be locked in to a large company (Google in this case). With PeerTube, I have a variety of choices of where to host my videos, and if I wanted to, I could even host them myself in my basement or in the cloud! Right now, I'm using <a href="https://peertube.social/">peertube.social</a>, which is one of the most popular general purpose instances.</p>
 
 <iframe title="Maker's Case Gemstone Commercial" width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://peertube.social/videos/embed/bf19ee3e-b4e2-484d-ae08-bd52b2bf6c1e" frameborder="0" allowfullscreen></iframe>

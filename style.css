@@ -173,3 +173,19 @@ footer {
     margin-left:auto;
     margin-right:auto;
 }
+
+.img65left {
+    width:65%;
+    display:block;
+    margin-left:0;
+}
+
+.img35left {
+    width:35%;
+    display:block;
+    margin-left:0;
+}
+
+.mono {
+    font-family: 'Monospace', sans-serif;
+}
