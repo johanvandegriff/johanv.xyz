@@ -16,13 +16,25 @@ if ($pageName == "Home") {
     echo '<title>'.$pageName.' | johanv.xyz | Johan Vandegriff</title>';
 }
 ?>
+
+<meta charset="utf-8">
 <meta name="description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
+nd games.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Johan Vandegriff">
+
 <meta property="og:title" content="Johan Vandegriff">
 <meta property="og:site_name" content="johanv.xyz">
 <meta property="og:url" content="https://johanv.xyz/">
 <meta property="og:description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="https://fosstodon.org/@johanv">
+<meta name="twitter:title" content="Johan Vandegriff">
+<meta name="twitter:description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
+<meta name="twitter:image" content="https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg">
+
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
 </head>
 <body>
