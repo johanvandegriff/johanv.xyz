@@ -1,6 +1,6 @@
 <?php $pageName = "Home"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
-<h1>Welcome!</h1>
+<h1>Welcome to johanv.xyz!</h1>
 <p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a>. Here's an random interesting fact about me (reload for another):</p>
 <p class="purple"><?php
 $facts = file("facts.txt", FILE_IGNORE_NEW_LINES);
@@ -34,7 +34,7 @@ echo $facts[array_rand($facts)];
 
 <h2>Resume</h2>
 <h3>NASA GSFC Internship</h3>
-<h5>summer 2017</h5>
+<h4>summer 2017</h4>
 <img src="/resume/images/GSFC.jpg" class="img65left" alt="me with my internship mentors and poster">
 <p>I fixed bugs in C code for <a target="_blank" href="https://cfs.gsfc.nasa.gov/">NASA’s core Flight System</a> by writing unit tests on a CentOS Linux virtual machine (using VirtualBox). To help write unit tests, I wrote some bash scripts to generate skeleton functions, then filled them in manually with code to test each case. At the end of the summer, I created a <a target="_blank" href="/resume/images/GSFC_poster.png">poster</a> and presented it at a lab-wide showcase day.</p>
 <p><a href="/resume">Read my full resume...</a></p>
