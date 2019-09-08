@@ -9,31 +9,36 @@ The PHP code is available at: https://gitlab.com/johanvandegriff/johanv.xyz
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="/style.css">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-<?php
-if ($pageName == "Home") {
-    echo '<title>johanv.xyz | Johan Vandegriff</title>';
-} else {
-    echo '<title>'.$pageName.' | johanv.xyz | Johan Vandegriff</title>';
+<title><?php
+$title = "johanv.xyz | Johan Vandegriff | a laid-back individual";
+$description = "Johan Vandegriff's website where he shares his games, videos, blog, drawings, projects, and more.";
+$image = "https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg";
+$url = "https://johanv.xyz/";
+$site_name = "johanv.xyz";
+
+if ($pageName != "Home") {
+    $title = $pageName.' | '.$title;
 }
-?>
+echo $title;
+?></title>
 
 <meta charset="utf-8">
-<meta name="description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
-nd games.">
+<meta name="description" content="<?php echo $description; ?>">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Johan Vandegriff">
 
-<meta property="og:title" content="Johan Vandegriff">
-<meta property="og:site_name" content="johanv.xyz">
-<meta property="og:url" content="https://johanv.xyz/">
-<meta property="og:description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg">
+<meta property="og:title" content="<?php echo $title; ?>">
+<meta property="og:site_name" content="<?php echo $site_name; ?>">
+<meta property="og:url" content="<?php echo $url; ?>">
+<meta property="og:description" content="<?php echo $description; ?>">
+<meta property="og:image" content="<?php echo $image; ?>">
+
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="https://fosstodon.org/@johanv">
-<meta name="twitter:title" content="Johan Vandegriff">
-<meta name="twitter:description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
-<meta name="twitter:image" content="https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg">
+<meta name="twitter:site" content="<?php echo $url; ?>">
+<meta name="twitter:title" content="<?php echo $title; ?>">
+<meta name="twitter:description" content="<?php echo $description; ?>">
+<meta name="twitter:image" content="<?php echo $image; ?>">
 
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
 </head>
