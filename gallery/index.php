@@ -25,7 +25,7 @@ function showDetailPage($gal){
 <div class="col-xs-6 col-md-4">
 	<a href="$galleries/$gal/$file">
 		<div class="thumbnail">
-			<img src="$galleries/$gal/$file" alt="..." class="img-rounded">
+			<img src="$galleries/$gal/$file" alt="" class="img-rounded">
 		</div>
 	</a>
 </div>
