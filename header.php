@@ -17,6 +17,12 @@ if ($pageName == "Home") {
 }
 ?>
 <meta name="description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
+<meta property="og:title" content="Johan Vandegriff">
+<meta property="og:site_name" content="johanv.xyz">
+<meta property="og:url" content="https://johanv.xyz/">
+<meta property="og:description" content="Johan Vandegriff's website where he shares his projects, blog, and games.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg">
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
 </head>
 <body>
