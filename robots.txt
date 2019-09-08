@@ -1,0 +1,4 @@
+Sitemap: https://johanv.xyz/sitemap.xml
+
+User-Agent: *
+Disallow:
