@@ -1,6 +1,6 @@
 Home	/
-Videos	/videos
 Games	https://games.johanv.xyz
+Videos	/videos
 Blog	https://blog.johanv.xyz
 Gallery	/gallery
 Resume	/resume
