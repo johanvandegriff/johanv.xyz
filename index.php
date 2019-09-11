@@ -1,7 +1,7 @@
 <?php $pageName = "Home"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
-<h1>Welcome to johanv.xyz!</h1>
-<p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a>. Here's an random interesting fact about me (reload for another):</p>
+<h1>johanv.xyz, my chill website</h1>
+<p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a>, and this is johanv.xyz: my new, awesome, spectacular, and chill website! Here's an random interesting fact about me (reload for another):</p>
 <p class="purple"><?php
 $facts = file("facts.txt", FILE_IGNORE_NEW_LINES);
 echo $facts[array_rand($facts)];

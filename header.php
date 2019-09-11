@@ -10,7 +10,7 @@ The PHP code is available at: https://gitlab.com/johanvandegriff/johanv.xyz
 <link rel="stylesheet" type="text/css" href="/style.css">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 <title><?php
-$title = "johanv.xyz | Johan Vandegriff | a laid-back individual";
+$title = "johanv.xyz | Johan Vandegriff | my chill website";
 $description = "Johan Vandegriff's website where he shares his games, videos, blog, drawings, projects, and more.";
 $image = "https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg";
 $url = "https://johanv.xyz/";
