@@ -98,6 +98,22 @@ function hideEmailOpts($email, $text, $options) {
   $GLOBALS['email_counter']++;
 }
 
+function getThumbURL($imgURL) {
+  $thumbURL = $imgURL.".jpg";
+  if (substr($imgURL, 0, 3) == "/f/") {
+    $thumbURL = "/thumbs/".substr($imgURL, 3).".jpg";
+    if (file_exists($_SERVER['DOCUMENT_ROOT'].$thumbURL)) {
+      return $thumbURL;
+    }
+  }
+  return $imgURL;
+}
+
+function getThumbIMG($imgURL, $props) {
+  $thumbURL = getThumbURL($imgURL);
+  return '<a target="_blank" href="'.$imgURL.'"><img src="'.$thumbURL.'" '.$props.'></a>';
+}
+
 ?>
 </ul></nav></div>
 <div class="main">

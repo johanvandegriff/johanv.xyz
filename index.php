@@ -13,6 +13,8 @@ echo $facts[array_rand($facts)];
 <p>For this drawing and others, I used the free and open source drawing software <a target="_blank" href="https://krita.org/">Krita</a>, a Wacom tablet, and a <a target="_blank" href="https://manjaro.org/">Manjaro</a> Linux laptop. I've also made some drawings on physical media.</p>
 <p><a href="/gallery?g=Drawings">See more of my drawings...</a></p>
 
+<?php echo getThumbIMG("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'class="img65left" alt="Drawing"'); ?>
+
 <h2>Videos</h2>
 <p>This video is for a propsed research project for Gemstone at UMD. I ended up joining another project instead, but I still have the initial version and plan to make it into a product someday.</p>
 <iframe title="Maker's Case Gemstone Commercial" width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://peertube.social/videos/embed/bf19ee3e-b4e2-484d-ae08-bd52b2bf6c1e" frameborder="0" allowfullscreen></iframe>
