@@ -1,4 +1,4 @@
-<?php $pageName = "ArduinOLED"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "ArduinOLED"; $pageNameExtra = "Software Setup Tutorial"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <a href="/ArduinOLED"><-Back to ArduinOLED</a>
 

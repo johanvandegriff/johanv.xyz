@@ -1,6 +1,4 @@
-<?php $pageName = "Gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
-
-<?php
++<?php
 /* Credit to https://github.com/thomassss/OneFileGallery */
 
 $galleries = '/f/galleries';
@@ -64,14 +62,15 @@ function getThumb($gal){
 	$files = scandir("$galleriesPath/$gal");
 	return("$galleries/$gal/$files[2]");
 }
-?>
-<link rel="stylesheet" href="gallery.css">
-
-<?php
 if(isset($_GET['g'])) {
+	$pageNameExtra = str_replace('_', ' ', $_GET['g']);
+	$pageName = "Gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
 	echo '<h4><a href=".">... back to all galleries</a></h4>';
+} else {
+	$pageName = "Gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
 }
 ?>
+<link rel="stylesheet" href="gallery.css">
 <div class="container">
 	<?php echo showGallery(); ?>
 </div>

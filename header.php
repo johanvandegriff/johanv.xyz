@@ -17,7 +17,11 @@ $url = "https://johanv.xyz/";
 $site_name = "johanv.xyz";
 
 if ($pageName != "Home") {
-    $title = $pageName.' | '.$title;
+    if (isset($pageNameExtra)) {
+        $title = $pageNameExtra.' | '.$pageName.' | '.$title;
+    } else {
+        $title = $pageName.' | '.$title;
+    }
 }
 echo $title;
 ?></title>
