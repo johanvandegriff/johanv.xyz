@@ -19,11 +19,12 @@ function showDetailPage($gal){
 	foreach($files as $file){
 		if($file == '.') continue;
 		if($file == '..') continue;
+		$img = getThumbIMG("$galleries/$gal/$file", 'alt="" class="img-rounded"');
 		echo <<<END
 <div class="col-xs-6 col-md-4">
 	<a href="$galleries/$gal/$file">
 		<div class="thumbnail">
-			<img src="$galleries/$gal/$file" alt="" class="img-rounded">
+			$img
 		</div>
 	</a>
 </div>
@@ -41,6 +42,7 @@ function createGallery(){
 			$gal_print_name = str_replace('_', ' ', $fileinfo->getFilename());
 			$link_name = $fileinfo->getFilename();
 			$thumbnail = getThumb($link_name);
+			$thumbnail = getThumbURL("$thumbnail");
 			echo <<<END
 	<div class="col-xs-6 col-md-4">
 		<a href="?g=$link_name">
