@@ -11,8 +11,12 @@ The PHP code is available at: https://gitlab.com/johanvandegriff/johanv.xyz
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 <title><?php
 $title = "johanv.xyz | Johan Vandegriff | my chill website";
-$description = "Johan Vandegriff's website where he shares his games, videos, blog, drawings, projects, and more.";
-$image = "https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg";
+if (!isset($description)) {
+    $description = "Johan Vandegriff's website where he shares his games, videos, blog, drawings, projects, and more.";
+}
+if (!isset($image)) {
+    $image = "https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg";
+}
 $url = "https://johanv.xyz/";
 $site_name = "johanv.xyz";
 
