@@ -1,8 +1,9 @@
 #My settings:
 #OPTIONS=decgraphics
+OPTIONS=windowtype:curses
+OPTIONS=number_pad
 #OPTIONS=IBMgraphics
 OPTIONS=hilite_pet
-OPTIONS=number_pad
 OPTIONS=time
 OPTIONS=showexp
 OPTIONS=color
@@ -197,11 +198,15 @@ MENUCOLOR="\{K\}"=blink
 #MENUCOLOR="cursed"=orange&bold
 #MENUCOLOR="uncursed"=green
 
-MENUCOLOR="loadstone\|wand \(of\|called\) cancellation"=underline
-MENUCOLOR="Amulet of Yendor named"=magenta                           # color only the real Amulet
+#MENUCOLOR="loadstone\|wand \(of\|called\) cancellation"=underline
+MENUCOLOR="Amulet of Yendor named"=magenta
+# color only the real Amulet
+
 MENUCOLOR="gold piece"=yellow
 
-MENUCOLOR="[a-zA-Z] - [a-zA-Z ]+[ ]+[0-9]+\*[ ]+[a-z]+[ ]+[0-9]+%"=magenta  # forgotten spell
+MENUCOLOR="[a-zA-Z] - [a-zA-Z ]+[ ]+[0-9]+\*[ ]+[a-z]+[ ]+[0-9]+%"=magenta
+# forgotten spell
+
 # This version will work on NAO.
 # MENUCOLOR="[a-zA-Z ]+[ ]+[0-9]+\*[ ]+[a-z]+[ ]+[0-9]+%"=magenta  # forgotten spell
 
