@@ -9,11 +9,9 @@ echo $facts[array_rand($facts)];
 
 <h2>Drawings</h2>
 <p>This is a drawing I made of the <a target="_blank" href="https://twitter.com/ErasableInc">Erasable Inc.</a> improv group at the University of Maryland (UMD) after their 24-hour show.</p>
-<a href="/gallery?g=Drawings"><img class="img65left" alt="Draing of the Erasable Inc Improv Group at UMD and Friends" src="/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png"></a>
+<a href="/gallery?g=Drawings"><img class="img65left" alt="Draing of the Erasable Inc Improv Group at UMD and Friends" src="<?php echo getThumbURL("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png"); ?>"></a>
 <p>For this drawing and others, I used the free and open source drawing software <a target="_blank" href="https://krita.org/">Krita</a>, a Wacom tablet, and a <a target="_blank" href="https://manjaro.org/">Manjaro</a> Linux laptop. I've also made some drawings on physical media.</p>
 <p><a href="/gallery?g=Drawings">See more of my drawings...</a></p>
-
-<?php echo getThumbIMG("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'class="img65left" alt="Drawing"'); ?>
 
 <h2>Videos</h2>
 <p>This video is for a propsed research project for Gemstone at UMD. I ended up joining another project instead, but I still have the initial version and plan to make it into a product someday.</p>
@@ -37,12 +35,12 @@ echo $facts[array_rand($facts)];
 <h2>Resume</h2>
 <h3>NASA GSFC Internship</h3>
 <h4>summer 2017</h4>
-<img src="/resume/images/GSFC.jpg" class="img65left" alt="me with my internship mentors and poster">
+<img src="/resume/images/GSFC.jpg.jpg" class="img65left" alt="me with my internship mentors and poster">
 <p>I fixed bugs in C code for <a target="_blank" href="https://cfs.gsfc.nasa.gov/">NASA’s core Flight System</a> by writing unit tests on a CentOS Linux virtual machine (using VirtualBox). To help write unit tests, I wrote some bash scripts to generate skeleton functions, then filled them in manually with code to test each case. At the end of the summer, I created a <a target="_blank" href="/resume/images/GSFC_poster.png">poster</a> and presented it at a lab-wide showcase day.</p>
 <p><a href="/resume">Read my full resume...</a></p>
 
 <h2>Contact</h2>
-<img src="/f/galleries/Random/IMG_20190301_154227.jpg" class="img35left" alt="a picture of me">
+<?php echo getThumbIMG("/f/galleries/Random/IMG_20190301_154227.jpg", 'class="img35left" alt="picture of me"'); ?>
 <p>Feel free to contact me, I have multiple ways to <a target=_blank href="contact">get in touch securely</a>. You can also follow me on <a rel="me" href="https://fosstodon.org/@johanv">Mastodon</a> or find me at any of the other links on the right sidebar of this page.</p>
 
 <!-- <h3>Other People's Sites</h3>
