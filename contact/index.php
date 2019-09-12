@@ -1,4 +1,4 @@
-<?php $pageName = "Contact"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "Contact"; $description = "Johan Vandegriff's contact info and ways to contact him securely with Tutanota, Protonmail, or Keybase."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h2>How to Contact Me Securely</h2>
 <p>These are some easy ways to securely send me a message with end-to-end encryption.</p>

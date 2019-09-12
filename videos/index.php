@@ -1,4 +1,4 @@
-<?php $pageName = "Videos"; $description = "Johan Vandegriff's videos about his life, projects, robotics team, and skits made with friends."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "Videos"; $image = "https://johanv.xyz/f/galleries/UMD/VideosThumb.jpg"; $description = "Johan Vandegriff's videos about his life, projects, robotics team, and skits made with friends."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <p>Here are some of my videos! You can see all of them on <a target="_blank" href="https://peertube.social/video-channels/jjvantheman_channel/videos">PeerTube</a> or <a target="_blank" href="https://www.youtube.com/user/jjvantheman">YouTube</a>. PeerTube is an alternative decentralized video platform to YouTube and I use it because I don't have to be locked in to a large company (Google in this case). With PeerTube, I have a variety of choices of where to host my videos, and if I wanted to, I could even host them myself in my basement or in the cloud! Right now, I'm using <a href="https://peertube.social/">peertube.social</a>, which is one of the most popular general purpose instances.</p>
 

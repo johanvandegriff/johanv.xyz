@@ -1,4 +1,4 @@
-<?php $pageName = "ArduinOLED"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "ArduinOLED"; $image = "https://johanv.xyz/ArduinOLED/StackerMenu.JPG"; $description = "ArduinOLED is a platform for electronic games and other projects. It includes an OLED screen, a joystick, some buttons, a buzzer, and alligator clip connection points to interface with many other devices."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h1 style="text-align: center; ">ArduinOLED</h1>
 <img style="width:65%; display:block; margin-left:auto; margin-right:auto" src="StackerMenu.JPG" alt="ArduinOLED board">

@@ -1,4 +1,4 @@
-<?php $pageName = "Configs"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "Configs"; $descriptions = "Johan Vandegriff's config files for zsh, emacs, tmux, nano, nethack, etc."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h1 style="text-align: center; ">Johan's Config Files</h1>
 <p>"You can tell a lot about a woman by the contents of her purse..." ~Mr. Incredible, 2004</p>

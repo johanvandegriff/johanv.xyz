@@ -1,4 +1,4 @@
-<?php $pageName = "Quest"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "Quest"; $description = "This is a roguelike I am working on. It is written in Python, using the curses module."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h1>Quest v0.6.0</h1>
 <p>This is a roguelike I am working on. It is written in Python, using the

@@ -1,4 +1,4 @@
-<?php $pageName = "HexaGame"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "HexaGame"; $image = "https://johanv.xyz/hexagame/WhackAMole.JPG"; $description = "Hexagame is a handheld multi-game system that consists of a hexagon of LEDs with buttons surrounding it, as well as a hex-shaped dpad."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h2>HexaGame</h2>
 <img alt="The HexaGame playing Whack-A-Mole" class="img65" src="WhackAMole.JPG">
