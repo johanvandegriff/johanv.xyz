@@ -17,7 +17,9 @@ if (!isset($description)) {
 if (!isset($image)) {
     $image = "https://johanv.xyz/f/galleries/Random/IMG_20190301_154227.jpg";
 }
-$url = "https://johanv.xyz/";
+if (!isset($url)) {
+    $url = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+}
 $site_name = "johanv.xyz";
 
 if ($pageName != "Home") {
