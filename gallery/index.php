@@ -62,6 +62,9 @@ function getThumb($gal){
 	$files = scandir("$galleriesPath/$gal");
 	return("$galleries/$gal/$files[2]");
 }
+$image = "https://johanv.xyz/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png";
+$url = "https://johanv.xyz/gallery";
+$description = "Johan Vandegriff's photo gallery with drawings and pictures from school, robotics, camping, etc.";
 if(isset($_GET['g'])) {
 	$pageNameExtra = str_replace('_', ' ', $_GET['g']);
 	$pageName = "Gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
