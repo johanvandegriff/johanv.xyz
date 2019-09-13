@@ -1,10 +1,10 @@
-<?php $pageName = "Configs"; $descriptions = "Johan Vandegriff's config files for zsh, emacs, tmux, nano, nethack, etc."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "Configs"; $description = "Johan Vandegriff's config files for zsh, emacs, tmux, nano, nethack, etc."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h1 style="text-align: center; ">Johan's Config Files</h1>
 <p>"You can tell a lot about a woman by the contents of her purse..." ~Mr. Incredible, 2004</p>
 <p>Well, I say you can tell a lot about a Linux nerd by the contents of his/her config files! These are a few of my config files for various Linux applications.</p>
 <h2>.zshrc</h2>
-<p>I installed <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a> to manage the themes for zsh. <a href="zshrc">Here</a> are my modifications to the .zshrc file. I also separated the theme into a separate file I named <a href="zshtheme">.zshtheme</a>.</p>
+<p>I installed <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a> to manage the themes for zsh and made some modifications to the <a href="zshrc">.zshrc</a> file. I also separated the theme into a separate file I named <a href="zshtheme">.zshtheme</a>.</p>
 <h2>.emacs.d/init.el</h2>
 <p><a href="init.el">This config file</a> turns off the welcome screen, scratch message, tool bar, menu bar, backups, and auto-save; sets the default directory to /DATA since I store most of my files in that directory; defines a function to backwards-kill more intelligently; and sets some abbreviations and other shortcuts. I followed <a href="https://sites.google.com/site/steveyegge2/effective-emacs">this page</a> to set up my emacs configuration. Instead of using the recommended way of swapping the caps lock and control keys, I put this: </p><pre>setxkbmap -option "shift:both_capslock,caps:ctrl_modifier"</pre><p> into my <a href="profile">.profile</a></p>
 <h2>.tmux.conf</h2>

@@ -1,7 +1,7 @@
 Home	/
-Games	https://games.johanv.xyz
-Videos	/videos
-Blog	https://blog.johanv.xyz
-Gallery	/gallery
-Resume	/resume
-Contact	/contact
+Games	https://games.johanv.xyz/
+Videos	/videos/
+Blog	https://blog.johanv.xyz/
+Gallery	/gallery/
+Resume	/resume/
+Contact	/contact/

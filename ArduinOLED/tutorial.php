@@ -1,6 +1,6 @@
-<?php $pageName = "ArduinOLED"; $pageNameExtra = "Software Setup Tutorial"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "ArduinOLED"; $pageNameExtra = "Software Setup Tutorial"; $image = "https://johanv.xyz/ArduinOLED/StackerMenu.JPG"; $description = "A platform for electronic games and other projects. It includes a screen, joystick, buttons, buzzer, and clip connections to add many other devices."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
-<a href="/ArduinOLED"><-Back to ArduinOLED</a>
+<a href="/ArduinOLED/"><-Back to ArduinOLED</a>
 
 <h2 style="text-align: center;">Tutorial</h2>
 <p>Steps:</p>
@@ -108,7 +108,7 @@
 <a href="#top">[Back to top]</a>
 <ul>
   <li>Try out the other example sketches</li>
-  <li>Try making some of the projects listed on <a href="/ArduinOLED">the main ArduinOLED page</a></li>
+  <li>Try making some of the projects listed on <a href="/ArduinOLED/">the main ArduinOLED page</a></li>
 </ul>
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

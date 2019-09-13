@@ -16,7 +16,7 @@
 <p>Once the signal reaches the app, a variety of actions can be taken. A simple sound file can be played to simulate a phone call to the wearer. A secret text can be sent to a pre-assigned recipient. A speech to text engine can be launched to initiate communication with a custom chatbot. Some future plans include broadcasting your location, calling 911, or even ordering a pizza!</p>
 
 <h2>CARL</h2>
-<p><a href="https://johan.vandegriff.net/CARL_INTERFACE.py">CARL</a> (Chatbot with Automatic and Rapid Learning) was developed alongside the device and app to simulate someone talking to you with speech-to-text and text-to-speech.</p>
+<p><a href="https://games.johanv.xyz/carl">CARL</a> (Chatbot with Automatic and Rapid Learning) was developed alongside the device and app to simulate someone talking to you with speech-to-text and text-to-speech.</p>
 
 <h2>Meet the Team</h2>
 <h4>Jonathan</h4>

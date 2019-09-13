@@ -1,4 +1,4 @@
-<?php $pageName = "Files"; $description = "Directory file listing."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "Files"; $description = "A listing of the files I have uploaded to the site."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <?php
 $file_root = $_SERVER['DOCUMENT_ROOT'].'/f';
@@ -14,7 +14,7 @@ echo '<h1 style="text-align: center">';
 if ($path[0] == "") {
     echo "files";
 } else {
-    echo '<a href="/f">files</a>';
+    echo '<a href="/f/">files</a>';
 }
 
 $i = 0;

@@ -53,7 +53,7 @@ echo $title;
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
 </head>
 <body>
-<div class="ribbon"><header><a href="/" class="green"><pre>
+<div class="ribbon"><header><pre class="green">
       _         _                                                   
      (_)       | |                                                  
       _  _____ | |___  ___ _  _____ __    __    __  __ _   _  ____  
@@ -62,7 +62,7 @@ echo $title;
    _ | |(_____)|_| |_|(___,_||_| |_|  \__/  (_) /_/\_\(____ | /____)
   | || |                                               ___| |       
   (____)                                              (_____)       </pre>
-</a></header>
+</header>
 <nav><ul>
 <?php
 $filename = $_SERVER['DOCUMENT_ROOT'].'/nav.txt';
