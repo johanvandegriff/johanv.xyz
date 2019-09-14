@@ -11,7 +11,7 @@ One of my favorite tabletop games is Dominion. My family owns the base set and 9
 When I was a baby, I turned <span class="orange">orange</span> because I ate too many carrots and sweet potatoes.
 I love to create electronic games and projects with Arduino boards! My first big project was a Whack-A-Mole game inspired by the Make Magazine volume 24's "Zap-A-Mole."
 I did FTC robotics in highschool on team 7393; I was the co-programmer. Go <a target="_blank" href="https://gearbox4h.org">electron Volts</a>!
-My middle name is NOT Sebastian. My parents weren't that corny.
+My middle name is NOT Sebastian or Bach. My parents weren't that corny.
 I currently technically live in my parents' basement.
 I have run a few D&D one-shot games and I wish I had time for more.
 I still play Minecraft sometimes. These kids with their newfangled comparators and observer blocks put my old redstone contraptions to shame!
@@ -37,3 +37,7 @@ My friend and I set up a Nextcloud server in my basement to replace Google Drive
 I was homeschooled until college. Every year, my family would start the first week of school at a remote cabin in the woods. As part of the trip, we always made the "cabin video," documenting the trip and including a skit that we came up with at the cabin and improvised props and costumes based on whatever we happened to have. Gems such as "Goldilocks and the 3 Campers," "Cabin Olympics," "Senior Survivors," "Stories from Summer Camp."
 I was in Boy Scouts as a kid and one of the trips we went on was Philmont, a week of hiking, tomahawk throwing, climbing, and other activities.
 My Mom tells me that when I was 18 months old, I put a 20-piece puzzle together really fast. Guess you could say I'm a prodigy, no big deal.
+The "New Fact" button is my first time using jQuery and Ajax.
+I'm studying Computer Engineering at UMD College Park. I'm also studying how to manage my time well and not get involved in too many clubs...
+I changed the CAPS Lock key on my keyboard to be a Ctrl key to improve keyboard posture.
+I use the i3 tiling window manager for better productivity with keyboard shortcuts and efficient use of screen real estate.

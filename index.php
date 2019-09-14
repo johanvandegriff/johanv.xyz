@@ -1,15 +1,21 @@
 <?php $pageName = "Home"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
+<script>
+function new_fact() {
+  $.ajax('/fact/')
+    .done(response => document.getElementById("fact").innerHTML = response)
+    .fail((xhr, status) => console.log('error:', status));
+}
+</script>
+
 <h1>johanv.xyz, my chill website</h1>
-<p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a>, and this is johanv.xyz: my new, awesome, spectacular, and chill website! Here's an random interesting fact about me (reload for another):</p>
-<p class="purple"><?php
-$facts = file("facts.txt", FILE_IGNORE_NEW_LINES);
-echo $facts[array_rand($facts)];
-?></p>
+<p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a>, and this is johanv.xyz: my new, awesome, spectacular, and chill website! Here's an random interesting fact about me:</p>
+<p id="fact" class="purple"><?php include $_SERVER['DOCUMENT_ROOT'].'/fact/index.php'; ?></p>
+<input type="button" value="Get New Fact!" onclick="new_fact();">
 
 <h2>Drawings</h2>
 <p>This is a drawing I made of the <a target="_blank" href="https://twitter.com/ErasableInc">Erasable Inc.</a> improv group at the University of Maryland (UMD) after their 24-hour show.</p>
-<a href="/gallery/?g=Drawings"><img class="img65left" alt="Draing of the Erasable Inc Improv Group at UMD and Friends" src="<?php echo getThumbURL("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png"); ?>"></a>
+<?php echo getThumbIMG("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'class="img65left" alt="Draing of the Erasable Inc Improv Group at UMD and Friends"'); ?>
 <p>For this drawing and others, I used the free and open source drawing software <a target="_blank" href="https://krita.org/">Krita</a>, a Wacom tablet, and a <a target="_blank" href="https://manjaro.org/">Manjaro</a> Linux laptop. I've also made some drawings on physical media.</p>
 <p><a href="/gallery/?g=Drawings">See more of my drawings...</a></p>
 
@@ -35,7 +41,7 @@ echo $facts[array_rand($facts)];
 <h2>Resume</h2>
 <h3>NASA GSFC Internship</h3>
 <h4>summer 2017</h4>
-<img src="/resume/images/GSFC.jpg.jpg" class="img65left" alt="me with my internship mentors and poster">
+<a target="_blank" href="/resume/images/GSFC.jpg"><img src="/resume/images/GSFC.jpg.jpg" class="img65left" alt="me with my internship mentors and poster"></a>
 <p>I fixed bugs in C code for <a target="_blank" href="https://cfs.gsfc.nasa.gov/">NASA’s core Flight System</a> by writing unit tests on a CentOS Linux virtual machine (using VirtualBox). To help write unit tests, I wrote some bash scripts to generate skeleton functions, then filled them in manually with code to test each case. At the end of the summer, I created a <a target="_blank" href="/resume/images/GSFC_poster.png">poster</a> and presented it at a lab-wide showcase day.</p>
 <p><a href="/resume/">Read my full resume...</a></p>
 
