@@ -1,6 +1,6 @@
 <?php $pageName = "Configs"; $description = "Johan Vandegriff's config files for zsh, emacs, tmux, nano, nethack, etc."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
-<h1 style="text-align: center; ">Johan's Config Files</h1>
+<h1 style="text-align: center; ">My Config Files</h1>
 <p>"You can tell a lot about a woman by the contents of her purse..." ~Mr. Incredible, 2004</p>
 <p>Well, I say you can tell a lot about a Linux nerd by the contents of his/her config files! These are a few of my config files for various Linux applications.</p>
 <h2>.zshrc</h2>
