@@ -7,6 +7,8 @@ The PHP code is available at: https://gitlab.com/johanvandegriff/johanv.xyz
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
+<!-- #climatestrike -->
+<script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
 <script src="/jquery-3.4.1.min.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="/style.css">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
