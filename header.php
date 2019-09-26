@@ -77,11 +77,10 @@ foreach($contents as $line) {
   $name = $parts[0];
   $url = $parts[1];
   if (strcmp($pageName, $name) == 0){
-    $active = ' class="active"';
+    echo '<li class="active" style="width:'.$width.'%"><a href="#">'.$name."</a></li>\n";
   } else {
-    $active = '';
+    echo '<li style="width:'.$width.'%"><a href="'.$url.'">'.$name."</a></li>\n";
   }
-  echo '<li'.$active.' style="width:'.$width.'%"><a href="'.$url.'">'.$name."</a></li>\n";
 }
 
 function hideEmail($email, $text) {
