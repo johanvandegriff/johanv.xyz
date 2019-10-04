@@ -9,7 +9,7 @@ function new_fact() {
 </script>
 
 <h1>johanv.xyz, my chill website</h1>
-<p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a>, and this is johanv.xyz: my new, awesome, spectacular, and chill website! Here's an random interesting fact about me:</p>
+<p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a>, and this is johanv.xyz: my new, awesome, spectacular, and chill website! Here's a random interesting fact about me:</p>
 <p id="fact" class="purple"><?php include $_SERVER['DOCUMENT_ROOT'].'/fact/index.php'; ?></p>
 <input type="button" value="Get New Fact!" onclick="new_fact();">
 
