@@ -4,9 +4,13 @@
 $galleries = '/f/galleries';
 $galleriesPath = $_SERVER['DOCUMENT_ROOT'].$galleries;
 
+function filter($gal){
+	return preg_replace("/[^a-zA-Z0-9_ ]+/", "", $gal);
+}
+
 function showGallery(){
 	if(isset($_GET['g'])){
-		showDetailPage($_GET['g']);
+		showDetailPage(filter($_GET['g']));
 	} else {
 		createGallery();
 	}
@@ -68,7 +72,7 @@ $image = "https://johanv.xyz/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFri
 $url = "https://johanv.xyz/gallery";
 $description = "Johan Vandegriff's photo gallery with drawings and pictures from school, robotics, camping, etc.";
 if(isset($_GET['g'])) {
-	$pageNameExtra = str_replace('_', ' ', $_GET['g']);
+	$pageNameExtra = str_replace('_', ' ', filter($_GET['g']));
 	$pageName = "Gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
 	echo '<h4><a href=".">... back to all galleries</a></h4>';
 } else {
