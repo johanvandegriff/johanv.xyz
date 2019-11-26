@@ -1,4 +1,4 @@
-+<?php
+<?php
 /* Credit to https://github.com/thomassss/OneFileGallery */
 
 $galleries = '/f/galleries';
