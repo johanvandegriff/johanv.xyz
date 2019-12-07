@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: johanv.xyz
+Token: 13813317e0230bdad0c5118430feb12e3e66351602e0b91701e33365c7340f78
