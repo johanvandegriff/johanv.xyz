@@ -26,7 +26,7 @@ function new_fact() {
 
 <h2>Games</h2>
 <p>You can play <a href="https://games.johanv.xyz/boggle">Boggle</a>, a multiplayer word game, talk to <a href="https://games.johanv.xyz/carl">CARL</a>, a chatbot that learns phrases from you, or play some of my old games written in perl.</p>
-<!-- <a href="https://games.johanv.xyz/carl">CARL says:</a><br/><embed height="60" width="315" src="https://games.johanv.xyz/carl_api"/> -->
+<a href="https://games.johanv.xyz/carl">CARL says:</a><br/><embed height="60" width="315" src="https://games.johanv.xyz/carl_api"/>
 <p><a href="https://games.johanv.xyz/">Play more of my games...</a></p>
 
 <h2>Blog</h2>
