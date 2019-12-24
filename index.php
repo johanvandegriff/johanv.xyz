@@ -29,6 +29,18 @@ function new_fact() {
 <a href="https://games.johanv.xyz/carl">CARL says:</a><br/><embed height="60" width="315" src="https://games.johanv.xyz/carl_api"/>
 <p><a href="https://games.johanv.xyz/">Play more of my games...</a></p>
 
+<h2>Projects</h2>
+<p>Here are some of my projects:</p>
+<ul>
+  <li><a href="/ArduinOLED/">ArduinOLED</a> - A handheld Arduino-based platform to create games, test equipment, and other projects. <a href="/ArduinOLED/">Learn how to make and use it!</a></li>
+  <li><a href="/hexagame/">HexaGame</a> - A handheld multi-game system that consists of a hexagon of LEDs with buttons surrounding it, as well as a hex-shaped dpad.</li>
+  <li><a href="/games-system/">GAMES</a> (Glamorous Automatic Multi-game Emulator System) - A tiny Arduino game system with a 3x3 LED screen and 4 buttons.</li>
+  <li><a href="/calculator/">Calculator</a> - A calculator you can run in the terminal.</li>
+  <li><a href="/quest/">Quest Game</a> - A roguelike game I am working on.</li>
+  <li><a href="/asocialsafety.net/">asocialsafety.net</a> (archived) - The website for a hackathon project my friends and I made.</li>
+  <li><a href="/configs/">My Config Files</a> - Some files with settings the way I like them, with descriptions.</li>
+</ul>
+
 <h2>Blog</h2>
 <p>Here's a snippet from a quintessential blog post of mine:</p>
 <a href="https://blog.johanv.xyz/log-e-tales-from-the-electron-volts"><h3>Log.e() – Tales from the electron Volts</h3></a>
