@@ -1,4 +1,9 @@
-<?php $pageName = "Upload"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "Upload"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
+
+$galleries = '/f/galleries';
+$galleriesPath = $_SERVER['DOCUMENT_ROOT'].$galleries;
+
+?>
 
 <h1 style="text-align: center">Upload</h1>
 
@@ -9,10 +14,27 @@
     New Name (optional): <input type="text" name="filename"/>
     <br/>
     <input type="checkbox" name="replace" value="yes"/> Replace Existing?
+    <select name="location">
+      <option>johanv.xyz/f</option>
+      <?php
+      $dir = new DirectoryIterator($galleriesPath);
+      foreach ($dir as $fileinfo) {
+        if ($fileinfo->isDir() && !$fileinfo->isDot()) {
+          echo "<option>".($fileinfo->getFilename())."</option>";
+        }
+      }
+      ?>
+    </select>
 </form>
 
 <?php
     $upload_path = '/f';
+    if (isset($_POST['location'])) {
+        $loc = $_POST['location'];
+        if ($loc != "johanv.xyz/f") {
+            $upload_path = "/f/galleries/$loc";
+        }
+    }
     if(isset($_FILES['upload'])){
         $file_name = $_FILES['upload']['name'];
         $file_tmp =$_FILES['upload']['tmp_name'];
@@ -52,5 +74,6 @@
     echo '<p>post_max_size: '.ini_get("post_max_size").'</p>';
     echo '<p>whoami: '.exec('whoami').'</p>';
 ?>
+<p>More debug info: <a href="phpinfo.php">phpinfo.php</a></p>
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>
