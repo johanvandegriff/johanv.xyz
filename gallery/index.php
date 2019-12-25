@@ -26,11 +26,9 @@ function showDetailPage($gal){
 		$img = getThumbIMG("$galleries/$gal/$file", 'alt="" class="img-rounded"');
 		echo <<<END
 <div class="col-xs-6 col-md-4">
-	<a href="$galleries/$gal/$file" id="$file">
-		<div class="thumbnail">
-			$img
-		</div>
-	</a>
+	<div class="thumbnail">
+		$img
+	</div>
 </div>
 END;
 	}
@@ -46,7 +44,7 @@ function createGallery(){
 			$gal_print_name = str_replace('_', ' ', $fileinfo->getFilename());
 			$link_name = $fileinfo->getFilename();
 			$thumbnail = getThumb($link_name);
-			$thumbnail = getThumbURL("$thumbnail");
+			$thumbnail = getThumbURL($thumbnail);
 			echo <<<END
 	<div class="col-xs-6 col-md-4">
 		<a href="?g=$link_name">
