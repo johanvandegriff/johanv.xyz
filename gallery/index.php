@@ -26,7 +26,7 @@ function showDetailPage($gal){
 		$img = getThumbIMG("$galleries/$gal/$file", 'alt="" class="img-rounded"');
 		echo <<<END
 <div class="col-xs-6 col-md-4">
-	<a href="$galleries/$gal/$file">
+	<a href="$galleries/$gal/$file" id="$file">
 		<div class="thumbnail">
 			$img
 		</div>
