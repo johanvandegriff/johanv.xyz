@@ -3,7 +3,7 @@
 from="/var/lib/dokku/data/storage/f"
 to="/var/lib/dokku/data/storage/thumbs"
 tmp="/var/lib/dokku/data/storage/tmp"
-THUMBNAIL_SIZE=500
+THUMBNAIL_SIZE=600
 
 rm "$tmp" -rf
 
@@ -18,7 +18,7 @@ echo "$images" | while read file; do
   mkdir -p "$thumb_dir"
   echo -en "Resizing $i/$num_images        \r"
   if [[ "$file" == "$from/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png" ]]; then
-    convert "$file" -thumbnail "900x900>" "$thumb"
+    convert "$file" -thumbnail "1000x1000>" "$thumb"
   else
     convert "$file" -thumbnail "${THUMBNAIL_SIZE}x${THUMBNAIL_SIZE}>" "$thumb"
   fi

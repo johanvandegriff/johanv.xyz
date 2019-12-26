@@ -40,9 +40,8 @@ function createGallery(){
 	$dir = new DirectoryIterator($galleriesPath);
 	foreach ($dir as $fileinfo) {
 		if ($fileinfo->isDir() && !$fileinfo->isDot()) {
-			//echo $fileinfo->getFilename().'<br>';
-			$gal_print_name = str_replace('_', ' ', $fileinfo->getFilename());
 			$link_name = $fileinfo->getFilename();
+			$gal_print_name = str_replace('_', ' ', $link_name);
 			$thumbnail = getThumb($link_name);
 			$thumbnail = getThumbURL($thumbnail);
 			echo <<<END
