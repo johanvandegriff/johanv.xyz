@@ -9,7 +9,6 @@ The PHP code is available at: https://gitlab.com/johanvandegriff/johanv.xyz
 <![endif]-->
 <script src="/jquery-3.4.1.min.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="/style.css">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 <title><?php
 $title = "johanv.xyz | Johan Vandegriff | my chill website";
 if (!isset($description)) {
@@ -52,9 +51,27 @@ echo $title;
 <meta name="twitter:image" content="<?php echo $image; ?>">
 
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @media not all and (max-width: 540px) {
+    nav ul li {
+      width:<?php
+$filename = $_SERVER['DOCUMENT_ROOT'].'/nav.txt';
+$contents = file($filename);
+$width = 100.0/count($contents);
+echo "$width";
+      ?>%
+    }
+  }
+</style>
 </head>
 <body>
-<div class="ribbon"><header><pre class="green">
+<div id="ribbon"><header><a href="/" class="greenLink"><pre id="titleText">johanv.xyz</pre><pre id="asciiArtSmall">
+  ___  _       _                    _  
+   |  | | |_| |_| |\ | | /   \/ \ /  / 
+ |_|  |_| | | | | | \| |/  o /\  |  /_ 
+ 
+</pre><pre id="asciiArt">
       _         _                                                   
      (_)       | |                                                  
       _  _____ | |___  ___ _  _____ __    __    __  __ _   _  ____  
@@ -63,23 +80,19 @@ echo $title;
    _ | |(_____)|_| |_|(___,_||_| |_|  \__/  (_) /_/\_\(____ | /____)
   | || |                                               ___| |       
   (____)                                              (_____)       </pre>
-</header>
-<nav><ul>
+</a></header>
+<nav><div id="navDropdown">&#9776;</div><input id="navToggle" type="checkbox" checked><ul>
 <?php
-$filename = $_SERVER['DOCUMENT_ROOT'].'/nav.txt';
-$contents = file($filename);
-
 if (strcmp($pageName, "") == 0) $pageName = $argv[1];
 
-$width = 100.0/count($contents);
 foreach($contents as $line) {
   $parts = preg_split('/\t/', rtrim($line));
   $name = $parts[0];
   $url = $parts[1];
   if (strcmp($pageName, $name) == 0){
-    echo '<li class="active" style="width:'.$width.'%"><a href="#">'.$name."</a></li>\n";
+    echo '<li id="active"><a href="'.$url.'">'.$name."</a></li>\n";
   } else {
-    echo '<li style="width:'.$width.'%"><a href="'.$url.'">'.$name."</a></li>\n";
+    echo '<li><a href="'.$url.'">'.$name."</a></li>\n";
   }
 }
 
@@ -116,22 +129,22 @@ function getThumbIMG($imgURL, $props) {
 
 ?>
 </ul></nav></div>
-<div class="main">
+<div id="main">
 <aside class="right">
-<p class="monospace green">
-$ cat <a target="_blank" class="green" href="/links.txt">links.txt</a><br/>
+<p class="monospace greenLink" style="overflow: hidden;">
+$ cat <a target="_blank" class="greenLink" href="/links.txt">links.txt</a><br/>
 <?php
 $filename = $_SERVER['DOCUMENT_ROOT'].'/links.txt';
 $contents = file($filename);
 
 foreach($contents as $line) {
    $parts = preg_split('/\t/', rtrim($line));
-   echo '<br/><a target="_blank" class="green" href="' . $parts[1] . '">' . $parts[0] . "</a>\n";
+   echo '<br/><a target="_blank" class="greenLink" href="' . $parts[1] . '">' . $parts[0] . "</a>\n";
 }
 
 ?>
 
-<br/><br/><a class="green" id="9dda4e98_0" href="#9dda4e98_0" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">tutanota</a><br/><a class="green" id="9dda4e98_1" href="#9dda4e98_1" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamnotorp'+'&#x40;'+'navjj'+'&#x202d;'">protonmail</a>
+<br/><br/><a class="greenLink" id="9dda4e98_0" href="#9dda4e98_0" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">tutanota</a><br/><a class="greenLink" id="9dda4e98_1" href="#9dda4e98_1" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamnotorp'+'&#x40;'+'navjj'+'&#x202d;'">protonmail</a>
 <?php $GLOBALS['email_counter'] += 2; ?>
 
 </p></aside>

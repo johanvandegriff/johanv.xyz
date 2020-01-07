@@ -21,12 +21,12 @@ function new_fact() {
 
 <h2 id="videos">Videos</h2>
 <p>This video is for a propsed research project for Gemstone at UMD. I ended up joining another project instead, but I still have the initial version and plan to make it into a product someday.</p>
-<iframe title="Maker's Case Gemstone Commercial" width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://peertube.social/videos/embed/bf19ee3e-b4e2-484d-ae08-bd52b2bf6c1e" frameborder="0" allowfullscreen></iframe>
+<iframe title="Maker's Case Gemstone Commercial" onload="this.width=Math.min(560, screen.width-20); this.height=this.width*315/560" width="56" height="31.5" sandbox="allow-same-origin allow-scripts" src="https://peertube.social/videos/embed/bf19ee3e-b4e2-484d-ae08-bd52b2bf6c1e" frameborder="0" allowfullscreen></iframe>
 <p><a href="/videos/">Watch more of my videos...</a></p>
 
 <h2 id="games">Games</h2>
 <p>You can play <a href="https://games.johanv.xyz/boggle">Boggle</a>, a multiplayer word game, talk to <a href="https://games.johanv.xyz/carl">CARL</a>, a chatbot that learns phrases from you, or play some of my <a href="https://games.johanv.xyz/">other games</a>, including some old ones written in perl.</p>
-<a href="https://games.johanv.xyz/carl">CARL says:</a><br/><embed height="60" width="315" src="https://games.johanv.xyz/carl_api"/>
+<a href="https://games.johanv.xyz/carl">CARL says:</a><br/><embed onload="this.width=screen.width-20;" height="60" width="315" src="https://games.johanv.xyz/carl_api"/>
 <p><a href="https://games.johanv.xyz/">Play more of my games...</a></p>
 
 <h2 id="projects">Projects</h2>

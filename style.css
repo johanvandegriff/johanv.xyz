@@ -48,7 +48,7 @@ a.svg {
   top: 0;
 }
 
-.ribbon {
+#ribbon {
   background-color: #000000;
   clear: both;
   height: 155px;
@@ -59,7 +59,11 @@ a.svg {
   width:100%;
 }
 
-.main {
+#titleText, #asciiArt, #asciiArtSmall {
+  overflow: hidden;
+}
+
+#main {
   margin: 0;
   margin-top: 185px;
   padding: 0;
@@ -111,16 +115,17 @@ nav ul li {
 nav ul li a {
   color: white;
   display: block;
-  padding: 10px 12px;
+  padding: 10px 0;
   text-align: center;
   text-decoration: none;
 }
 
 nav ul li a:hover:not(.active) {
   background-color: #111;
+  transition: all .4s;
 }
 
-.active {
+#active {
   background-color: #631fa3;
 }
 
@@ -141,7 +146,7 @@ footer {
     padding: 10px;
 }
 
-.green {
+.greenLink {
   color: #0f0;
   font-weight: bold;
   text-decoration: none;
@@ -188,4 +193,118 @@ footer {
 
 .mono {
     font-family: 'Monospace', sans-serif;
+}
+
+#navToggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+}
+
+#navDropdown {
+  color: white;
+  background-color: #333;
+  border-top: 1px solid #0f0;
+  margin: 0;
+  width: 100%;
+  height: 18px;
+
+  padding: 10px 0;
+  text-align: center;
+
+  transition: all .4s;
+}
+
+nav:hover #navDropdown {
+  background-color: #111;
+}
+
+
+@media all and (max-width: 915px) {
+  #asciiArt {
+    display: none;
+  }
+  #main {
+    margin-top: 115px;
+  }
+  #ribbon {
+    height: 115px;
+  }
+}
+
+@media not all and (max-width: 915px) {
+  #asciiArtSmall {
+    display: none;
+  }
+}
+
+@media not all and (max-width: 540px) {
+  .hideLarge {
+    display: none;
+  }
+
+
+
+  #titleText {
+    display: none;
+  }
+  #navDropdown {
+    display: none;
+  }
+}
+
+@media all and (max-width: 540px) {
+
+  #asciiArt {
+    display: none;
+  }
+  #asciiArtSmall {
+    display: none;
+  }
+  #ribbon {
+    height: 75px;
+  }
+  #main {
+    margin-top: 75px;
+  }
+
+  nav {
+      margin: auto;
+      position: relative;
+      height: 50px;
+  }
+
+  #navToggle:checked ~ul {
+    height: 0%;
+  }
+  nav ul {
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 0;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 22px;
+    text-align: center;
+    transition: all .4s ease-out;
+  }
+
+  nav ul li {
+    border-radius: 6px;
+    margin:5px 5px;
+    text-align: center;
+    background-color: #555;
+    position: relative;
+    display: block;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
 }
