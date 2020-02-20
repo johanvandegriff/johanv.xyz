@@ -1,8 +1,8 @@
+LBRY	https://lbry.tv/@johanv:5
 Mastodon	https://fosstodon.org/@johanv
 GitLab	https://gitlab.com/johanvandegriff
 Keybase	https://keybase.io/johanvandegriff
-LBRY	https://lbry.tv/@johanv:5
-Drawception	https://drawception.com/player/962191/johanv/
+Drawception	https://drawception.com/player/962191/johanv/drawings/1/
 Devpost	https://devpost.com/johanvandegriff
 alt.org/nethack	https://alt.org/nethack/plr.php?player=jjvan
 PeerTube	https://peertube.social/video-channels/jjvantheman_channel/videos
