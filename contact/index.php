@@ -23,13 +23,11 @@ to send me an encrypted message at:</p>
 <?php $GLOBALS['email_counter']++; ?>
 
 <h3 id="keybase">Keybase</h3>
-<p>Keybase is an encrypted chat app for mobile and desktop. You can install it on
-your phone and/or computer (more devices makes it more secure) and create an account at
-<a target=_blank href="https://keybase.io/download">
-keybase.io</a>.
-Then you can send encrypted messages to me:
-<a target=_blank href="https://keybase.io/johanvandegriff">
-https://keybase.io/johanvandegriff</a>
+<p>Keybase is an encrypted chat app for mobile and desktop. Follow this link to chat with me:
+<a target=_blank href="https://keybase.io/johanvandegriff/chat">
+https://keybase.io/johanvandegriff/chat</a>
+It will walk you through installing the app, then you can send me a message, share files,
+create encrypted group chats, and more.
 </p>
 
 <h3 id="matrix">Matrix.org/Riot.im</h3>
