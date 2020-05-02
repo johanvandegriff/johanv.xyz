@@ -8,6 +8,7 @@ Drawception	https://drawception.com/player/962191/johanv/drawings/1/
 Devpost	https://devpost.com/johanvandegriff
 alt.org/nethack	https://alt.org/nethack/plr.php?player=jjvan
 PeerTube	https://peertube.social/video-channels/jjvantheman_channel/videos
+Reddit	https://www.reddit.com/user/johanvandegriff
 Instructables	https://instructables.com/member/jjvan/
 EasyEDA	https://easyeda.com/jjvan
 Stack Overflow	https://stackoverflow.com/users/5894048/jjvan
