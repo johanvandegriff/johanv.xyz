@@ -13,6 +13,8 @@ to a few cents (not worth it for just a few LBC). I believe that LBRY is the mos
 <a target="_blank" href="https://www.youtube.com/user/jjvantheman">YouTube</a>.
 (PeerTube is another open source decentralized video platform.)</p>
 
+<p><a target="_blank" href="https://lbry.tv/@johanv:5">My LBRY Channel: @johanv<br/><img src="lbry-dark-1600x528.png" style="width: 20%; border: 2px solid blue; border-radius: 10px; padding: 5px"></a></p>
+
 <iframe width="560" height="315" src="https://lbry.tv/$/embed/midi-cable-is-here/ca78d2574b3ef78667003f8b6f6a11f1b45751c7" allowfullscreen></iframe>
 
 <!-- <iframe src="https://spee.ch/video-embed/@johanv:5/makers-case-gemstone-commercial" allowfullscreen="true" style="border:0"></iframe> -->
