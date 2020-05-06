@@ -1,18 +1,18 @@
 I enjoy playing piano! I was classically trained and now I just playand compose for fun. I can't read sheet music in real time so I play mostly by ear.
 My favorite movie is the Incredibles. A great superhero story before the Avengers came and saturated the market and our collective brainspace.
 My favorite color is <span class="blue">blue</span>. No, <span class="orange">orange</span>! No, purple! I'm indecisive...
-Within the span of May-June 2019, my phone, laptop, and tablet all broke. I am currently using a flip phone and a crappy old Lenovo Ideapad Flex until the software is ready for my <a target="_blank" href="https://www.pine64.org/pinephone/">PINEPHONE</a> which finally came in! (You can attach a keyboard & screen, so I might not need a laptop).
+Within the span of May-June 2019, my phone, laptop, and tablet all broke. Now it's a year later and, I finally replaced my temporarary crappy laptop, but am still using a flip phone until the software is ready for my <a target="_blank" href="https://www.pine64.org/pinephone/">PINEPHONE</a> which finally came in!
 I've never been outside the United States. I came close when my family visited Maine and almost stepped over to Canada, but it would have been an extra 2 hour drive, so we decided against it.
 My social security number is 015-68-3185. Just kidding! Or am I? Quick -- reload the page so no-one sees!
 I have never watched an anime. Yes, I know your response: I should watch Full Metal Alchemist. Or Cowboy Bebop. Or Death Note, JoJo's Bizarre Adventure, Pokemon, Naruto, etc. I wish I could too, but I don't have the time, and I know that once I start, there's no going back.
-My favorite Linux distro is Manjaro. With the AUR I can easily install most apps, even the obscure ones. And when I say the obscure ones, I'm talking about Vivaldi (web browser), Frescobalidi (sheet music editor), kaldi (speech recognition), all the -aldi's. Not to mention, Dokku, obscure drivers, Minecraft, Mycroft, etc. All available for any distro but so much easier to install on Manjaro. &lt;/soapbox&gt;
-I installed Arch Linux on Valentine's day 2016. It was a learning experience, to say the least -- thank you, Arch wiki.
-One of my favorite tabletop games is Dominion. I own the base set and 9 expansion boxes.
+Mf favorite operating systems are Linux Mint (installed on my laptop), Manjaro (on my desktop), QubesOS (dual boot on my desktop), Ubuntu (on my servers), Kali (on a virtual machine on my laptop), and Raspbian (on my Raspberry Pi boards). You give me freedom of choice, and I choose multiple!
+Arch Linux was my valentine in 2016; I installed it on Valentine's Day. Dim the lights, put on some music, insert that install CD, and read the Arch Wiki because this is your first time installing. It was quite the learning experience.
+One of my favorite tabletop games is Dominion, a deck-building strategy game. I own the base set and 9 expansion boxes.
 When I was a baby, I turned <span class="orange">orange</span> because I ate too many carrots and sweet potatoes.
 I love to create electronic games and projects with Arduino boards! My first big project was a Whack-A-Mole game inspired by the Make Magazine volume 24's "Zap-A-Mole."
 I did FTC robotics in highschool on team 7393; I was the co-programmer. Go <a target="_blank" href="https://gearbox4h.org">electron Volts</a>!
 My middle name is NOT Sebastian or Bach. My parents weren't that corny.
-I have technically lived in a basement for the past 6 months. Whether that basement is fully furnished or is in fact 2 separate basements over that time period is up for speculation.
+I have technically been living in a basement for the past 9 months. Whether that basement is fully furnished or is in fact 2 separate basements over that time period is up for speculation.
 I have run a few D&D one-shot games and I wish I had time for more.
 I still play Minecraft sometimes. These kids with their newfangled comparators and observer blocks put my old redstone contraptions to shame!
 I almost played Fortnite once. But then I uninstalled it from my Windows VM because it was taking up too many BigaBytes.
@@ -20,7 +20,7 @@ My favorite computer game as a kid was The Incredible Machine: Even More Contrap
 My favorite computer game is Nethack, a roguelike from 1987 that is still being developed today.
 I enjoy making digital art by tracing over pictures -- I'm not quite skilled enough to draw for real yet. I've been playing <a target="_blank" href="https://drawception.com/player/962191/johanv/drawings/1/">Drawception</a> recently to practice and have fun.
 I try to use mostly free and open source software, for example Krita instead of Photoshop, Libreoffice instead of Microsoft Office, Nextcloud instead of Google Drive. It saves a lot of money and it's a joy to be free of the tech giants!
-I use Xournal++ for note-taking -- you should try it if you have a drawing tablet or actual tablet!
+I use Xournal++ for note-taking -- you should try it if you have a drawing tablet or touchscreen laptop!
 My siblings and I have been making and filming little skits and stories since we were young. We used to edit them on Windows Movie Maker (yikes!), but now I use Kdenlive and Shotcut.
 I probably need glasses... I tried my friend's glasses on and things were just a little bit easier to read from far away.
 I don't drink coffee or tea (except sometimes iced tea).
@@ -30,7 +30,7 @@ I have never invested in a pair of earbuds good enough that at least one of the 
 I have stopped buying water bottles because I just keep losing them. Instead I just buy some juice at 7-11 (2 for $2) and reuse the bottles. Hey, at least they're BPA free. (And gluten free, it says on the bottle!)
 I carry around a USB with 15 different boot options, including some Linux distros, utilities, and backup software. It also has a portable version of Libreoffice for Windows in case I need to give a presentation and Powerpoint can't read my .odp files correctly.
 I always wish I had more time for things, but when I sometimes do, I waste it on things I hadn't wished I had time for, like writing these fun facts. (Although sometimes the unintended tasks are fun, like writing these fun facts.)
-My Linux distro hop journey went: Cygwin (on Vista family computer) => Ubuntu (my own desktop!) => Arch (after Ubuntu upgrade killed the OS) => Ubuntu (new laptop for college!) => Mint => Qubes => Manjaro. Before college, I also used our family Windows computer and my robotics team's old Mac laptop.
+My Linux distro hop journey went: Cygwin (on Vista family computer) => Ubuntu (my own desktop!) => Arch (after Ubuntu upgrade killed the OS) => Ubuntu (new laptop for college!) => Mint => Qubes => Manjaro => Pop!_OS => Mint (current laptop). Before college, I also used our family Windows computer and my robotics team's old Mac laptop.
 These fun facts are stored in johanv.xyz/facts.txt Shh, don't tell anybody, then they could view all the facts! ;)
 I am 1/4 Lebanese and 3/4 white as Swiss cheese.
 My friend and I set up a Nextcloud server in my basement to replace Google Drive, Calendar, etc.
@@ -42,3 +42,7 @@ I'm studying Computer Engineering at UMD College Park. I'm also studying how to 
 I changed the CAPS Lock key on my keyboard to be a Ctrl key to improve keyboard posture.
 I use the i3 tiling window manager for better productivity with keyboard shortcuts and efficient use of screen real estate.
 My desktop has a dual-monitor setup: one horizontal and one vertical for L337 coding. I found both at the thrift store for only $15 each!
+I found an external HDMI monitor for $90 on ebay, and it's super convenient since it's powered from USB and compact enough to take anywhere.
+I am lucky enough to never have had a Facebook. Right when I was thinking I might cave and get one, the privacy revelations came out, and I decided to never sign up. I'm super glad, since they can be a pain to delete.
+The first programming language I learned was Bash, from a book my Dad gave me called <a target="_blank" href="https://www.goodreads.com/book/show/293206.UNIX_Shell_Programming">UNIX Shell Programming Revised Edition</a>. The book was released in 1989 and I read it around 2009. I remember being fascinated by the fact that you could create a phonebook program to store all your contacts using files, and display them with cool ASCII art formatting. I still have <a target="_blank" href="https://gitlab.com/johanvandegriff/unix-shell-programming-revised-edition-programs">the old programs I wrote</a>.
+My favorite programming languages in order are Python, Bash, Java, and C. One of my least favorites is PHP, although I did use it to make this site...
