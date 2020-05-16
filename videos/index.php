@@ -15,6 +15,8 @@ to a few cents (not worth it for just a few LBC). I believe that LBRY is the mos
 
 <p><a target="_blank" href="https://lbry.tv/@johanv:5">My LBRY Channel: @johanv<br/><img src="lbry-dark-1600x528.png" style="width: 20%; border: 2px solid blue; border-radius: 10px; padding: 5px"></a></p>
 
+<iframe width="560" height="315" src="https://lbry.tv/$/embed/normal-day-until/33282078d18db3527c83b2f0a4b48fb5a711024c" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://lbry.tv/$/embed/midi-cable-is-here/ca78d2574b3ef78667003f8b6f6a11f1b45751c7" allowfullscreen></iframe>
 
 <!-- <iframe src="https://spee.ch/video-embed/@johanv:5/makers-case-gemstone-commercial" allowfullscreen="true" style="border:0"></iframe> -->
