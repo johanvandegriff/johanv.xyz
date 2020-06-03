@@ -23,14 +23,25 @@ function showDetailPage($gal){
 	foreach($files as $file){
 		if($file == '.') continue;
 		if($file == '..') continue;
-		$img = getThumbIMG("$galleries/$gal/$file", 'alt="" class="img-rounded"');
-		echo <<<END
+		if(pathinfo($file, PATHINFO_EXTENSION) == "mp4") {
+			echo <<<END
+<div class="col-xs-6 col-md-4">
+	<video width="400" controls>
+		<source src="$galleries/$gal/$file" type="video/mp4">
+		Your browser does not support HTML video.
+	</video>
+</div>
+END;
+		} else {
+			$img = getThumbIMG("$galleries/$gal/$file", 'alt="" class="img-rounded"');
+			echo <<<END
 <div class="col-xs-6 col-md-4">
 	<div class="thumbnail">
 		$img
 	</div>
 </div>
 END;
+		}
 	}
 }
 
