@@ -1,7 +1,8 @@
-<?php $pageName = "Contact"; $description = "Johan Vandegriff's contact info and ways to contact him securely with Tutanota, Protonmail, or Keybase."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "Contact"; $description = "Johan Vandegriff's contact info and ways to contact him securely with Tutanota, Protonmail, or Element."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h2>How to Contact Me Simply</h2>
 <p>Email me at <a  id="9dda4e98_2" href="#9dda4e98_2" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">[click to show]</a></p>
+<?php $GLOBALS['email_counter']++; ?>
 
 <h2>How to Contact Me Securely</h2>
 <p>These are some easy ways to securely send me a message with end-to-end encryption.</p>
@@ -22,20 +23,12 @@ to send me an encrypted message at:</p>
 <a  id="9dda4e98_4" href="#9dda4e98_4" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamnotorp'+'&#x40;'+'navjj'+'&#x202d;'">[click to show]</a>
 <?php $GLOBALS['email_counter']++; ?>
 
-<h3 id="keybase">Keybase</h3>
-<p>Keybase is an encrypted chat app for mobile and desktop. Follow this link to chat with me:
-<a target=_blank href="https://keybase.io/johanvandegriff/chat">
-https://keybase.io/johanvandegriff/chat</a></p>
-<p>It will walk you through installing the app, then you can send me a message, share files,
-create encrypted group chats, and more.
-</p>
-
-<h3 id="matrix">Matrix.org/Riot.im</h3>
+<h3 id="matrix">Element.io/Matrix.org</h3>
 <p>This is another encrypted chat app, but the cool part is that anyone can run a
 server, and you can talk to anyone on any server. You can talk to me by following
 this link and creating an account:
-<a target=_blank href="https://riot.im/app/#/room/#johanv:matrix.org">
-https://riot.im/app/#/room/#johanv:matrix.org</a></p>
+<a target=_blank href="https://app.element.io/#/room/#johanv:matrix.org">
+https://app.element.io/#/room/#johanv:matrix.org</a></p>
 <p>Note that this particular room is public, so anyone can see what you say there.
 But once you sign up, you can also send me an encrypted direct message by clicking
 on my name and clicking "Start a chat" which appears in the right panel.</p>

@@ -1,7 +1,6 @@
 LBRY	https://lbry.tv/@johanv:5
 Mastodon	https://fosstodon.org/@johanv
 GitLab	https://gitlab.com/johanvandegriff
-Keybase	https://keybase.io/johanvandegriff
 Twitch	https://www.twitch.tv/jjvantheman
 sourcehut	https://git.sr.ht/~johanvandegriff/
 Drawception	https://drawception.com/player/962191/johanv/drawings/1/
