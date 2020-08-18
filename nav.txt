@@ -1,7 +1,8 @@
 Home	/
 Games	https://games.johanv.xyz/
-Videos	/videos/
 Blog	https://blog.johanv.xyz/
+Live	https://live.johanv.xyz/
+Videos	/videos/
 Gallery	/gallery/
 Resume	/resume/
 Contact	/contact/

@@ -13,6 +13,9 @@ function new_fact() {
 <p id="fact" class="purple"><?php include $_SERVER['DOCUMENT_ROOT'].'/fact/index.php'; ?></p>
 <input type="button" value="Get New Fact!" onclick="new_fact();">
 
+<h2>Personal Livestream Site</h2>
+<p>My most recent project is a livestream hosted on this site! You can watch me live at <a target="_blank" href="https://live.johanv.xyz">live.johanv.xyz</a>. Follow me on <a rel="me" href="https://fosstodon.org/@johanv">Mastodon</a> for announcements when I go live.</p>
+
 <h2 id="drawings">Drawings</h2>
 <p>This is a drawing I made of the <a target="_blank" href="https://twitter.com/ErasableInc">Erasable Inc.</a> improv group at the University of Maryland (UMD) after their 24-hour show.</p>
 <?php echo getThumbIMG("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'class="img65left" alt="Draing of the Erasable Inc Improv Group at UMD and Friends"'); ?>
