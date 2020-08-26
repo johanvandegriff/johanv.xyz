@@ -1,19 +1,21 @@
-LBRY	https://lbry.tv/@johanv:5
-Mastodon	https://fosstodon.org/@johanv
-GitLab	https://gitlab.com/johanvandegriff
-Twitch	https://www.twitch.tv/jjvantheman
-sourcehut	https://git.sr.ht/~johanvandegriff/
-Drawception	https://drawception.com/player/962191/johanv/drawings/1/
-Devpost	https://devpost.com/johanvandegriff
+LBRY (videos)	https://lbry.tv/@johanv:5
+mastodon (posts)	https://fosstodon.org/@johanv
+dlive (streams)	https://dlive.tv/jjvantheman
+gitlab (code)	https://gitlab.com/johanvandegriff
+
+twitch	https://www.twitch.tv/jjvantheman
+youtube	https://youtube.com/user/jjvantheman
+github	https://github.com/johanvandegriff
+lichess	https://lichess.org/@/jjvan
+drawception	https://drawception.com/player/962191/johanv/drawings/1/
+devpost	https://devpost.com/johanvandegriff
 alt.org/nethack	https://alt.org/nethack/plr.php?player=jjvan
-PeerTube	https://peertube.social/video-channels/jjvantheman_channel/videos
-Reddit	https://www.reddit.com/user/johanvandegriff
-Instructables	https://instructables.com/member/jjvan/
-EasyEDA	https://easyeda.com/jjvan
-Stack Overflow	https://stackoverflow.com/users/5894048/jjvan
+instructables	https://instructables.com/member/jjvan/
+easyeda	https://easyeda.com/jjvan
+scratch	https://scratch.mit.edu/users/jjvan/
+stack overflow	https://stackoverflow.com/users/5894048/jjvan
+peertube (videos)	https://peertube.social/video-channels/jjvantheman_channel/videos
+sourcehut (code)	https://git.sr.ht/~johanvandegriff/
 confuzer.cloud	https://confuzer.cloud/
-Scratch	https://scratch.mit.edu/users/jjvan/
-YouTube	https://youtube.com/user/jjvantheman
-FTC Team	https://gearbox4h.org/
-GitHub	https://github.com/johanvandegriff
-Bitbucket	https://bitbucket.org/johanvandegriff/
+ftc team	https://gearbox4h.org/
+bitbucket	https://bitbucket.org/johanvandegriff/
