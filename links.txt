@@ -8,14 +8,13 @@ youtube	https://youtube.com/user/jjvantheman
 github	https://github.com/johanvandegriff
 lichess	https://lichess.org/@/jjvan
 drawception	https://drawception.com/player/962191/johanv/drawings/1/
-devpost	https://devpost.com/johanvandegriff
+devpost (hackathons)	https://devpost.com/johanvandegriff
 alt.org/nethack	https://alt.org/nethack/plr.php?player=jjvan
 instructables	https://instructables.com/member/jjvan/
-easyeda	https://easyeda.com/jjvan
-scratch	https://scratch.mit.edu/users/jjvan/
+easyeda (circuits)	https://easyeda.com/jjvan
+scratch (games)	https://scratch.mit.edu/users/jjvan/
 stack overflow	https://stackoverflow.com/users/5894048/jjvan
 peertube (videos)	https://peertube.social/video-channels/jjvantheman_channel/videos
 sourcehut (code)	https://git.sr.ht/~johanvandegriff/
 confuzer.cloud	https://confuzer.cloud/
-ftc team	https://gearbox4h.org/
-bitbucket	https://bitbucket.org/johanvandegriff/
+ftc team (alum)	https://gearbox4h.org/
