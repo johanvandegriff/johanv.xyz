@@ -1,6 +1,6 @@
 These fun facts are stored in johanv.xyz/facts.txt Shh, don't tell anybody, then they could view all the facts! ;)
-I enjoy playing piano! I was classically trained and now I just play and compose for fun. I can't read sheet music in real time so I play mostly by ear.
-My favorite movie is the Incredibles. A great superhero story before the Avengers came and saturated the market and our collective brainspace.
+I enjoy playing piano! I was classically trained and now I just play and compose for fun. I can't read sheet music in real time so I play mostly by ear. I have released an <a target="_blank" href="https://odysee.com/@johanv:5/internal-travels:d">album with my piano music</a>, complete with a drawing for each song!
+My favorite movie is The Incredibles. A great superhero story before the Avengers came and saturated the market and our collective brainspace.
 My favorite color is <span class="blue">blue</span>. No, <span class="orange">orange</span>! No, purple! I'm indecisive...
 Within the span of May-June 2019, my phone, laptop, and tablet all broke. Now it's a year later and, I finally replaced my temporarary crappy laptop, but am still using a flip phone until the software is ready for my <a target="_blank" href="https://www.pine64.org/pinephone/">PINEPHONE</a> which finally came in!
 I've never been outside the United States. I came close when my family visited Maine and almost stepped over to Canada, but it would have been an extra 2 hour drive, so we decided against it.
@@ -19,7 +19,7 @@ I still play Minecraft sometimes. These kids with their newfangled comparators a
 I almost played Fortnite once. But then I uninstalled it from my Windows VM because it was taking up too many BigaBytes.
 My favorite computer game as a kid was The Incredible Machine: Even More Contraptions. I can still play it, now using Wine on Linux -- glad we kept the CD!
 My favorite computer game is Nethack, a roguelike from 1987 that is still being developed today. I have a 5 game win streak with a different class each game, despite death being permanent (no restoring to save points).
-One of my favorite games is Teeworlds, a side-scrolling capture-the-flag first-person-shooter and-other-dashed-words game. I am currently the person on LBRY with the most views on <a target="_blank" href="https://lbry.tv/@johanv/owning-some-noobs-on-teeworlds">Teeworlds videos</a>.
+One of my favorite games is Teeworlds, a side-scrolling capture-the-flag first-person-shooter and-other-dashed-words game. I am currently the person on LBRY with the most views on <a target="_blank" href="https://odysee.com/@johanv/owning-some-noobs-on-teeworlds">Teeworlds videos</a>.
 I enjoy making digital art by tracing over pictures -- I'm not quite skilled enough to draw for real yet. I've been playing <a target="_blank" href="https://drawception.com/player/962191/johanv/drawings/1/">Drawception</a> recently to practice and have fun.
 I try to use mostly free and open source software, for example Krita instead of Photoshop, Libreoffice instead of Microsoft Office, Nextcloud instead of Google Drive. It saves a lot of money and it's a joy to be free of the tech giants!
 I use Xournal++ for note-taking -- you should try it if you have a drawing tablet or touchscreen laptop!
@@ -49,4 +49,3 @@ The first programming language I learned was Bash, from a book my Dad gave me ca
 My favorite programming languages in order are Python, Bash, Java, and C. One of my least favorites is PHP, although I did use it to make this site...
 I sometimes stream on <a target="_blank" href="https://www.twitch.tv/jjvantheman">twitch</a>, <a target="_blank" href="https://youtube.com/user/jjvantheman">youtube</a>, <a target="_blank" href="https://dlive.tv/jjvantheman">dlive</a>, and <a target="_blank" href="https://live.johanv.xyz">my own custom site</a> all at the same time!
 I just started playing chess more seriously (on <a target="_blank" href="https://lichess.org/@/jjvan">lichess</a>) and I'm still terrible at it.
-I have released an <a target="_blank" href="https://lbry.tv/@johanv:5/internal-travels:d">album with my piano music</a>, complete with a drawing for each song!

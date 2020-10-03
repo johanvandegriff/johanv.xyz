@@ -24,10 +24,10 @@ function new_fact() {
 
 <h2 id="videos">Videos</h2>
 <p>I publish my videos on <a target="_blank" href="https://lbry.tv/@johanv:5">LBRY</a>, an awesome new platform that solves the demonitization issues of YouTube! <a target="_blank" href="https://lbry.tv/$/invite/@johanv:5">Follow me with my invite link</a>. This video is for a propsed research project for Gemstone at UMD. I ended up joining another project instead, but I still have the initial version and plan to make it into a product someday.</p>
-<h3><a target="_blank" href="https://lbry.tv/@johanv:5/makers-case-gemstone-commercial:e">Maker's Case Gemstone Commercial</a></h3>
+<h3><a target="_blank" href="https://odysee.com/@johanv:5/makers-case-gemstone-commercial:e">Maker's Case Gemstone Commercial</a></h3>
 <!-- <iframe src="https://spee.ch/video-embed/@johanv:5/makers-case-gemstone-commercial" allowfullscreen="true" style="border:0"></iframe> -->
-<!-- <iframe width="560" height="315" src="https://lbry.tv/$/embed/makers-case-gemstone-commercial/e3e0edee20fbab97268a8e7dfcc35c798cd74d6c" allowfullscreen></iframe> -->
-<iframe title="Maker's Case Gemstone Commercial" onload="this.width=Math.min(560, screen.width-20); this.height=this.width*315/560" width="56" height="31.5" sandbox="allow-same-origin allow-scripts" src="https://peertube.social/videos/embed/bf19ee3e-b4e2-484d-ae08-bd52b2bf6c1e" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://odysee.com/$/embed/makers-case-gemstone-commercial/e3e0edee20fbab97268a8e7dfcc35c798cd74d6c" allowfullscreen></iframe>
+<!-- <iframe title="Maker's Case Gemstone Commercial" onload="this.width=Math.min(560, screen.width-20); this.height=this.width*315/560" width="56" height="31.5" sandbox="allow-same-origin allow-scripts" src="https://peertube.social/videos/embed/bf19ee3e-b4e2-484d-ae08-bd52b2bf6c1e" frameborder="0" allowfullscreen></iframe> -->
 <p><a href="/videos/">Watch more of my videos...</a></p>
 
 <h2 id="games">Games</h2>
