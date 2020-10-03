@@ -47,9 +47,18 @@ pre {
 
 .instructions {
   font-family: 'Roboto Bold', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: .5px;
+  opacity: 1;
+
+  animation: fade 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0.25 }
+  50% { opacity: 1 }
 }
 
 .orange {
@@ -796,7 +805,7 @@ body.is-menu-visible #menu .close {
   transition: all .5s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .a a .img-hover {
     bottom: 0;
     top: 0;
@@ -806,45 +815,50 @@ body.is-menu-visible #menu .close {
 .a a:hover .img-hover {
   opacity: 0;
 }
-.a a .img-hover.nasa-gsfc {
-  background: #a0c4a3;
+
+.a a .img-hover.arduinoled {
+  background: #70e0be;
 }
-.a a .img-hover.ftc-robotics {
+.a a .img-hover.nasa-gsfc {
   background: #da9dd9;
 }
+
+.a a .img-hover.ftc-robotics {
+  background: #f4a1a7;
+}
 .a a .img-hover.boggle {
-  background: #6da178;
+  background: #8c92fe;
 }
 .a a .img-hover.apl {
-  background: #da9567;
+  background: #f7ca8a;
 }
 .a a .img-hover.oscar {
-  background: #5dc6aa;
+  background: #70e0be;
 }
 .a a .img-hover.state-machine-framework {
-  background: #cab0a6;
+  background: #9bcef7;
 }
 .a a .img-hover.johanv-xyz {
-  background: #ddd173;
+  background: #da9dd9;
 }
 
 .a a .img-hover.carl {
-  background: #da9dd9;
+  background: #8c92fe;
 }
 .a a .img-hover.stoichiometry {
-  background: #da9567;
+  background: #f7ca8a;
 }
 .a a .img-hover.aimar {
-  background: #6da178;
+  background:#f4a1a7;
 }
 .a a .img-hover.home-server {
-  background: #5dc6aa;
+  background: #70e0be;
 }
 .a a .img-hover.zfs-server-cluster-setup {
-  background: #cab0a6;
+  background: #9bcef7;
 }
 .a a .img-hover.eagle-scout-project {
-  background: #ddd173;
+  background: #da9dd9;
 }
 
 .a a .img-hover .c-table {

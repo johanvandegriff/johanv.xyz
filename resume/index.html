@@ -45,7 +45,7 @@
                 <a href="#menu" class="nav-bars">
                   <img src="images/nav_icon.svg" class="img-responsive" alt="Collapsable Navbar">
                 </a>
-                <a href="/" class="logo">
+                <a target="_blank" href="/" class="logo">
                   <span class="symbol"><img src="images/profile-photo.png" alt="Title" /></span><span class="title">Johan Vandegriff</span>
                 </a>
               </div>
@@ -54,8 +54,15 @@
             <nav id="menu">
               <h2>Menu</h2>
               <ul>
-                <li><a href="/">Back to johanv.xyz</a></li>
-                <li><a href="#"><span class="orange">Resume p.1</span></a></li>
+                <li><a href="/">Home (johanv.xyz)</a></li>
+                <li><a href="https://games.johanv.xyz/">Games</a></li>
+                <li><a href="https://blog.johanv.xyz/">Blog</a></li>
+                <li><a href="https://live.johanv.xyz/">Live</a></li>
+                <li><a href="/videos">Videos</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="#"><span class="orange">Resume</span></a></li>
+                <li><a href="/contact">Contact</a></li>
+                <!-- <li><a href="#"><span class="orange">Resume p.1</span></a></li> -->
                 <!-- <li><a href="/resume/page2.html">Resume p.2</a></li> -->
               </ul>
             </nav>
@@ -71,7 +78,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9">
-          <p class="description">I'm a <span class="orange">software developer, maker, and Linux nerd</span>. I aim to contribute to software and electronics engineering projects that move society toward more open standards, improve quality of life for people in need, and provide useful tools and building blocks for other makers. I support <span class="orange">free (libre) and open source software</span>, open hardware, digital rights, an open internet, and consumers' right to repair. <!--Click on any of the projects below to see details and links.--></p>
+          <p class="description">I'm a <span class="orange">software developer, maker, and Linux nerd</span>. I aim to contribute to software and electronics engineering projects that improve privacy, push for open standards, help people in need, and provide tools and building blocks for other projects. I support <span class="orange">free (libre) and open source software</span>, open hardware, digital rights, net neutrality, and consumers' right to repair.</p>
+          <br/>
           <p class="instructions">Click images to view project info. Circular icons link to the code, demo site, video, etc.</p>
         </div>
       </div>
@@ -81,10 +89,11 @@
             <div class="a">
               <a href="#popup-arduinoled" class="open-popup-link">
                 <img src="images/ArduinOLED.jpg" class="img-responsive" alt="Responsive image">
-                <div class="img-hover ArduinOLED">
+                <div class="img-hover arduinoled">
                   <div class="c-table">
                     <div class="ct-cell">
-                      <h3 class="img-title">ArduinOLED</h3>
+                      <h2 class="img-title">ArduinOLED</h2>
+                      <h5 class="img-title">Arduino, C++, PCB Design</h5>
                     </div>
                   </div>
                 </div>
@@ -103,7 +112,7 @@
                         <h5 class="popup-date">2017</h5>
                       </div>
                       <div>
-                        <p class="popup-parapraph">ArduinOLED is an Arduino-based platform to create games, test equipment, and other projects. It includes an OLED display, joystick, buttons, buzzer, and alligator clip connection points to easily interface with other sensors and devices. Using the ArduinOLED, I made a stacker game, and a battery health tester (with a small external circuit). Much more is possible with the <a target="_blank" href="https://www.instructables.com/id/ArduinOLED/">instructions</a> I posted on Instructables and the <a target="_blank" href="https://gitlab.com/johanvandegriff/ArduinOLED">open source library</a> I wrote and published on GitHub/GitLab. I designed and ordered the <a target="_blank" href="https://easyeda.com/jjvan/OLED_Arduino-55422f17ec8149338d246987e5e87bc4">printed circuit boards</a> on EasyEDA.</p>
+                        <p class="popup-parapraph">ArduinOLED is an Arduino-based platform to create games, test equipment, and other projects. It includes an OLED display, joystick, buttons, buzzer, and alligator clip connection points to easily interface with other sensors and devices. Using the ArduinOLED, I made a stacker game, and a battery health tester (with a small external circuit). Much more is possible with the <a target="_blank" href="https://www.instructables.com/id/ArduinOLED/">instructions</a> I posted on Instructables (I was featured!) and the <a target="_blank" href="https://gitlab.com/johanvandegriff/ArduinOLED">open source library</a> I wrote and published on GitHub/GitLab. I designed and ordered the <a target="_blank" href="https://easyeda.com/jjvan/OLED_Arduino-55422f17ec8149338d246987e5e87bc4">printed circuit boards</a> on EasyEDA.</p>
                       </div>
                       <div class="pop-up-icon">
                         <div class="row">
@@ -136,7 +145,8 @@
                 <div class="img-hover nasa-gsfc">
                   <div class="c-table">
                     <div class="ct-cell">
-                      <h3 class="img-title">NASA GSFC Internship</h3>
+                      <h2 class="img-title">NASA GSFC Internship</h2>
+                      <h5 class="img-title">C, Bash, VirtualBox</h5>
                     </div>
                   </div>
                 </div>
@@ -176,49 +186,44 @@
       <div class="row">
         <div class="col-md-4">
           <div class="a">
-            <a href="#popup-ftc" class="open-popup-link">
-              <img src="images/ftc.jpg" class="img-responsive" alt="Responsive image">
-              <div class="img-hover ftc-robotics">
+            <a href="#popup-boggle" class="open-popup-link">
+              <img src="images/boggle.jpg" class="img-responsive" alt="Responsive image">
+              <div class="img-hover boggle">
                 <div class="c-table">
                   <div class="ct-cell">
-                    <h3 class="img-title">FTC Robotics</h3>
+                    <h3 class="img-title">Boggle</h3>
+                    <h6 class="img-title">Flask, Vue.js, MongoDB</h6>
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div id="popup-ftc" class="white-popup mfp-hide">
+          <div id="popup-boggle" class="white-popup mfp-hide">
             <div class="container-fluid">
               <div class="row">
                 <div class="pop-up-color">
                   <div class="col-md-8 p-l-0 p-r-0">
-                    <img src="images/ftc.jpg" class="img-responsive" alt="Responsive image">
+                    <img src="images/boggle.jpg" class="img-responsive" alt="Responsive image">
                   </div>
                   <div class="col-md-4">
                     <div>
-                      <h2 class="popup-head-with-date">FIRST Tech Challenge (FTC) Robotics</h2>
-                      <h5 class="popup-date">2013-2017</h5>
+                      <h2 class="popup-head-with-date">Boggle Online Game</h2>
+                      <h5 class="popup-date">2016-2020</h5>
                     </div>
                     <div>
-                      <p class="popup-parapraph">I competed in FTC robotics in highschool for about 200 hours per schoolyear. 2016 was our most successful year; we won the East Super-Regional competition, and were awarded a finalist nomination at the World Festival for control system and sensors (<a target="_blank" href="https://peertube.social/videos/watch/2fe7dcfd-3428-462d-ba7e-7aa5e18e75ea">season review video</a>). As the co-programmer, I helped write an <a target="_blank" href="https://github.com/FTC7393/ftc_app_7393">Android app</a> to control the robot's motors and sensors through an Android phone. We separated our code into libraries for other teams to use, including a <a target="_blank" href="https://github.com/FTC7393/state-machine-framework">Java library</a> to manage the underlying state machine, and an <a target="_blank" href="https://github.com/FTC7393/EVLib">Android library</a> with a lot of our generic code. The competition involved both a tele-operator period, with a human driver; and an autonomous period, during which we used sensors with filtering algorithms to determine our position and complete tasks. We made an <a target="_blank" href="https://www.gearbox4h.org/opencv/OpenCV_FTC_Tutorial.pdf">OpenCV computer vision tutorial</a> and taught a class to 35 people at a state-wide season kickoff event. For one of our motor controller boards, we designed <a target="_blank" href="https://www.gearbox4h.org/encoderotation">custom PCB's</a> to make the wiring easier. Then we printed out a few hundred and handed them out to other teams. The company that makes the motor control boards contacted us and bought some of our boards to sell online for a time. I also worked on the <a target="_blank" href="https://www.gearbox4h.org/">team website</a> to thank our sponsors and to store info about the team.</p>
+                      <p class="popup-parapraph">Boggle is a word game my family likes to play. One day, we were wondering how many words we missed, so I coded up a <a target="_blank" href="https://gitlab.com/johanvandegriff/BoggleSolver">python program to find all the possible words</a> on any given boggle board. Then we would play normally, enter the board into the script, and instantly feel dumb for missing some obvious ones. The next iteration was an <a target="_blank" href="https://games.johanv.xyz/boggle">online version</a>, where you can play a game with multiple people, automatically validate and add up points, and view the list of all the words you inevitably missed, because computers can do in an instant what it takes humans much longer, and the singularity is aproaching. ;) Over the years, I have updated the game and recently redesigned it to use Flask, Vue.js, MongoDB, and some decent CSS.</p>
                     </div>
                     <div class="pop-up-icon">
                       <div class="row">
                         <ul class="text-center popup-social-contact">
                           <li class="popup-social-icons">
-                            <a target="_blank" href="https://www.gearbox4h.org/"><img class="icon pop-up fa-www popup_icon_fix" src="logos/www.png" alt="www"><span class="label">FTC Team Website</span></a>
+                            <a target="_blank" href="https://games.johanv.xyz/boggle"><img class="icon pop-up fa-www popup_icon_fix" src="logos/www.png" alt="www"><span class="label">Boggle Online</span></a>
                           </li>
                           <li class="popup-social-icons">
-                            <a target="_blank" href="https://peertube.social/videos/watch/2fe7dcfd-3428-462d-ba7e-7aa5e18e75ea"><img class="icon pop-up fa-peertube popup_icon_fix" src="logos/peertube.png"alt="peertube"><span class="label">PeerTube</span></a>
+                            <a target="_blank" href="https://gitlab.com/johanvandegriff/games.johanv.xyz" class="icon pop-up fa-gitlab"><span class="label">GitLab</span></a>
                           </li>
                           <li class="popup-social-icons">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=D902AVlU4r4" class="icon pop-up fa-youtube"><span class="label">YouTube</span></a>
-                          </li>
-                          <li class="popup-social-icons">
-                            <a target="_blank" href="https://github.com/FTC7393/" class="icon pop-up fa-github"><span class="label">GitHub</span></a>
-                          </li>
-                          <li class="popup-social-icons">
-                            <a target="_blank" href="https://twitter.com/electronVoltFTC" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+                            <a target="_blank" href="https://github.com/johanvandegriff/games.johanv.xyz" class="icon pop-up fa-github"><span class="label">GitHub</span></a>
                           </li>
                         </ul>
                       </div>
@@ -237,6 +242,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">APL Internship</h3>
+                    <h6 class="img-title">OpenCV, Java, Python</h6>
                   </div>
                 </div>
               </div>
@@ -271,43 +277,50 @@
         </div>
         <div class="col-md-4">
           <div class="a">
-            <a href="#popup-boggle" class="open-popup-link">
-              <img src="images/boggle.png" class="img-responsive" alt="Responsive image">
-              <div class="img-hover boggle">
+            <a href="#popup-ftc" class="open-popup-link">
+              <img src="images/ftc.jpg" class="img-responsive" alt="Responsive image">
+              <div class="img-hover ftc-robotics">
                 <div class="c-table">
                   <div class="ct-cell">
-                    <h3 class="img-title">Boggle</h3>
+                    <h3 class="img-title">FTC Robotics</h3>
+                    <h6 class="img-title">Java, Android, Git</h6>
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div id="popup-boggle" class="white-popup mfp-hide">
+          <div id="popup-ftc" class="white-popup mfp-hide">
             <div class="container-fluid">
               <div class="row">
                 <div class="pop-up-color">
                   <div class="col-md-8 p-l-0 p-r-0">
-                    <img src="images/boggle.png" class="img-responsive" alt="Responsive image">
+                    <img src="images/ftc.jpg" class="img-responsive" alt="Responsive image">
                   </div>
                   <div class="col-md-4">
                     <div>
-                      <h2 class="popup-head-with-date">Boggle Online Game</h2>
-                      <h5 class="popup-date">2016</h5>
+                      <h2 class="popup-head-with-date">FIRST Tech Challenge (FTC) Robotics</h2>
+                      <h5 class="popup-date">2013-2017</h5>
                     </div>
                     <div>
-                      <p class="popup-parapraph">Boggle is a word game that my family likes to play. One day, we were wondering how many words we missed on a particular board, so I coded up a <a target="_blank" href="https://gitlab.com/johanvandegriff/BoggleSolver">python program to find all the possible words</a> on any given boggle board. Then we would play normally, and enter the board into the script to see what long words we had missed. The next iteration of this program was an <a target="_blank" href="https://games.johanv.xyz/boggle">online version</a>, where you can play a game with multiple people, automatically validate and add up points, and view the list of all the words you inevitably missed, because computers can do in an instant what it takes humans much longer, and the singularity is aproaching. ;)</p>
+                      <p class="popup-parapraph">I competed in FTC robotics in highschool, and now I serve as a mentor. In 2016, we won East Super-Regionals, and received a finalist nomination for control systems at the World Festival (<a target="_blank" href="https://peertube.social/videos/watch/2fe7dcfd-3428-462d-ba7e-7aa5e18e75ea">season review video</a>). As the co-programmer, I helped write an <a target="_blank" href="https://github.com/FTC7393/ftc_app_7393">Android app</a> to control the robot's motors and sensors through an Android phone. We separated our code into libraries for other teams to use, including a <a target="_blank" href="https://github.com/FTC7393/state-machine-framework">Java state machine library</a>, and an <a target="_blank" href="https://github.com/FTC7393/EVLib">Android library</a> with a lot of our generic code. We taught an <a target="_blank" href="https://www.gearbox4h.org/opencv/OpenCV_FTC_Tutorial.pdf">OpenCV computer vision class</a> to 35 people at a state-wide season kickoff event. For one of our motor controller boards, we designed <a target="_blank" href="https://www.gearbox4h.org/encoderotation">custom PCB's</a> to make the wiring easier. Then we printed out a few hundred and handed them out to other teams. The company that makes the motor control boards contacted us and bought some of our boards to sell online for a time. I also worked on the <a target="_blank" href="https://www.gearbox4h.org/">team website</a> to thank our sponsors and to publish info about the team.</p>
                     </div>
                     <div class="pop-up-icon">
                       <div class="row">
                         <ul class="text-center popup-social-contact">
                           <li class="popup-social-icons">
-                            <a target="_blank" href="https://games.johanv.xyz/boggle"><img class="icon pop-up fa-www popup_icon_fix" src="logos/www.png" alt="www"><span class="label">Boggle Online</span></a>
+                            <a target="_blank" href="https://www.gearbox4h.org/"><img class="icon pop-up fa-www popup_icon_fix" src="logos/www.png" alt="www"><span class="label">FTC Team Website</span></a>
                           </li>
                           <li class="popup-social-icons">
-                            <a target="_blank" href="https://gitlab.com/johanvandegriff/BoggleSolver" class="icon pop-up fa-gitlab"><span class="label">GitLab</span></a>
+                            <a target="_blank" href="https://peertube.social/videos/watch/2fe7dcfd-3428-462d-ba7e-7aa5e18e75ea"><img class="icon pop-up fa-peertube popup_icon_fix" src="logos/peertube.png"alt="peertube"><span class="label">PeerTube</span></a>
                           </li>
                           <li class="popup-social-icons">
-                            <a target="_blank" href="https://github.com/johanvandegriff/BoggleSolver" class="icon pop-up fa-github"><span class="label">GitHub</span></a>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=D902AVlU4r4" class="icon pop-up fa-youtube"><span class="label">YouTube</span></a>
+                          </li>
+                          <li class="popup-social-icons">
+                            <a target="_blank" href="https://github.com/FTC7393/" class="icon pop-up fa-github"><span class="label">GitHub</span></a>
+                          </li>
+                          <li class="popup-social-icons">
+                            <a target="_blank" href="https://twitter.com/electronVoltFTC" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
                           </li>
                         </ul>
                       </div>
@@ -328,6 +341,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">OSCAR</h3>
+                    <h6 class="img-title">Python, Raspberry Pi</h6>
                   </div>
                 </div>
               </div>
@@ -346,7 +360,7 @@
                       <h5 class="popup-date">Apr 2019</h5>
                     </div>
                     <div>
-                      <p class="popup-parapraph">OSCAR is a talking trash can that insults you if you put recycling in the trash bin, trash in the compost bin, or really anything in any bin because the actual code to make the determination of what type of waste you are holding was not working (thanks a lot, IBM with your so-called <a target="_blank" href="https://github.com/IBM/watson-waste-sorter">"watson waste sorter"</a>...). It was developed at Bitcamp (a hackathon at University of Maryland) by me and 3 of my friends. We wrote up a <a target="_blank" href="https://devpost.com/software/obnoxious-scheme-to-convince-all-to-recycle">description and project page</a> with pictures and <a target="_blank" href="https://peertube.social/videos/watch/66d762b2-484b-4ac7-b1b7-665809c2d162">video</a> at 4am. I was in charge of infrastructure and odd jobs -- I set up the Raspberry Pi and showed people how to use ssh, gave people accounts on my home server for easy file sharing, drew portraits of the team members and the logo to enter in the colorwar contest, and helped out here and there with the python code.</p>
+                      <p class="popup-parapraph">At the University of Maryland Bitcamp hackathon in 2019, OSCAR was born. OSCAR was so amazing that it won <a target="_blank" href="https://devpost.com/software/obnoxious-scheme-to-convince-all-to-recycle">Most Entertaining Hack</a>, and the president of the university even <a target="_blank" href="images/loh-approved.jpg">tried it out</a> and had a laugh. OSCAR is a talking trash can that insults you (<a target="_blank" href="https://peertube.social/videos/watch/66d762b2-484b-4ac7-b1b7-665809c2d162">video</a>) if you put recycling in the trash bin, trash in the compost bin, or really anything in any bin because the actual code to make the determination of what type of waste you are holding was not working (thanks a lot, IBM with your so-called <a target="_blank" href="https://github.com/IBM/watson-waste-sorter">"watson waste sorter"</a> which even the IBM folks who were there told us it was trash, no pun intended...). I was in charge of infrastructure and odd jobs -- I set up the Raspberry Pi and showed people how to use ssh, gave people accounts on my home server for easy file sharing, drew portraits of the team members and the logo to enter in the colorwar contest, and helped out here and there with the python code.</p>
                     </div>
                     <div class="pop-up-icon">
                       <div class="row">
@@ -374,6 +388,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">state-machine-framework</h3>
+                    <h6 class="img-title">Java Library</h6>
                   </div>
                 </div>
               </div>
@@ -417,6 +432,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">johanv.xyz</h3>
+                    <h6 class="img-title">Linux, Docker, PHP</h6>
                   </div>
                 </div>
               </div>
@@ -435,7 +451,7 @@
                       <h5 class="popup-date">2019+</h5>
                     </div>
                     <div>
-                      <p class="popup-parapraph">I recently moved my website to this new domain name that is easier to spell (since it doesn't include my last name :). Since I was moving it, I also decided to try out some new ways of hosting it. I <a target="_blank" href=" https://blog.johanv.xyz/how-i-created-johanv-xyz">settled on dokku</a>, which is a docker-based platform-as-a-service infrastructure that allows you to deply code by doing a git push to the site. It's hosted on a Linux virtual machine on DigitalOcean for only $5 a month. Dokku allows you to easily deploy different apps to different subdomains, and so far I have <a target="_blank" href="https://johanv.xyz/">the main site</a>, <a target="_blank" href="https://blog.johanv.xyz/">a blog</a>, <a target="_blank" href="https://games.johanv.xyz/">some games</a>, and <a target="_blank" href="https://forms.johanv.xyz/">a LimeSurvey site</a>.
+                      <p class="popup-parapraph">I recently moved my website to this new domain name that is easier to spell (since it doesn't include my last name :). Since I was moving it, I also decided to try out some new ways of hosting it. I <a target="_blank" href=" https://blog.johanv.xyz/how-i-created-johanv-xyz">settled on dokku</a>, which is a docker-based platform-as-a-service infrastructure that allows you to deply code by doing a git push to the site. It's hosted on a Linux virtual machine on DigitalOcean for only $5 a month. Dokku allows you to easily deploy different apps to different subdomains, and so far I have <a target="_blank" href="https://johanv.xyz/">the main site</a>, <a target="_blank" href="https://blog.johanv.xyz/">a blog</a>, <a target="_blank" href="https://games.johanv.xyz/">some games</a>, and <a target="_blank" href="https://live.johanv.xyz/">a livestream site</a>.
                       </p>
                     </div>
                     <div class="pop-up-icon">
@@ -463,6 +479,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">CARL</h3>
+                    <h6 class="img-title">Python, JSON</h6>
                   </div>
                 </div>
               </div>
@@ -506,6 +523,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">Stoichiometry</h3>
+                    <h6 class="img-title">Java, Python, Linear Algebra</h6>
                   </div>
                 </div>
               </div>
@@ -555,6 +573,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">AIMAR</h3>
+                    <h6 class="img-title">ROS, Python, Qt</h6>
                   </div>
                 </div>
               </div>
@@ -600,6 +619,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">Home Server</h3>
+                    <h6 class="img-title">Linux, ZFS, Nextcloud</h6>
                   </div>
                 </div>
               </div>
@@ -643,6 +663,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">zfs-server-cluster-setup</h3>
+                    <h6 class="img-title">Bash, ZFS, Kubernetes</h6>
                   </div>
                 </div>
               </div>
@@ -689,6 +710,7 @@
                 <div class="c-table">
                   <div class="ct-cell">
                     <h3 class="img-title">Eagle Scout Project</h3>
+                    <h6 class="img-title">Lots of Logistics!</h6>
                   </div>
                 </div>
               </div>
@@ -707,7 +729,7 @@
                       <h5 class="popup-date">2016</h5>
                     </div>
                     <div>
-                      <p class="popup-parapraph">For my Eagle Scout Project, I built a flagstone walkway for a homeschool theatre group I was in. They used someone's house to store the props and costumes, and the path to the costume shed would get muddy when it rained. So the project connected the house and the shed to provide a safe and clean path for the costume team. The project was funded by raking leaves, and with a brick landing in front of the costume shed with donor's names engraved in the bricks (using a laser engraver with <a target="_blank" href="https://www.lasersketch.com/">special bricks</a>). You can view some <a target="_blank" href="https://vandegriff.net/johan/eagle/">pictures</a> that we compiled from my scouting career and from the project.</p>
+                      <p class="popup-parapraph">For my Eagle Scout Project, I led the scouts in building a flagstone walkway for a homeschool theatre group I was in. They used someone's house to store the props and costumes, and the path to the costume shed would get muddy when it rained. So the project connected the house to the shed which provided a safe and clean path for the costume team. The project was funded by raking leaves, and with a brick landing in front of the costume shed with donor's names engraved in the bricks (using a laser engraver with <a target="_blank" href="https://www.lasersketch.com/">special bricks</a>). You can view some <a target="_blank" href="https://johanv.xyz/gallery/?g=Boy_Scouts">pictures</a> that we compiled from my scouting career and from the project.</p>
                     </div>
                     <div class="pop-up-icon">
                       <div class="row">
@@ -765,7 +787,7 @@
   <h1>CONTACT INFO</h1>
   <p><Strong>Email: </Strong><a id="e4614a8a" class="greenLink" href="#e4614a8a" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">[click to show]</a></p>
   <p class="contact-desc">
-    If you need my phone number or address, ask me in an email. If you want to contact me securely, visit <a href="/contact/">this page</a> for instructions.
+    If you need my phone number, address, or PDF resume, ask me in an email. If you want to contact me securely, visit <a href="/contact/">this page</a> for instructions.
   </p>
 </div>
 </div>
