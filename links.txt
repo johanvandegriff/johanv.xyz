@@ -1,4 +1,4 @@
-LBRY (videos)	https://lbry.tv/@johanv:5
+LBRY (videos)	https://odysee.com/@johanv:5
 mastodon (posts)	https://fosstodon.org/@johanv
 dlive (streams)	https://dlive.tv/jjvantheman
 gitlab (code)	https://gitlab.com/johanvandegriff

@@ -1,10 +1,10 @@
 <?php $pageName = "Videos"; $image = "https://johanv.xyz/f/galleries/UMD/VideosThumb.jpg"; $description = "Johan Vandegriff's videos about his life, projects, robotics team, and skits made with friends."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <p>Here are some of my videos! Since YouTube is very invasive of privacy and tends to censor people,
-I instead upload my videos to <a target="_blank" href="https://lbry.tv/@johanv:5">LBRY</a> (pronounced like library), an awesome video platform that
-<a target="_blank" href="https://lbry.tv/@lbry:3f/progress-at-lbry:0">more and more YouTubers are moving to</a>. LBRY is open source, decentralized, privacy-respecting,
+I instead upload my videos to <a target="_blank" href="https://odysee.com/@johanv:5">LBRY</a> (pronounced like library), an awesome video platform that
+<a target="_blank" href="https://odysee.com/@lbry:3f/progress-at-lbry:0">more and more YouTubers are moving to</a>. LBRY is open source, decentralized, privacy-respecting,
 has a decent and growing user base, and even has a good system for monetization. It doesn't require a minimum subscriber count like YouTube does, which means I'm making
-money already! (Only a few dollars, my channel isn't that popular.) If you sign up with my <a target="_blank" href="https://lbry.tv/$/invite/@johanv:5">invite link</a>,
+money already! (Only a few dollars, my channel isn't that popular.) If you sign up with my <a target="_blank" href="https://odysee.com/$/invite/@johanv:5">invite link</a>,
 we both get some LBC (LBRY's cryptocurrency) as a referral bonus which you can use to boost a video's popularity, tip a LBRYian (content creator on LBRY), or convert
 to USD or your local currency. I believe that LBRY is the most likely platform to compete with YouTube in the long term, if not overtake it.</p>
 
@@ -14,7 +14,7 @@ to USD or your local currency. I believe that LBRY is the most likely platform t
 <a target="_blank" href="https://www.youtube.com/user/jjvantheman">YouTube</a>.
 </p>
 
-<p><a target="_blank" href="https://lbry.tv/@johanv:5">My LBRY Channel: @johanv<br/><img src="lbry-dark-1600x528.png" style="width: 15%; border: 2px solid blue; border-radius: 10px; padding: 5px"></a></p>
+<p><a target="_blank" href="https://odysee.com/@johanv:5">My LBRY Channel: @johanv<br/><img src="lbry-dark-1600x528.png" style="width: 15%; border: 2px solid blue; border-radius: 10px; padding: 5px"></a></p>
 
 <iframe id="lbry-iframe" width="560" height="315" src="https://odysee.com/$/embed/midi-magically-infinite-dank-inspiration/50ef277f0372ac54b056672ae5a6658a980ae348" allowfullscreen></iframe>
 
