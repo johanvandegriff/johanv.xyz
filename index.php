@@ -1,4 +1,4 @@
-<?php $pageName = "Home"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "home"; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <script>
 function new_fact() {

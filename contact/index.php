@@ -1,4 +1,4 @@
-<?php $pageName = "Contact"; $description = "Johan Vandegriff's contact info and ways to contact him securely with Tutanota, Protonmail, or Element."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "contact"; $description = "Johan Vandegriff's contact info and ways to contact him securely with Tutanota, Protonmail, or Element."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h2>How to Contact Me Simply</h2>
 <p>Email me at <a  id="9dda4e98_2" href="#9dda4e98_2" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">[click to show]</a></p>

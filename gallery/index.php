@@ -81,10 +81,10 @@ $url = "https://johanv.xyz/gallery";
 $description = "Johan Vandegriff's photo gallery with drawings and pictures from school, robotics, camping, etc.";
 if(isset($_GET['g'])) {
 	$pageNameExtra = str_replace('_', ' ', filter($_GET['g']));
-	$pageName = "Gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
+	$pageName = "gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
 	echo '<h4><a href=".">... back to all galleries</a></h4>';
 } else {
-	$pageName = "Gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
+	$pageName = "gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
 }
 ?>
 <link rel="stylesheet" href="gallery.css">

@@ -1,4 +1,4 @@
-<?php $pageName = "ArduinOLED"; $pageNameExtra = "Tutorial"; $image = "https://johanv.xyz/ArduinOLED/StackerMenu.JPG"; $description = "Software tutorial for ArduinOLED, a platform for electronic games and other projects. It includes a screen, joystick, buttons, buzzer, and clip connections to add many other devices."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "arduinoled"; $pageNameExtra = "Tutorial"; $image = "https://johanv.xyz/ArduinOLED/StackerMenu.JPG"; $description = "Software tutorial for ArduinOLED, a platform for electronic games and other projects. It includes a screen, joystick, buttons, buzzer, and clip connections to add many other devices."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <a href="/ArduinOLED/"><-Back to ArduinOLED</a>
 

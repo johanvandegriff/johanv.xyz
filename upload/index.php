@@ -1,4 +1,4 @@
-<?php $pageName = "Upload"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
+<?php $pageName = "upload"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
 
 $galleries = '/f/galleries';
 $galleriesPath = $_SERVER['DOCUMENT_ROOT'].$galleries;

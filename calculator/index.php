@@ -1,4 +1,4 @@
-<?php $pageName = "Calc"; $description = "This is a calculator that you can run in a terminal. It is written in Python."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "calc"; $description = "This is a calculator that you can run in a terminal. It is written in Python."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 <h1>Command-line Calculator</h1>
 <p><a href="calculator.zip" target="frame">Download .zip file</a></p>
 <p>This is a calculator that you can run in a command line terminal.

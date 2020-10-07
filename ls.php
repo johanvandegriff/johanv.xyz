@@ -1,4 +1,4 @@
-<?php $pageName = "Files"; $description = "A listing of the files I have uploaded to the site."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "files"; $description = "A listing of the files I have uploaded to the site."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <?php
 $file_root = $_SERVER['DOCUMENT_ROOT'].'/f';

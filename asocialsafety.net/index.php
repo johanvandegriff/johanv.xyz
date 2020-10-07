@@ -1,4 +1,4 @@
-<?php $pageName = "Home"; include 'header.php'; ?>
+<?php $pageName = "home"; include 'header.php'; ?>
 
 <h2>Our Mission</h2>
 <p>We started this hackathon with no real idea for a project, and the intention to build something random and have fun. Then the pieces started coming together. The conversation went something like:</p>

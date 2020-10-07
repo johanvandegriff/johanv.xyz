@@ -1,4 +1,4 @@
-<?php $pageName = "Videos"; $image = "https://johanv.xyz/f/galleries/UMD/VideosThumb.jpg"; $description = "Johan Vandegriff's videos about his life, projects, robotics team, and skits made with friends."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+<?php $pageName = "videos"; $image = "https://johanv.xyz/f/galleries/UMD/VideosThumb.jpg"; $description = "Johan Vandegriff's videos about his life, projects, robotics team, and skits made with friends."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <p>Here are some of my videos! Since YouTube is very invasive of privacy and tends to censor people,
 I instead upload my videos to <a target="_blank" href="https://odysee.com/@johanv:5">LBRY</a> (pronounced like library), an awesome video platform that
