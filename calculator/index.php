@@ -1,6 +1,6 @@
 <?php $pageName = "calc"; $description = "This is a calculator that you can run in a terminal. It is written in Python."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 <h1>Command-line Calculator</h1>
-<p><a href="calculator.zip" target="frame">Download .zip file</a></p>
+<p><a href="calculator.zip">Download .zip file</a></p>
 <p>This is a calculator that you can run in a command line terminal.
 To run it, you need Python 2 or 3.</p>
 <p>You can either use argument mode:</p>
@@ -31,5 +31,5 @@ cos abc<br/>
 0.249540117973
 </div>
 <p>To see more of the features, type help in interpreter mode or run <b>./calculator.py help [page #]</b>.</p>
-<p><a target="_blank" href="colors.zip">Download terminal colors python module</a></p>
+<p><a href="colors.zip">Download terminal colors python module</a></p>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>

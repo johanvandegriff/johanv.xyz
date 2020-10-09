@@ -34,6 +34,14 @@ div.img img {
   text-align: center;
 }
 
+/*wikipedia-style "external link" indicator*/
+a[target="_blank"] {
+  background-image: url(https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/external-link-ltr-icon.svg?b4b84);
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding-right: 13px;
+}
+
 a.svg {
   display: inline-block;
   position: relative;

@@ -8,7 +8,7 @@ youtube	https://youtube.com/user/jjvantheman
 github	https://github.com/johanvandegriff
 lichess	https://lichess.org/@/jjvan
 drawception	https://drawception.com/player/962191/johanv/drawings/1/
-devpost (hackathons)	https://devpost.com/johanvandegriff
+devpost (projects)	https://devpost.com/johanvandegriff
 alt.org/nethack	https://alt.org/nethack/plr.php?player=jjvan
 instructables	https://instructables.com/member/jjvan/
 easyeda (circuits)	https://easyeda.com/jjvan

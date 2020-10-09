@@ -8,18 +8,18 @@ function new_fact() {
 }
 </script>
 
-<h1>johanv.xyz, my chill website</h1>
-<p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a>, and this is johanv.xyz: my new, awesome, spectacular, and chill website! Here's a random interesting fact about me:</p>
+<h1>Welcome to johanv.xyz!</h1>
+<p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a> and this is my website, which STINKS. <u>S</u>tores <u>T</u>hings <u>I</u> <u>N</u>eed to <u>K</u>eep <u>S</u>omewhere! Also here's a random interesting fact about me:</p>
 <p id="fact" class="purple"><?php include $_SERVER['DOCUMENT_ROOT'].'/fact/index.php'; ?></p>
 <input type="button" value="Get New Fact!" onclick="new_fact();">
 
 <h2>Personal Livestream Site</h2>
-<p>My most recent project is a livestream hosted on this site! You can watch me live at <a target="_blank" href="https://live.johanv.xyz">live.johanv.xyz</a>. Follow me on <a target="_blank" rel="me" href="https://fosstodon.org/@johanv">Mastodon</a> for announcements when I go live.</p>
+<p>My most recent project is a livestream hosted on this site! You can watch me live at <a href="https://live.johanv.xyz">live.johanv.xyz</a>. Follow me on <a target="_blank" rel="me" href="https://fosstodon.org/@johanv">Mastodon</a> for announcements when I go live.</p>
 
 <h2 id="drawings">Drawings</h2>
 <p>This is a drawing I made of the <a target="_blank" href="https://twitter.com/ErasableInc">Erasable Inc.</a> improv group at the University of Maryland (UMD) after their 24-hour show.</p>
 <?php echo getThumbIMG("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'class="img65left" alt="Draing of the Erasable Inc Improv Group at UMD and Friends"'); ?>
-<p>For this drawing and others, I used the free and open source drawing software <a target="_blank" href="https://krita.org/">Krita</a>, a Wacom tablet, and a <a target="_blank" href="https://manjaro.org/">Manjaro</a> Linux laptop. I've also made some drawings on physical media.</p>
+<p>For this drawing and others, I used the free and open source drawing software <a target="_blank" href="https://krita.org/">Krita</a>, a Wacom tablet, and a <a target="_blank" href="https://linuxmint.com/">Linux Mint</a> laptop. I've also made some drawings on physical media.</p>
 <p><a href="/gallery/?g=Drawings">See more of my drawings...</a></p>
 
 <h2 id="videos">Videos</h2>
@@ -65,7 +65,7 @@ function new_fact() {
 
 <h2 id="contact">Contact</h2>
 <?php echo getThumbIMG("/f/galleries/Random/IMG_20190301_154227.jpg", 'class="img35left" alt="picture of me"'); ?>
-<p>Feel free to contact me, I have multiple ways to <a target=_blank href="/contact/">get in touch securely</a>. You can also follow me on <a rel="me" href="https://fosstodon.org/@johanv">Mastodon</a> or find me at any of the other links on the right sidebar of this page.</p>
+<p>Feel free to contact me, I have multiple ways to <a href="/contact/">get in touch securely</a>. You can also follow me on <a rel="me" href="https://fosstodon.org/@johanv">Mastodon</a> or find me at any of the other links on the right sidebar of this page.</p>
 
 <!-- <h3>Other People's Sites</h3>
 <ul>

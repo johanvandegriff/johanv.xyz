@@ -1,5 +1,9 @@
 <?php $pageName = "files"; $description = "A listing of the files I have uploaded to the site."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
+<!--To use this, go into the dir where the listing is needed and create index.php with this as the contents:
+ <?php include $_SERVER['DOCUMENT_ROOT'].'/ls.php'; ?>
+ -->
+
 <?php
 $file_root = $_SERVER['DOCUMENT_ROOT'].'/f';
 $loc = getcwd();

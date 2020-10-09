@@ -138,8 +138,12 @@ $filename = $_SERVER['DOCUMENT_ROOT'].'/links.txt';
 $contents = file($filename);
 
 foreach($contents as $line) {
-   $parts = preg_split('/\t/', rtrim($line));
-   echo '<br/><a target="_blank" class="greenLink" href="' . $parts[1] . '">' . $parts[0] . "</a>\n";
+  if ($line == "\n") {
+    echo "<br/>\n";
+  } else {
+  $parts = preg_split('/\t/', rtrim($line));
+    echo '<br/><a target="_blank" class="greenLink" href="' . $parts[1] . '">' . $parts[0] . "</a>\n";
+  }
 }
 
 ?>
