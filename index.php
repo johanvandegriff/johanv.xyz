@@ -3,9 +3,19 @@
 <script>
 function new_fact() {
   $.ajax('/fact/')
-    .done(response => document.getElementById("fact").innerHTML = response)
+    .done(response => $("#fact").html(response))
     .fail((xhr, status) => console.log('error:', status));
 }
+
+$(window).resize(function() {
+  set_video_size();
+});
+function set_video_size() {
+  var w = $("#drawing").width() - 4;
+  $("#video").width(w);
+  $("#video").height(w*315/560);
+}
+
 </script>
 
 <style>
@@ -42,7 +52,7 @@ body {
   
   <div class="box">
     <h2 id="drawings">drawings</h2>
-    <?php echo getThumbImg("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'style="width:66%; display:block; float: right; border-radius: 12px" alt="Draing of the Erasable Inc Improv Group at UMD and Friends"'); ?>
+    <?php echo getThumbImg("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'id="drawing" style="width:66%; display:block; float: right; border-radius: 12px" alt="Draing of the Erasable Inc Improv Group at UMD and Friends"'); ?>
     <p>This is a drawing I made of the <a target="_blank" href="https://twitter.com/ErasableInc">Erasable Inc.</a> improv group at the University of Maryland (UMD) after their 24-hour show. (click the image for full size)</p>
     <p>For this drawing and others, I used the free and open source drawing software <a target="_blank" href="https://krita.org/">Krita</a> and a Wacom tablet on Linux.</p>
     <a class="greenButton" href="/gallery/?g=Drawings" onmouseover="this.innerHTML=this.innerHTML.replace(/.$/,'▸')" onmouseleave="this.innerHTML=this.innerHTML.replace(/.$/,'▹')">see more ▹</a>
@@ -50,7 +60,7 @@ body {
 
   <div class="box">
     <h2 id="videos">videos</h2>
-    <iframe style="display:block; float: right; border-radius: 12px" onload="this.width=Math.min(560, window.innerWidth/(2.8 - 1.05*(window.innerWidth<=1100))-150); this.height=this.width*315/560" width="56" height="31.5" src="https://odysee.com/$/embed/makers-case-gemstone-commercial/e3e0edee20fbab97268a8e7dfcc35c798cd74d6c" allowfullscreen></iframe>
+    <iframe id="video" style="display:block; float: right; border-radius: 12px" onload="set_video_size();" width="56" height="31.5" src="https://odysee.com/$/embed/makers-case-gemstone-commercial/e3e0edee20fbab97268a8e7dfcc35c798cd74d6c" allowfullscreen></iframe>
     <p>I publish my videos on <a target="_blank" href="https://odysee.com/@johanv:5">LBRY</a>, an awesome new platform that solves the demonitization issues of YouTube! <a target="_blank" href="https://odysee.com/$/invite/@johanv:5">Follow me with my invite link</a>. This video is for a propsed research project for Gemstone at UMD. I ended up joining another project instead, but I still have the initial version and plan to make it into a product someday.</p>
     <!-- <h3><a target="_blank" href="https://odysee.com/@johanv:5/makers-case-gemstone-commercial:e">Maker's Case Gemstone Commercial</a></h3> -->
     <!-- <iframe src="https://spee.ch/video-embed/@johanv:5/makers-case-gemstone-commercial" allowfullscreen="true" style="border:0"></iframe> -->

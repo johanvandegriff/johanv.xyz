@@ -4,6 +4,7 @@ $(function () {
 
     function hide() {
         $(".show").fadeOut();
+        var $img = $(".img-show img");
         $img.off("error");
         $img.attr("src", "");
     }
