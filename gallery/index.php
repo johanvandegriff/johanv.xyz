@@ -33,7 +33,7 @@ function showDetailPage($gal){
 </div>
 END;
 		} else {
-			$img = getThumbIMG("$galleries/$gal/$file", 'alt="..."');
+			$img = getThumbImg("$galleries/$gal/$file", 'alt="..."');
 			echo <<<END
 <div class="col-xs-6 col-md-4">
 	<div class="thumbnail">

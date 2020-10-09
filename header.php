@@ -111,20 +111,21 @@ function hideEmailOpts($email, $text, $options) {
   $GLOBALS['email_counter']++;
 }
 
-function getThumbURL($imgURL) {
-  $thumbURL = $imgURL.".jpg";
-  if (substr($imgURL, 0, 3) == "/f/") {
-    $thumbURL = "/thumbs/".substr($imgURL, 3).".jpg";
-    if (file_exists($_SERVER['DOCUMENT_ROOT'].$thumbURL)) {
-      return $thumbURL;
+function getThumbUrl($imgUrl) {
+  $thumbUrl = $imgUrl.".jpg";
+  if (substr($imgUrl, 0, 3) == "/f/") {
+    $thumbUrl = "/thumbs/".substr($imgUrl, 3).".jpg";
+
+    if (file_exists($_SERVER['DOCUMENT_ROOT'].$thumbUrl)) {
+      return $thumbUrl;
     }
   }
-  return $imgURL;
+  return $imgUrl;
 }
 
-function getThumbIMG($imgURL, $props) {
-  $thumbURL = getThumbURL($imgURL);
-  return '<img class="popup" src="'.$thumbURL.'" '.$props.'>';
+function getThumbImg($imgUrl, $props) {
+  $thumbUrl = getThumbUrl($imgUrl);
+  return '<img class="popup" src="'.$thumbUrl.'" '.$props.'>';
 }
 
 ?>

@@ -42,7 +42,7 @@ body {
   
   <div class="box">
     <h2 id="drawings">drawings</h2>
-    <?php echo getThumbIMG("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'style="width:66%; display:block; float: right; border-radius: 12px" alt="Draing of the Erasable Inc Improv Group at UMD and Friends"'); ?>
+    <?php echo getThumbImg("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'style="width:66%; display:block; float: right; border-radius: 12px" alt="Draing of the Erasable Inc Improv Group at UMD and Friends"'); ?>
     <p>This is a drawing I made of the <a target="_blank" href="https://twitter.com/ErasableInc">Erasable Inc.</a> improv group at the University of Maryland (UMD) after their 24-hour show. (click the image for full size)</p>
     <p>For this drawing and others, I used the free and open source drawing software <a target="_blank" href="https://krita.org/">Krita</a> and a Wacom tablet on Linux.</p>
     <a class="greenButton" href="/gallery/?g=Drawings" onmouseover="this.innerHTML=this.innerHTML.replace(/.$/,'▸')" onmouseleave="this.innerHTML=this.innerHTML.replace(/.$/,'▹')">see more ▹</a>
@@ -104,7 +104,7 @@ body {
 
   <div class="box">
     <h2 id="contact">contact</h2>
-    <?php echo getThumbIMG("/f/galleries/Random/IMG_20190301_154227.jpg", 'style="width:20%; display:block; float: right; border-radius: 12px" alt="picture of me"'); ?>
+    <?php echo getThumbImg("/f/galleries/Random/IMG_20190301_154227.jpg", 'style="width:20%; display:block; float: right; border-radius: 12px" alt="picture of me"'); ?>
     <p>Feel free to contact me, I have multiple ways to <a href="/contact/">get in touch securely</a>. You can also follow me on <a rel="me" href="https://fosstodon.org/@johanv">Mastodon</a> or find me at any of the other links on the right sidebar of this page.</p>
     <form method="get" action="/contact/">
     <input class="greenButton" type="submit" value="contact ▹" onmouseover="this.value=this.value.replace(/.$/,'▸')" onmouseleave="this.value=this.value.replace(/.$/,'▹')"/>

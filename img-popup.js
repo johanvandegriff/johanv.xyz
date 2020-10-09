@@ -11,7 +11,12 @@ $(function () {
         var $img = $(".img-show img");
 
         //remove the last 4 chars, in case this is a thumbnail (blahblah.png.jpg)
-        $img.attr("src", $src.slice(0, -4));
+        var $original = $src.slice(0, -4);
+        //also remove "/thumbs/" from the beginning and add "/f/"
+        $original = "/f/" + $original.slice(8);
+
+        //try to get the original
+        $img.attr("src", $original);
 
         //set the backup url in case this is not a thumbnail (blahblah.png)
         $img.off("error"); $img.on("error", function(){this.src=$src});
