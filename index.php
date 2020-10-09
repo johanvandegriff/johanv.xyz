@@ -95,7 +95,7 @@ body {
 
   <div class="box">
     <h2 id="resume">resume</h2>
-    <img class="popup" src="/resume/images/GSFC.jpg.jpg" style="width:40%; display:block; float: right; border-radius: 12px" alt="me with my internship mentors and poster">
+    <?php echo getThumbImg("/f/galleries/Random/GSFC.jpg", 'style="width:40%; display:block; float: right; border-radius: 12px" alt="me with my internship mentors and poster"'); ?>
     <h3>NASA GSFC Internship</h3>
     <h4>summer 2017</h4>
     <p>I fixed bugs in C code for <a target="_blank" href="https://cfs.gsfc.nasa.gov/">NASA’s core Flight System</a> by writing unit tests on a CentOS Linux virtual machine (using VirtualBox). To help write unit tests, I wrote some bash scripts to generate skeleton functions, then filled them in manually with code to test each case. At the end of the summer, I created a <a target="_blank" href="/resume/images/GSFC_poster.png">poster</a> and presented it at a lab-wide showcase day.</p>
