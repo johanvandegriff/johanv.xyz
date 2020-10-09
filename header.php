@@ -124,7 +124,7 @@ function getThumbURL($imgURL) {
 
 function getThumbIMG($imgURL, $props) {
   $thumbURL = getThumbURL($imgURL);
-  return '<a target="_blank" href="'.$imgURL.'"><img src="'.$thumbURL.'" '.$props.'></a>';
+  return '<img class="popup" src="'.$thumbURL.'" '.$props.'>';
 }
 
 ?>

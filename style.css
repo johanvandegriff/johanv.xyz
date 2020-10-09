@@ -85,6 +85,7 @@ aside {
   font-family: 'Monospace', sans-serif;
   background-color: #000000;
   margin: 0;
+  margin-left: 10px;
   max-width: 200px;
   padding: 4px;
   width: 25%;
@@ -137,10 +138,42 @@ nav ul li a:hover:not(.active) {
   background-color: #631fa3;
 }
 
-.box {
-  border: 1px solid gray;
-  margin: auto;
-  width: 75%;
+div.boxes {
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+  grid-template-rows: auto; /* line up each new row */
+}
+
+@media only screen and (max-width: 1100px) {
+  div.boxes {
+    grid-template-columns: auto;
+  }
+}
+
+div.box {
+  border-radius: 12px;
+  padding-top: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 2.4%;
+  background-color: white;
+}
+
+div.box > h2 {
+  text-align: center;
+}
+
+.greenButton{
+  background: #10ee10;
+  font-size: 1em;
+  height: 2em;
+  border-radius: 0.3em;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  margin: 5px;
 }
 
 .title {
@@ -151,7 +184,7 @@ nav ul li a:hover:not(.active) {
 }
 
 footer {
-    padding: 10px;
+  padding: 10px;
 }
 
 .greenLink {
@@ -173,34 +206,64 @@ footer {
 }
 
 .terminal {
-    font-family: 'Monospace', sans-serif;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    display: inline-block;
+  font-family: 'Monospace', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+.show{
+  z-index: 999;
+  display: none;
+}
+.show .overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.66);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.show .img-show{
+  height: 60vh;
+  width: 60vw;
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden
+}
+.img-show span{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  cursor: pointer;
+}
+.img-show img{
+  /* width: 100%; */
+  height: 100%;
+  /* position: absolute; */
+  top: 0;
+  /* left: 0; */
+  display: block;
+  margin: auto;
 }
 
 .img65 {
-    width:65%;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+  width:65%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-.img65left {
-    width:65%;
-    display:block;
-    margin-left:0;
-}
-
-.img35left {
-    width:35%;
-    display:block;
-    margin-left:0;
-}
 
 .mono {
-    font-family: 'Monospace', sans-serif;
+  font-family: 'Monospace', sans-serif;
+  font-size: smaller;
 }
 
 #navToggle {
