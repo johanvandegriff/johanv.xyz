@@ -1,6 +1,12 @@
 // https://codepen.io/Muhnad/pen/dMbXNb
 $(function () {
     "use strict";
+
+    function hide() {
+        $(".show").fadeOut();
+        $img.off("error");
+        $img.attr("src", "");
+    }
     
     $("img.popup").click(function () {
         //get the location of the image to be popped up
@@ -23,11 +29,11 @@ $(function () {
     });
     
     $("span, .overlay").click(function () {
-        $(".show").fadeOut();
+        hide();
     });
     
     $(document).keyup(function(e) {
         //ESC key closes the image popup
-        if (e.keyCode === 27) $(".show").fadeOut();
+        if (e.keyCode === 27) hide();
       });
 });
