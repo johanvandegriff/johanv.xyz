@@ -8,21 +8,11 @@ function new_fact() {
 }
 </script>
 
-<script src="/img-popup.js"></script>
-
 <style>
 body {
   background-color: #cecece;
 }
 </style>
-
-<div class="show">
-  <div class="overlay"></div>
-  <div class="img-show">
-    <span>X</span>
-    <img src="">
-  </div>
-</div>
 
 <div class="boxes">
   <div class="box">

@@ -64,7 +64,7 @@
 }
 
 .col-xs-6 {
-  position: relative;
+  /* position: relative; */
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
@@ -109,10 +109,6 @@ a.thumbnail.active {
 .thumbnail .caption {
   padding: 9px;
   color: #333333;
-}
-
-.img-rounded {
-  border-radius: 6px;
 }
 
 .text-center {

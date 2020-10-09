@@ -129,6 +129,16 @@ function getThumbIMG($imgURL, $props) {
 
 ?>
 </ul></nav></div>
+
+<div class="show">
+  <div class="overlay"></div>
+  <div class="img-show">
+    <span>X</span>
+    <img src="">
+  </div>
+</div>
+<script src="/img-popup.js"></script>
+
 <div id="main">
 <aside class="right">
 <p class="monospace greenLink" style="overflow: hidden;">

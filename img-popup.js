@@ -21,4 +21,8 @@ $(function () {
         $(".show").fadeOut();
     });
     
+    $(document).keyup(function(e) {
+        //ESC key closes the image popup
+        if (e.keyCode === 27) $(".show").fadeOut();
+      });
 });

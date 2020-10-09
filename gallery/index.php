@@ -33,7 +33,7 @@ function showDetailPage($gal){
 </div>
 END;
 		} else {
-			$img = getThumbIMG("$galleries/$gal/$file", 'alt="" class="img-rounded"');
+			$img = getThumbIMG("$galleries/$gal/$file", 'alt="..."');
 			echo <<<END
 <div class="col-xs-6 col-md-4">
 	<div class="thumbnail">
@@ -59,7 +59,7 @@ function createGallery(){
 	<div class="col-xs-6 col-md-4">
 		<a href="?g=$link_name">
 			<div class="thumbnail">
-				<img src="$thumbnail" alt="..." class="img-rounded">
+				<img src="$thumbnail" alt="...">
 				<div class="caption">
 					<h3 class="text-center">$gal_print_name</h3>
 				</div>
