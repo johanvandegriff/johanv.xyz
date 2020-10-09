@@ -3,10 +3,11 @@ $(function () {
     "use strict";
 
     function hide() {
-        $(".show").fadeOut();
-        var $img = $(".img-show img");
-        $img.off("error");
-        $img.attr("src", "");
+        $(".show").fadeOut(function() {
+            var $img = $(".img-show img");
+            $img.off("error");
+            $img.attr("src", "");
+        });
     }
     
     $("img.popup").click(function () {
