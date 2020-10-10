@@ -109,15 +109,14 @@ body {
     <h3>NASA GSFC Internship</h3>
     <h4>summer 2017</h4>
     <p>I fixed bugs in C code for <a target="_blank" href="https://cfs.gsfc.nasa.gov/">NASA’s core Flight System</a> by writing unit tests on a CentOS Linux virtual machine (using VirtualBox). To help write unit tests, I wrote some bash scripts to generate skeleton functions, then filled them in manually with code to test each case. At the end of the summer, I created a <a target="_blank" href="/resume/images/GSFC_poster.png">poster</a> and presented it at a lab-wide showcase day.</p>
-      <a class="greenButton" href="/resume/" onmouseover="this.innerHTML=this.innerHTML.replace(/.$/,'▸')" onmouseleave="this.innerHTML=this.innerHTML.replace(/.$/,'▹')">ful resume ▹</a>
+    <a class="greenButton" href="/resume/" onmouseover="this.innerHTML=this.innerHTML.replace(/.$/,'▸')" onmouseleave="this.innerHTML=this.innerHTML.replace(/.$/,'▹')">full resume ▹</a>
   </div>
 
   <div class="box">
     <h2 id="contact">contact</h2>
     <?php echo getThumbImg("/f/galleries/Random/IMG_20190301_154227.jpg", 'style="width:20%; display:block; float: right; border-radius: 12px" alt="picture of me"'); ?>
     <p>Feel free to contact me, I have multiple ways to <a href="/contact/">get in touch securely</a>. You can also follow me on <a rel="me" href="https://fosstodon.org/@johanv">Mastodon</a> or find me at any of the other links on the right sidebar of this page.</p>
-    <form method="get" action="/contact/">
-    <input class="greenButton" type="submit" value="contact ▹" onmouseover="this.value=this.value.replace(/.$/,'▸')" onmouseleave="this.value=this.value.replace(/.$/,'▹')"/>
+    <a class="greenButton" href="/contact/" onmouseover="this.innerHTML=this.innerHTML.replace(/.$/,'▸')" onmouseleave="this.innerHTML=this.innerHTML.replace(/.$/,'▹')">contact ▹</a>
     </form>
   </div>
 
