@@ -61,7 +61,7 @@ body {
   <div class="box">
     <h2 id="videos">videos</h2>
     <iframe id="video" style="display:block; float: right; border-radius: 12px" onload="set_video_size();" width="56" height="31.5" src="https://odysee.com/$/embed/makers-case-gemstone-commercial/e3e0edee20fbab97268a8e7dfcc35c798cd74d6c" allowfullscreen></iframe>
-    <p>I publish my videos on <a target="_blank" href="https://odysee.com/@johanv:5">LBRY</a>, an awesome new platform that solves the demonitization issues of YouTube! <a target="_blank" href="https://odysee.com/$/invite/@johanv:5">Follow me with my invite link</a>. This video is for a propsed research project for Gemstone at UMD. I ended up joining another project instead, but I still have the initial version and plan to make it into a product someday.</p>
+    <p>I publish my videos on <a target="_blank" href="https://odysee.com/@johanv:5">Odysee</a>, an awesome new platform that solves the demonitization issues of YouTube! <a target="_blank" href="https://odysee.com/$/invite/@johanv:5">Follow me with my invite link</a>. This video is for a propsed research project for Gemstone at UMD. I ended up joining another project instead, but I still have the initial version and plan to make it into a product someday.</p>
     <!-- <h3><a target="_blank" href="https://odysee.com/@johanv:5/makers-case-gemstone-commercial:e">Maker's Case Gemstone Commercial</a></h3> -->
     <!-- <iframe src="https://spee.ch/video-embed/@johanv:5/makers-case-gemstone-commercial" allowfullscreen="true" style="border:0"></iframe> -->
     

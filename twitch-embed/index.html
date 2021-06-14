@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      function addEmbed() {
+        //var width = 854*2;
+        //var height = 480*2;
+        var width = window.innerWidth - 50;
+        var height = window.innerHeight - 50;
+        if (document.getElementById("check").checked) {
+            width /= 2;
+            height /= 2;
+        }
+
+        return new Twitch.Embed("twitch-embed", {
+          width: width,
+          height: height,
+          channel: document.getElementById("channel").value,
+          // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+          //parent: ["embed.example.com", "othersite.example.com"]
+          parent: ["embed-test.johanv.xyz", "johanv.xyz"]
+        });
+      }
+    </script>
+
+    twitch channel name: <input type="text" id="channel">
+    <input type="checkbox" id="check" name="check" value="yes">
+    <label for="check">small?</label>
+    <button onclick="addEmbed()">add embed</button>
+  </body>
+</html>

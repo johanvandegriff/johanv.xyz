@@ -2,7 +2,7 @@
 <!--
 This HTML source code and the PHP source code used to generate it is licensed under the GNU Affero General Public License 3.0. (https://www.gnu.org/licenses/agpl-3.0.html)
 
-The PHP code is available at: https://gitlab.com/johanvandegriff/johanv.xyz
+The PHP code is available at: https://git.sr.ht/~johanvandegriff/johanv.xyz
 -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

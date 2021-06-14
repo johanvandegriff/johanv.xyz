@@ -1,7 +1,7 @@
-LBRY (videos)	https://odysee.com/@johanv:5
+odysee (videos)	https://odysee.com/@johanv:5
 mastodon (posts)	https://fosstodon.org/@johanv
 dlive (streams)	https://dlive.tv/jjvantheman
-gitlab (code)	https://gitlab.com/johanvandegriff
+sourcehut (code)	https://git.sr.ht/~johanvandegriff/
 
 twitch	https://www.twitch.tv/jjvantheman
 youtube	https://youtube.com/user/jjvantheman
@@ -15,6 +15,5 @@ easyeda (circuits)	https://easyeda.com/jjvan
 scratch (games)	https://scratch.mit.edu/users/jjvan/
 stack overflow	https://stackoverflow.com/users/5894048/jjvan
 peertube (videos)	https://peertube.social/video-channels/jjvantheman_channel/videos
-sourcehut (code)	https://git.sr.ht/~johanvandegriff/
 confuzer.cloud	https://confuzer.cloud/
 ftc team (alum)	https://gearbox4h.org/

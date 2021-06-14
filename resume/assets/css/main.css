@@ -239,6 +239,16 @@ pre {
   background-color: #FC6D27;
   /*     background-color: #FCA326; */
 }
+.icon.style2.fa-srht {
+  /*     background-color: #E2432A; */
+  background-color: #212429;
+  /*     background-color: #FCA326; */
+}
+.pop-up.fa-srht {
+  /*     background-color: #E2432A; */
+  background-color: #212429;
+  /*     background-color: #FCA326; */
+}
 .icon.style2.fa-keybase {
   /*     background-color: #FE6F21; */
   /*     background-color: #41C98F; */
@@ -254,6 +264,12 @@ pre {
 }
 .pop-up.fa-lbry {
   background-color: #0b5a47;
+}
+.icon.style2.fa-odysee {
+  background-color: #ff592c;
+}
+.pop-up.fa-odysee {
+  background-color: #ff592c;
 }
 .icon.style2.fa-peertube {
   /*     background-color: #211F20; */

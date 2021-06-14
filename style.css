@@ -1,7 +1,7 @@
 /*
 This CSS source code is licensed under the GNU Affero General Public License 3.0. (https://www.gnu.org/licenses/agpl-3.0.html)
 
-The full source code is available at: https://gitlab.com/johanvandegriff/johanv.xyz
+The full source code is available at: https://git.sr.ht/~johanvandegriff/johanv.xyz
 */
 
 body {
@@ -36,7 +36,7 @@ div.img img {
 
 /*wikipedia-style "external link" indicator*/
 a[target="_blank"] {
-  background-image: url(https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/external-link-ltr-icon.svg?b4b84);
+  background-image: url(/external-link-ltr-icon.svg);
   background-position: center right;
   background-repeat: no-repeat;
   padding-right: 13px;
