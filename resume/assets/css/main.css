@@ -214,6 +214,11 @@ pre {
   top: -2px;
 }
 
+.extra-padding-fix {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .label {
   display: none;
 }
