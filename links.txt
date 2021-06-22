@@ -1,19 +1,21 @@
-odysee (videos)	https://odysee.com/@johanv:5
-mastodon (posts)	https://fosstodon.org/@johanv
-dlive (streams)	https://dlive.tv/jjvantheman
-sourcehut (code)	https://git.sr.ht/~johanvandegriff/
+wheretofind.me	https://wheretofind.me/@johanv
+mastodon	https://fosstodon.org/@johanv
+odysee vids	https://odysee.com/@johanv:5
+odysee live	https://odysee.com/@johanv:5/live:a
+sourcehut	https://git.sr.ht/~johanvandegriff/
 
 twitch	https://www.twitch.tv/jjvantheman
 youtube	https://youtube.com/user/jjvantheman
+dlive	https://dlive.tv/jjvantheman
 github	https://github.com/johanvandegriff
 lichess	https://lichess.org/@/jjvan
 drawception	https://drawception.com/player/962191/johanv/drawings/1/
-devpost (projects)	https://devpost.com/johanvandegriff
+devpost	https://devpost.com/johanvandegriff
 alt.org/nethack	https://alt.org/nethack/plr.php?player=jjvan
 instructables	https://instructables.com/member/jjvan/
-easyeda (circuits)	https://easyeda.com/jjvan
-scratch (games)	https://scratch.mit.edu/users/jjvan/
+easyeda	https://easyeda.com/jjvan
+scratch	https://scratch.mit.edu/users/jjvan/
 stack overflow	https://stackoverflow.com/users/5894048/jjvan
-peertube (videos)	https://peertube.social/video-channels/jjvantheman_channel/videos
+peertube	https://peertube.social/video-channels/jjvantheman_channel/videos
 confuzer.cloud	https://confuzer.cloud/
-ftc team (alum)	https://gearbox4h.org/
+ftc team	https://gearbox4h.org/
