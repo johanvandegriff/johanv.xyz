@@ -179,12 +179,12 @@ MENUCOLOR="\{g\}"=lightgreen
 MENUCOLOR="\{b\}"=lightblue
 MENUCOLOR="\{[mp]\}"=lightmagenta
 MENUCOLOR="\{c\}"=lightcyan
-MENUCOLOR="\{N\}"=none
-MENUCOLOR="\{X\}"=bold
-MENUCOLOR="\{x\}"=dim
-MENUCOLOR="\{U\}"=underline
-MENUCOLOR="\{I\}"=inverse
-MENUCOLOR="\{K\}"=blink
+#MENUCOLOR="\{N\}"=none
+#MENUCOLOR="\{X\}"=bold
+#MENUCOLOR="\{x\}"=dim
+#MENUCOLOR="\{U\}"=underline
+#MENUCOLOR="\{I\}"=inverse
+#MENUCOLOR="\{K\}"=blink
 
 
 

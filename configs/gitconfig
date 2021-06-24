@@ -1,0 +1,11 @@
+[user]
+	email = my email
+	name = Johan Vandegriff
+	signingkey = CB274A4B4E0B24B79A86FB98121A0B83683707DB
+[alias]
+	pushall = !git remote | xargs -L1 git push --all
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
