@@ -1,7 +1,7 @@
 wheretofind.me	https://wheretofind.me/@johanv
 mastodon	https://fosstodon.org/@johanv
 odysee vids	https://odysee.com/@johanv:5
-odysee live	https://odysee.com/@johanv:5/live:a
+odysee live	https://odysee.com/@johanv:5/live
 sourcehut	https://git.sr.ht/~johanvandegriff/
 
 twitch	https://www.twitch.tv/jjvantheman
