@@ -10,6 +10,7 @@
 </ul>
 
 <h3>More Photos</h3>
+<img alt="HexaGame 2.0 Printed Circuit Board" class="img65" src="pcb2.0.png">
 <img alt="5 HexaGames of different colors" class="img65" src="Colors.JPG">
 <img alt="HexaGame with programming cable" class="img65" src="WithCable.JPG">
 <img alt="The HexaGame" class="img65" src="Hexagame.JPG">
