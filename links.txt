@@ -15,6 +15,6 @@ nethack	https://alt.org/nethack/plr.php?player=jjvan
 instructables	https://instructables.com/member/jjvan/
 easyeda	https://easyeda.com/jjvan
 scratch	https://scratch.mit.edu/users/jjvan/
-peertube	https://peertube.social/video-channels/jjvantheman_channel/videos
+peertube	https://diode.zone/c/johanv/videos
 confuzer	https://confuzer.cloud/
 ftc team	https://github.com/FTC7393
