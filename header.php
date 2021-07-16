@@ -53,7 +53,7 @@ echo $title;
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  @media not all and (max-width: 540px) {
+  @media not all and (max-width: 600px) {
     nav ul li {
       width:<?php
 $filename = $_SERVER['DOCUMENT_ROOT'].'/nav.txt';
@@ -81,7 +81,7 @@ echo "$width";
   | || |                                               ___| |       
   (____)                                              (_____)       </pre>
 </a></header>
-<nav><div id="navDropdown">&#9776;</div><input id="navToggle" type="checkbox" checked><ul>
+<nav><div id="navDropdown">&#9776; menu</div><input id="navToggle" type="checkbox" checked><ul>
 <?php
 if (strcmp($pageName, "") == 0) $pageName = $argv[1];
 
@@ -141,26 +141,6 @@ function getThumbImg($imgUrl, $props) {
 <script src="/img-popup.js"></script>
 
 <div id="main">
-<aside class="right">
-<p class="monospace greenLink" style="overflow: hidden;">
-$ cat <a target="_blank" class="greenLink" href="/links.txt">links.txt</a><br/>
-<?php
-$filename = $_SERVER['DOCUMENT_ROOT'].'/links.txt';
-$contents = file($filename);
-
-foreach($contents as $line) {
-  if ($line == "\n") {
-    echo "<br/>\n";
-  } else {
-  $parts = preg_split('/\t/', rtrim($line));
-    echo '<br/><a target="_blank" class="greenLink" href="' . $parts[1] . '">' . $parts[0] . "</a>\n";
-  }
-}
-
-?>
-
-<br/><br/><a class="greenLink" id="9dda4e98_0" href="#9dda4e98_0" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamydnav'+'&#x40;'+'nahoj'+'&#x202d;'">tutanota</a><br/><a class="greenLink" id="9dda4e98_1" href="#9dda4e98_1" onclick="this.innerHTML='&#x202e;'+'moc'+'&#x2e;'+'liamnotorp'+'&#x40;'+'navjj'+'&#x202d;'">protonmail</a>
-<?php $GLOBALS['email_counter'] += 2; ?>
-
-</p></aside>
+<!-- <aside class="right">
+</aside> -->
 <section>

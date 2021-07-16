@@ -145,7 +145,7 @@ div.boxes {
   grid-template-rows: auto; /* line up each new row */
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 950px) {
   div.boxes {
     grid-template-columns: auto;
   }
@@ -295,7 +295,7 @@ nav:hover #navDropdown {
 }
 
 
-@media all and (max-width: 915px) {
+@media all and (max-width: 800px) {
   #asciiArt {
     display: none;
   }
@@ -307,13 +307,13 @@ nav:hover #navDropdown {
   }
 }
 
-@media not all and (max-width: 915px) {
+@media not all and (max-width: 800px) {
   #asciiArtSmall {
     display: none;
   }
 }
 
-@media not all and (max-width: 540px) {
+@media not all and (max-width: 600px) {
   .hideLarge {
     display: none;
   }
@@ -328,7 +328,7 @@ nav:hover #navDropdown {
   }
 }
 
-@media all and (max-width: 540px) {
+@media all and (max-width: 600px) {
 
   #asciiArt {
     display: none;
@@ -374,5 +374,18 @@ nav:hover #navDropdown {
 
   nav ul li a {
     padding: 10px;
+  }
+}
+
+.blinking {
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #0f0;
   }
 }

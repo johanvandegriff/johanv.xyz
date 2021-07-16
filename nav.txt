@@ -1,4 +1,5 @@
 home	/
+links	/links/
 games	https://games.johanv.xyz/
 blog	https://blog.johanv.xyz/
 live	https://live.johanv.xyz/
