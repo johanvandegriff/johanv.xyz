@@ -17,10 +17,17 @@ function showGallery(){
 	}
 }
 
+function getPrintName($link_name) {
+	$gal_print_name = str_replace('_', ' ', $link_name);
+	$gal_print_name = str_replace('@', '"', $gal_print_name);
+	return $gal_print_name;
+}
+
 function showDetailPage($gal){
     GLOBAL $galleries, $galleriesPath;
+	$gal_print_name = getPrintName($gal);
 	$files = scandir("$galleriesPath/$gal/");
-
+	echo "<h3 class='text-center'>$gal_print_name</h3>";
 	foreach($files as $file){
 		if($file == '.') continue;
 		if($file == '..') continue;
@@ -53,8 +60,7 @@ function createGallery(){
 	foreach ($dir as $fileinfo) {
 		if ($fileinfo->isDir() && !$fileinfo->isDot()) {
 			$link_name = $fileinfo->getFilename();
-			$gal_print_name = str_replace('_', ' ', $link_name);
-			$gal_print_name = str_replace('@', '"', $gal_print_name);
+			$gal_print_name = getPrintName($link_name);
 			$thumbnail = getThumb($link_name);
 			$thumbnail = getThumbURL($thumbnail);
 			echo <<<END
@@ -82,7 +88,7 @@ $image = "https://johanv.xyz/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFri
 $url = "https://johanv.xyz/gallery";
 $description = "Johan Vandegriff's photo gallery with drawings and pictures from school, robotics, camping, etc.";
 if(isset($_GET['g'])) {
-	$pageNameExtra = str_replace('_', ' ', filter($_GET['g']));
+	$pageNameExtra = getPrintName($_GET['g']);
 	$pageName = "gallery"; include $_SERVER['DOCUMENT_ROOT'].'/header.php';
 	echo '<h4><a href=".">... back to all galleries</a></h4>';
 } else {
