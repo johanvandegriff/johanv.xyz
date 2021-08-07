@@ -5,7 +5,8 @@ $galleries = '/f/galleries';
 $galleriesPath = $_SERVER['DOCUMENT_ROOT'].$galleries;
 
 function filter($gal){
-	return preg_replace("/[^a-zA-Z0-9_ ]+/", "", $gal);
+	// return $gal;
+	return preg_replace("/[^a-zA-Z0-9_@ ]+/", "", $gal);
 }
 
 function showGallery(){
@@ -53,6 +54,7 @@ function createGallery(){
 		if ($fileinfo->isDir() && !$fileinfo->isDot()) {
 			$link_name = $fileinfo->getFilename();
 			$gal_print_name = str_replace('_', ' ', $link_name);
+			$gal_print_name = str_replace('@', '"', $gal_print_name);
 			$thumbnail = getThumb($link_name);
 			$thumbnail = getThumbURL($thumbnail);
 			echo <<<END
