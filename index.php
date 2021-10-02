@@ -60,7 +60,7 @@ body {
 
   <div class="box">
     <h2 id="videos">videos</h2>
-    <iframe id="video" style="display:block; float: right; border-radius: 12px" onload="set_video_size();" width="56" height="31.5" src="https://odysee.com/$/embed/makers-case-gemstone-commercial/e3e0edee20fbab97268a8e7dfcc35c798cd74d6c" allowfullscreen></iframe>
+    <a href="https://odysee.com/@johanv:5/makers-case-gemstone-commercial:e"><img style="width:66%; display:block; float: right; border-radius: 12px" src="makers-case.jpg"></a>
     <p>I publish my videos on <a target="_blank" href="https://odysee.com/@johanv:5">Odysee</a>, an awesome new platform that solves the demonitization issues of YouTube! <a target="_blank" href="https://odysee.com/$/invite/@johanv:5">Follow me with my invite link</a>. This video is for a propsed research project for Gemstone at UMD. I ended up joining another project instead, but I still have the initial version and plan to make it into a product someday.</p>
     <a class="greenButton" href="/videos/" onmouseover="this.innerHTML=this.innerHTML.replace(/.$/,'▸')" onmouseleave="this.innerHTML=this.innerHTML.replace(/.$/,'▹')">watch more ▹</a>
   </div>

@@ -17,11 +17,11 @@ echo "$images" | while read file; do
   thumb_dir=`dirname "$thumb"`
   mkdir -p "$thumb_dir"
   echo -en "Resizing $i/$num_images        \r"
-  if [[ "$file" == "$from/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png" ]]; then
-    convert "$file" -auto-orient -thumbnail "1000x1000>" "$thumb"
-  else
+  #if [[ "$file" == "$from/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png" ]]; then
+  #  convert "$file" -auto-orient -thumbnail "1000x1000>" "$thumb"
+  #else
     convert "$file" -auto-orient -thumbnail "${THUMBNAIL_SIZE}x${THUMBNAIL_SIZE}>" "$thumb"
-  fi
+  #fi
   i=$((i+1))
 done
 
