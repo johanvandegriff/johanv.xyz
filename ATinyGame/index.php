@@ -1,7 +1,7 @@
 <?php $pageName = "ATinyGame"; $image = "https://johanv.xyz/f/galleries/Random/ATinyGame.jpg"; $description = "A $1 game console that fits in 1 hand, with a program smaller than 1kB."; include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
 
 <h1 style="text-align: center; ">ATinyGame: A Tiny Inexpensive Nugget for Your Gaming and All Manner of Entertainment</h1>
-<p>ATinyGame is a $1 game console that fits in 1 hand, with a program smaller than 1kB. Read the harrowing tale of its development: <a target="_blank" href="https://blog.johanv.xyz/the-assembly-instruction-that-saved-christmas">The Assembly Instruction that Saved Christmas</a>.
+<p>ATinyGame is a $1 game console that fits in 1 hand, with a program smaller than 1kB. Download the <a target="_blank" href="ATinyGame.pdf">instruction PDF</a> to learn how to use it. Read the harrowing tale of its development: <a target="_blank" href="https://blog.johanv.xyz/the-assembly-instruction-that-saved-christmas">The Assembly Instruction that Saved Christmas</a>.
 You can see the <a target="_blank" href="https://easyeda.com/jjvan/aTinyGame-5a98fb4c47414c39bf407d7c0f4ad94f">board design on EasyEDA</a> (<a target="_blank" href="https://easyeda.com/jjvan/GamesAttiny-0c60b91066fd4798b2eaa3da66746e06">old version here</a>).
 Note that there are some changes and caveats to this design. The PCB design was incorrect, which required some adjustments and extra components after the fact. More details will be added soon.</p>
 
