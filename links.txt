@@ -2,11 +2,12 @@ wheretofind.me	https://wheretofind.me/@johanv
 mastodon	https://fosstodon.org/@johanv
 odysee vids	https://odysee.com/@johanv:5
 odysee live	https://odysee.com/@johanv:5/live
-sourcehut	https://git.sr.ht/~johanvandegriff/
+codeberg	https://codeberg.org/johanvandegriff
 
 twitch	https://www.twitch.tv/jjvantheman
 youtube	https://youtube.com/user/jjvantheman
 dlive	https://dlive.tv/jjvantheman
+sourcehut	https://git.sr.ht/~johanvandegriff/
 github	https://github.com/johanvandegriff
 lichess	https://lichess.org/@/jjvan
 drawception	https://drawception.com/player/962191/johanv/drawings/1/
