@@ -13,7 +13,7 @@
     <img id="on_img" src="/ATinyGame/on.jpg" style="display:none;" />
     <img id="dim_img" src="/ATinyGame/dim.jpg" style="display:none;" />
     <img id="off_img" src="/ATinyGame/off.jpg" style="display:none; position: absolute; z-index: 0; border-radius: 10%; user-select: none;" />
-    <img id="off_img_noscript" src="/ATinyGame/off.jpg" style="display: block; margin: auto; width: calc(90% - 35px); z-index: 0; border-radius: 10%; user-select: none;" />
+    <img id="off_img_noscript" src="/ATinyGame/off.jpg" style="display: block; margin: auto; max-width: calc(85vw - 35px); max-height: calc(85vh - 35px); z-index: 0; border-radius: 10%; user-select: none;" />
     <canvas id="LED00" style="position: absolute; z-index: 1;"></canvas>
     <canvas id="LED10" style="position: absolute; z-index: 2;"></canvas>
     <canvas id="LED20" style="position: absolute; z-index: 3;"></canvas>
@@ -940,8 +940,8 @@ function scale(id) {
   //scale the canvas to fit the screen
   var elem = document.getElementById(id)
   // https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas#scaling_canvas_using_css_transforms
-  var scaleX = (window.innerWidth*.9-35) / elem.width;
-  var scaleY = window.innerHeight / elem.height;
+  var scaleX = (window.innerWidth*.85-35) / elem.width;
+  var scaleY = (window.innerHeight*.85-35) / elem.height;
 
   var scaleToFit = Math.min(scaleX, scaleY);
   var scaleToCover = Math.max(scaleX, scaleY);
@@ -984,24 +984,47 @@ function release(button) {
   button.pressed = false;
 }
 
+function handle_resize() {
+  scale('off_img')
+  scale('LED00');
+  scale('LED10');
+  scale('LED20');
+  scale('LED01');
+  scale('LED11');
+  scale('LED21');
+  scale('LED02');
+  scale('LED12');
+  scale('LED22');
+  scale('dim');
+  scale('buttonL');
+  scale('buttonR');
+  scale('buttonS');
+
+  var factor = scale('click');
+
+  //scale the game canvas container div's height so the stuff below will not be underneath
+  canvas_height_on_page = document.getElementById('dim').height*factor+'px';
+  document.getElementById('game').style.height = canvas_height_on_page;
+}
+
 function play() {
   document.onkeydown = handle_key;
   document.onkeyup = handle_key;
   window.onscroll = handle_scroll;
+  window.onresize = handle_resize;
 
   w = Math.round(2777/2)
   h = Math.round(2694/2)
 
-  scale('off_img')
-  var ctxLED00 = init_ctx('LED00', w, h); scale('LED00');
-  var ctxLED10 = init_ctx('LED10', w, h); scale('LED10');
-  var ctxLED20 = init_ctx('LED20', w, h); scale('LED20');
-  var ctxLED01 = init_ctx('LED01', w, h); scale('LED01');
-  var ctxLED11 = init_ctx('LED11', w, h); scale('LED11');
-  var ctxLED21 = init_ctx('LED21', w, h); scale('LED21');
-  var ctxLED02 = init_ctx('LED02', w, h); scale('LED02');
-  var ctxLED12 = init_ctx('LED12', w, h); scale('LED12');
-  var ctxLED22 = init_ctx('LED22', w, h); scale('LED22');
+  var ctxLED00 = init_ctx('LED00', w, h);
+  var ctxLED10 = init_ctx('LED10', w, h);
+  var ctxLED20 = init_ctx('LED20', w, h);
+  var ctxLED01 = init_ctx('LED01', w, h);
+  var ctxLED11 = init_ctx('LED11', w, h);
+  var ctxLED21 = init_ctx('LED21', w, h);
+  var ctxLED02 = init_ctx('LED02', w, h);
+  var ctxLED12 = init_ctx('LED12', w, h);
+  var ctxLED22 = init_ctx('LED22', w, h);
 
   ctxs = [
     [ctxLED00,ctxLED10,ctxLED20],
@@ -1009,19 +1032,14 @@ function play() {
     [ctxLED02,ctxLED12,ctxLED22]
   ]
 
-  ctxDim = init_ctx('dim', w, h); scale('dim');
+  ctxDim = init_ctx('dim', w, h);
 
-  ctxButtonL = init_ctx('buttonL', w, h); scale('buttonL');
-  ctxButtonR = init_ctx('buttonR', w, h); scale('buttonR');
-  ctxButtonS = init_ctx('buttonS', w, h); scale('buttonS');
+  ctxButtonL = init_ctx('buttonL', w, h);
+  ctxButtonR = init_ctx('buttonR', w, h);
+  ctxButtonS = init_ctx('buttonS', w, h);
 
   ctxClick = init_ctx('click', w, h);
-  var factor = scale('click');
-
-  //scale the game canvas container div's height so the stuff below will not be underneath
-  canvas_height_on_page = document.getElementById('dim').height*factor+'px';
-  document.getElementById('game').style.height = canvas_height_on_page;
-
+  handle_resize();
 
 //   document.getElementById('click').addEventListener('click', handle_click);
   document.getElementById('click').addEventListener('mousedown', handle_click);
