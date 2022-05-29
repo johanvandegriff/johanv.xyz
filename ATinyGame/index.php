@@ -868,6 +868,7 @@ function handle_key(e) {
       }
     }
   }
+  return false; //disable spacebar scrolling the page
 }
 
 function init_ctx(id, w, h) {
