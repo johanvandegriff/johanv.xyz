@@ -12,8 +12,8 @@
   <div id="game">
     <img id="on_img" src="/ATinyGame/on.jpg" style="display:none;" />
     <img id="dim_img" src="/ATinyGame/dim.jpg" style="display:none;" />
-    <img id="off_img" src="/ATinyGame/off.jpg" style="display:none; position: absolute; z-index: 0; border-radius: 50%; user-select: none;" />
-    <img id="off_img_noscript" src="/ATinyGame/off.jpg" style="display: block; margin: auto; width: calc(90% - 35px); z-index: 0; border-radius: 50%; user-select: none;" />
+    <img id="off_img" src="/ATinyGame/off.jpg" style="display:none; position: absolute; z-index: 0; border-radius: 10%; user-select: none;" />
+    <img id="off_img_noscript" src="/ATinyGame/off.jpg" style="display: block; margin: auto; width: calc(90% - 35px); z-index: 0; border-radius: 10%; user-select: none;" />
     <canvas id="LED00" style="position: absolute; z-index: 1;"></canvas>
     <canvas id="LED10" style="position: absolute; z-index: 2;"></canvas>
     <canvas id="LED20" style="position: absolute; z-index: 3;"></canvas>
