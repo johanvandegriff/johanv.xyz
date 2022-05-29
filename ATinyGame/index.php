@@ -40,6 +40,10 @@ const buttons = {
 }
 
 const vibrateLength = 5;
+function vibrate() {
+  if (navigator.vibrate) window.navigator.vibrate(vibrateLength);
+}
+
 function handle_click(e) {
   if (e.type === 'touchstart' || e.type === 'touchend') {
     var t = e.type;
@@ -54,32 +58,29 @@ function handle_click(e) {
 //   ctx3.fillRect(e.layerX, e.layerY, .1*w, .1*h)
   if (dist(w*buttons.L.x, h*buttons.L.y, x, y) < w*buttons.L.r*3) {
     if (e.type === 'mousedown' || e.type === 'touchstart') {
-      if (navigator.vibrate) window.navigator.vibrate(vibrateLength);
-      buttonL.pressed = true;
-      buttonL.justPressed = true;
+      vibrate();
+      press(buttonL);
+      scrollEnabled = false;
     } else {
-      buttonL.pressed = false;
-      buttonL.justReleased = true;
+      release(buttonL);
     }
   }
   if (dist(w*buttons.R.x, h*buttons.R.y, x, y) < w*buttons.R.r*3) {
     if (e.type === 'mousedown' || e.type === 'touchstart') {
-      if (navigator.vibrate) window.navigator.vibrate(vibrateLength);
-      buttonR.pressed = true;
-      buttonR.justPressed = true;
+      vibrate();
+      press(buttonR);
+      scrollEnabled = false;
     } else {
-      buttonR.pressed = false;
-      buttonR.justReleased = true;
+      release(buttonR);
     }
   }
   if (dist(w*buttons.S.x, h*buttons.S.y, x, y) < w*buttons.S.r*3) {
     if (e.type === 'mousedown' || e.type === 'touchstart') {
-      if (navigator.vibrate) window.navigator.vibrate(vibrateLength);
-      buttonS.pressed = true;
-      buttonS.justPressed = true;
+      vibrate();
+      press(buttonS);
+      scrollEnabled = false;
     } else {
-      buttonS.pressed = false;
-      buttonS.justReleased = true;
+      release(buttonS);
     }
   }
 }
@@ -197,6 +198,17 @@ function loop() {
   }
   r25++;
   if (r25 >= 256) r25 = 0;
+
+  if (scrollS > 0) {
+    if (scrollS == 9) press(buttonS);
+    if (scrollS == 1) release(buttonS);
+    scrollS--;
+  }
+  if (scrollR > 0) {
+    if (scrollR == 9) press(buttonR);
+    if (scrollR == 1) release(buttonR);
+    scrollR--;
+  }
 }
 
 function random() {
@@ -817,6 +829,7 @@ function showScore(score) {
 }
 
 function handle_key(e) {
+  //when this function returns false, it disables the default event, such as spacebar scrolling the page
   e = e || window.event;
   if (!e.repeat) {
     console.log(e.type, e.keyCode)
@@ -829,12 +842,13 @@ function handle_key(e) {
       false
     ) {
       if (e.type === 'keydown') {
-        buttonL.pressed = true;
-        buttonL.justPressed = true;
+        press(buttonL);
+        scrollEnabled = false;
       } else {
-        buttonL.pressed = false;
-        buttonL.justReleased = true;
+        release(buttonL);
       }
+      vibrate();
+      return false;
     }
     if (
       e.keyCode === 82 || //R
@@ -845,12 +859,13 @@ function handle_key(e) {
       false
     ) { //W
       if (e.type === 'keydown') {
-        buttonR.pressed = true;
-        buttonR.justPressed = true;
+        press(buttonR);
+        scrollEnabled = false;
       } else {
-        buttonR.pressed = false;
-        buttonR.justReleased = true;
+        release(buttonR);
       }
+      vibrate();
+      return false;
     }
     if (
       e.keyCode === 83 || //S
@@ -861,15 +876,34 @@ function handle_key(e) {
       false
     ) {
       if (e.type === 'keydown') {
-        buttonS.pressed = true;
-        buttonS.justPressed = true;
+        press(buttonS);
+        scrollEnabled = false;
       } else {
-        buttonS.pressed = false;
-        buttonS.justReleased = true;
+        release(buttonS);
       }
+      vibrate();
+      return false;
     }
   }
-  return false; //disable spacebar scrolling the page
+  return true;
+}
+
+var scrollEnabled = true;
+var lastScroll = window.scrollY;
+var scrollS = 0;
+var scrollR = 0;
+function handle_scroll(e) {
+  // console.log(window.scrollY, e)
+  if (scrollEnabled) {
+    if (window.scrollY - lastScroll > 25){
+      scrollS = 20; //after this many frames (64 frames = 1 sec) it will have pressed and released
+      lastScroll = window.scrollY;
+    }
+    if (window.scrollY - lastScroll < -25){
+      scrollR = 20;
+      lastScroll = window.scrollY;
+    }
+  }
 }
 
 function init_ctx(id, w, h) {
@@ -915,9 +949,20 @@ var buttonL = {pressed: false, prev: false, justPressed: false, justReleased: fa
 var buttonR = {pressed: false, prev: false, justPressed: false, justReleased: false}
 var buttonS = {pressed: false, prev: false, justPressed: false, justReleased: false}
 
+function press(button) {
+  if (!button.pressed) button.justPressed = true;
+  button.pressed = true;
+}
+
+function release(button) {
+  if (button.pressed) button.justReleased = true;
+  button.pressed = false;
+}
+
 function play() {
   document.onkeydown = handle_key;
   document.onkeyup = handle_key;
+  window.onscroll = handle_scroll;
 
   w = Math.round(2777/2)
   h = Math.round(2694/2)
