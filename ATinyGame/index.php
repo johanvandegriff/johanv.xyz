@@ -217,12 +217,10 @@ function loop() {
 
   //timers from handle_scroll
   if (scrollS > 0) {
-    if (scrollS == 9) press(buttonS);
     if (scrollS == 1) release(buttonS);
     scrollS--;
   }
   if (scrollR > 0) {
-    if (scrollR == 9) press(buttonR);
     if (scrollR == 1) release(buttonR);
     scrollR--;
   }
@@ -911,13 +909,20 @@ var scrollS = 0;
 var scrollR = 0;
 function handle_scroll(e) {
   // console.log(window.scrollY, e)
+  var scrollThreshold = 0;
   if (scrollEnabled) {
-    if (window.scrollY - lastScroll > 25){
-      scrollS = 20; //after this many frames (64 frames = 1 sec) it will have pressed and released
+    if (window.scrollY - lastScroll > scrollThreshold){
+      press(buttonS);
+      scrollS = 16; //release after this many frames (64 frames = 1 sec)
+      release(buttonR); //release the other button
+      scrollR = 0;
       lastScroll = window.scrollY;
     }
-    if (window.scrollY - lastScroll < -25){
-      scrollR = 20;
+    if (window.scrollY - lastScroll < -scrollThreshold){
+      press(buttonR);
+      scrollR = 16;
+      release(buttonS); //release the other button
+      scrollS = 0;
       lastScroll = window.scrollY;
     }
   }
