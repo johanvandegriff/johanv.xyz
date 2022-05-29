@@ -10,8 +10,8 @@
 <h1 style="text-align: center; ">ATinyGame: A Tiny Inexpensive Nugget for Your Gaming and All Manner of Entertainment</h1>
 
   <div id="game">
-    <img id="on_img" src="/ATinyGame/on.jpg" onload="on_img_loaded=true;" style="display:none;" />
-    <img id="dim_img" src="/ATinyGame/dim.jpg" onload="dim_img_loaded=true;" style="display:none;" />
+    <img id="on_img" src="/ATinyGame/on.jpg" style="display:none;" />
+    <img id="dim_img" src="/ATinyGame/dim.jpg" style="display:none;" />
     <img id="off_img" src="/ATinyGame/off.jpg" style="display:none; position: absolute; z-index: 0; border-radius: 50%; user-select: none;" />
     <img id="off_img_noscript" src="/ATinyGame/off.jpg" style="display: block; margin: auto; width: calc(90% - 35px); z-index: 0; border-radius: 50%; user-select: none;" />
 <!--     <canvas id="game0" style="position: absolute; z-index: 0;"></canvas> -->
@@ -176,29 +176,24 @@ function renderLEDs() {
 }
 
 function loop() {
-  if (dim_img_loaded && on_img_loaded) {
-    //in case it was pressed and released between loops
-//     if (buttonL.justPressed) buttonL.pressed = true;
-//     if (buttonR.justPressed) buttonR.pressed = true;
-//     if (buttonS.justPressed) buttonS.pressed = true;
-
-    renderButtons();
-    var board_before = ''+board
-    game_logic()
-    buttonL.justPressed = false;
-    buttonL.justReleased = false;
-    buttonR.justPressed = false;
-    buttonR.justReleased = false;
-    buttonS.justPressed = false;
-    buttonS.justReleased = false;
-    if (board_before !== ''+board ||
-    (((r25 % 8) === 0 || (r25 % 8) === 4) && board_before.includes('4'))) {
-      renderLEDs()
-    }
+  renderButtons();
+  var board_before = ''+board
+  game_logic()
+  buttonL.justPressed = false;
+  buttonL.justReleased = false;
+  buttonR.justPressed = false;
+  buttonR.justReleased = false;
+  buttonS.justPressed = false;
+  buttonS.justReleased = false;
+  //accounting for board changes and blinking LEDs
+  if (board_before !== ''+board ||
+  (((r25 % 8) === 0 || (r25 % 8) === 4) && board_before.includes('4'))) {
+    renderLEDs()
   }
   r25++;
   if (r25 >= 256) r25 = 0;
 
+  //timers from handle_scroll
   if (scrollS > 0) {
     if (scrollS == 9) press(buttonS);
     if (scrollS == 1) release(buttonS);
