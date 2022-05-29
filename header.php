@@ -7,7 +7,11 @@ The PHP code is available at: https://git.sr.ht/~johanvandegriff/johanv.xyz
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
-<script src="/jquery-3.4.1.min.js" type="text/javascript"></script>
+<?php
+if (!isset($no_extras)) {
+    echo '<script src="/jquery-3.4.1.min.js" type="text/javascript"></script>' . "\n";
+}
+?>
 <link rel="stylesheet" type="text/css" href="/style.css">
 <title><?php
 $title = "johanv.xyz | Johan Vandegriff | my chill website";
@@ -32,7 +36,6 @@ if ($pageName != "Home") {
 echo $title;
 ?></title>
 
-<meta charset="utf-8">
 <meta name="description" content="<?php echo $description; ?>">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Johan Vandegriff">
@@ -51,7 +54,12 @@ echo $title;
 <meta name="twitter:image" content="<?php echo $image; ?>">
 
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
+if (!isset($viewport)) {
+  $viewport = '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+}
+echo $viewport . "\n";
+?>
 <style>
   @media not all and (max-width: 600px) {
     nav ul li {
@@ -138,7 +146,11 @@ function getThumbImg($imgUrl, $props) {
     <img src="">
   </div>
 </div>
-<script src="/img-popup.js"></script>
+<?php
+if (!isset($no_extras)) {
+  echo '<script src="/img-popup.js"></script>' . "\n";
+}
+?>
 
 <div id="main">
 <!-- <aside class="right">
