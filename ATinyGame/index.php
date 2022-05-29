@@ -12,7 +12,8 @@
   <div id="game">
     <img id="on_img" src="/ATinyGame/on.jpg" onload="on_img_loaded=true;" style="display:none;" />
     <img id="dim_img" src="/ATinyGame/dim.jpg" onload="dim_img_loaded=true;" style="display:none;" />
-    <img id="off_img" src="/ATinyGame/off.jpg" style="position: absolute; z-index: 0; border-radius: 50%; user-select: none;" />
+    <img id="off_img" src="/ATinyGame/off.jpg" style="display:none; position: absolute; z-index: 0; border-radius: 50%; user-select: none;" />
+    <img id="off_img_noscript" src="/ATinyGame/off.jpg" style="display: block; margin: auto; width: calc(90% - 35px); z-index: 0; border-radius: 50%; user-select: none;" />
 <!--     <canvas id="game0" style="position: absolute; z-index: 0;"></canvas> -->
     <canvas id="game1" style="position: absolute; z-index: 1;"></canvas>
     <canvas id="game2" style="position: absolute; z-index: 2;"></canvas>
@@ -944,6 +945,9 @@ function play() {
 
   on_img = document.getElementById('on_img');
   dim_img = document.getElementById('dim_img');
+
+  document.getElementById('off_img').style.display = 'initial';
+  document.getElementById('off_img_noscript').style.display = 'none';
 
 //   document.getElementById('off_img').style.display = 'none';
 
