@@ -14,10 +14,20 @@
     <img id="dim_img" src="/ATinyGame/dim.jpg" style="display:none;" />
     <img id="off_img" src="/ATinyGame/off.jpg" style="display:none; position: absolute; z-index: 0; border-radius: 50%; user-select: none;" />
     <img id="off_img_noscript" src="/ATinyGame/off.jpg" style="display: block; margin: auto; width: calc(90% - 35px); z-index: 0; border-radius: 50%; user-select: none;" />
-<!--     <canvas id="game0" style="position: absolute; z-index: 0;"></canvas> -->
-    <canvas id="game1" style="position: absolute; z-index: 1;"></canvas>
-    <canvas id="game2" style="position: absolute; z-index: 2;"></canvas>
-    <canvas id="game3" style="position: absolute; z-index: 3;"></canvas>
+    <canvas id="LED00" style="position: absolute; z-index: 1;"></canvas>
+    <canvas id="LED10" style="position: absolute; z-index: 2;"></canvas>
+    <canvas id="LED20" style="position: absolute; z-index: 3;"></canvas>
+    <canvas id="LED01" style="position: absolute; z-index: 4;"></canvas>
+    <canvas id="LED11" style="position: absolute; z-index: 5;"></canvas>
+    <canvas id="LED21" style="position: absolute; z-index: 6;"></canvas>
+    <canvas id="LED02" style="position: absolute; z-index: 7;"></canvas>
+    <canvas id="LED12" style="position: absolute; z-index: 8;"></canvas>
+    <canvas id="LED22" style="position: absolute; z-index: 9;"></canvas>
+    <canvas id="dim" style="position: absolute; z-index: 10;"></canvas>
+    <canvas id="buttonL" style="position: absolute; z-index: 11;"></canvas>
+    <canvas id="buttonR" style="position: absolute; z-index: 12;"></canvas>
+    <canvas id="buttonS" style="position: absolute; z-index: 13;"></canvas>
+    <canvas id="click" style="position: absolute; z-index: 14;"></canvas>
   </div>
   <script>
 function fillRectCenterWH(ctx, x, y, w, h) {
@@ -45,18 +55,13 @@ function vibrate() {
 }
 
 function handle_click(e) {
-  if (e.type === 'touchstart' || e.type === 'touchend') {
-    var t = e.type;
-    e = e.changedTouches[0];
-    e.type = t;
-    return
-  }
-  console.log(e.type, e.clientX, e.clientY, e.layerX, e.layerY, e.offsetX, e.offsetY);
+  console.log(e.type, 'client=('+e.clientX+','+e.clientY+') layer=('+e.layerX+','+e.layerY+') offset=('+e.offsetX+','+e.offsetY+')');
   var x = e.offsetX;
   var y = e.offsetY;
-//   ctx3.fillStyle = 'rgba(255,0,0,1)'
-//   ctx3.fillRect(e.layerX, e.layerY, .1*w, .1*h)
-  if (dist(w*buttons.L.x, h*buttons.L.y, x, y) < w*buttons.L.r*3) {
+  // ctxClick.fillStyle = 'rgba(255,0,0,1)'
+  // fillRectCenterWH(ctxClick, x, y, .01*w, .01*h);
+  var radiusFactor = 3;
+  if (dist(w*buttons.L.x, h*buttons.L.y, x, y) < w*buttons.L.r*radiusFactor) {
     if (e.type === 'mousedown' || e.type === 'touchstart') {
       vibrate();
       press(buttonL);
@@ -65,7 +70,7 @@ function handle_click(e) {
       release(buttonL);
     }
   }
-  if (dist(w*buttons.R.x, h*buttons.R.y, x, y) < w*buttons.R.r*3) {
+  if (dist(w*buttons.R.x, h*buttons.R.y, x, y) < w*buttons.R.r*radiusFactor) {
     if (e.type === 'mousedown' || e.type === 'touchstart') {
       vibrate();
       press(buttonR);
@@ -74,7 +79,7 @@ function handle_click(e) {
       release(buttonR);
     }
   }
-  if (dist(w*buttons.S.x, h*buttons.S.y, x, y) < w*buttons.S.r*3) {
+  if (dist(w*buttons.S.x, h*buttons.S.y, x, y) < w*buttons.S.r*radiusFactor) {
     if (e.type === 'mousedown' || e.type === 'touchstart') {
       vibrate();
       press(buttonS);
@@ -85,34 +90,26 @@ function handle_click(e) {
   }
 }
 
+function show(id) {
+  document.getElementById(id).style.display = '';
+}
+
+function hide(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+function sh(id, value) {
+  if (value) {
+    show(id);
+  } else {
+    hide(id);
+  }
+}
+
 function renderButtons() {
-  clearCanvas(ctx3)
-  ctx3.globalCompositeOperation = 'source-over';
-  ctx3.fillStyle = 'rgba(240,240,255,0.6)'
-//   ctx3.lineWidth = .003*w;
-//   ctx3.strokeStyle = 'rgba(0,200,100,1)';
-  if(buttonL.pressed || buttonL.justPressed || buttonL.justReleased) {
-    ctx3.beginPath();
-    ctx3.arc(buttons.L.x*w, buttons.L.y*h, buttons.L.r*w, 0, 2*Math.PI, false);
-//     ctx3.arc(.3005*w, .3635*h, .0243*w, 0, 2 * Math.PI, false);
-    ctx3.closePath();
-    ctx3.fill();
-//     ctx3.stroke();
-  }
-  if (buttonR.pressed || buttonR.justPressed || buttonR.justReleased) {
-    ctx3.beginPath();
-    ctx3.arc(buttons.R.x*w, buttons.R.y*h, buttons.R.r*w, 0, 2 * Math.PI, false);
-    ctx3.closePath();
-    ctx3.fill();
-//     ctx3.stroke();
-  }
-  if (buttonS.pressed || buttonS.justPressed || buttonS.justReleased) {
-    ctx3.beginPath();
-    ctx3.arc(buttons.S.x*w, buttons.S.y*h, buttons.S.r*w, 0, 2 * Math.PI, false);
-    ctx3.closePath();
-    ctx3.fill();
-//     ctx3.stroke();
-  }
+  sh('buttonL', buttonL.pressed || buttonL.justPressed || buttonL.justReleased);
+  sh('buttonR', buttonR.pressed || buttonR.justPressed || buttonR.justReleased);
+  sh('buttonS', buttonS.pressed || buttonS.justPressed || buttonS.justReleased);
 }
 
 function drawLEDMask(ctx, x, y) {
@@ -137,42 +134,67 @@ function drawLEDMask(ctx, x, y) {
   }
 }
 
-var offscreen_canvas;
+function render_init() {
+  //make everything hidden (since starting board is empty)
+  renderLEDs();
+  renderButtons();
 
-// function render_init() {
-//   offscreen_canvas = document.createElement('canvas');
-//   offscreen_canvas.width = Math.round(w*.5)
-//   offscreen_canvas.height = Math.round(h*.4)
-//   var ctx = offscreen_canvas.getContext('2d')
-//   drawLEDMask(ctx, 0, 0)
-// }
-
-function renderLEDs() {
-  clearCanvas(ctx1)
-  clearCanvas(ctx2)
   // https://stackoverflow.com/questions/18379818/canvas-image-masking-overlapping
-  ctx1.globalCompositeOperation = 'source-over';
-  ctx2.globalCompositeOperation = 'source-over';
+  ctxDim.globalCompositeOperation = 'source-over';
   for (x=0; x<3; x++){
     for (y=0; y<3; y++){
-        // draw the shape we want to use for clipping
+      var ctx = ctxs[y][x];
+      ctx.filter = "brightness(120%)";
+      ctx.globalCompositeOperation = 'source-over';
+      drawLEDMask(ctx, x, y);
+      ctx.globalCompositeOperation = 'source-in';
+      ctx.drawImage(on_img, 0, 0, w, h);
+
+      drawLEDMask(ctxDim, x, y);
+    }
+  }
+  
+  ctxDim.globalCompositeOperation = 'source-in';
+  ctxDim.filter = "hue-rotate(-20deg)";
+  ctxDim.drawImage(dim_img, 0, 0, w, h);
+
+  ctxButtonL.globalCompositeOperation = 'source-over';
+  ctxButtonL.fillStyle = 'rgba(240,240,255,0.6)';
+  ctxButtonL.beginPath();
+  ctxButtonL.arc(buttons.L.x*w, buttons.L.y*h, buttons.L.r*w, 0, 2*Math.PI, false);
+  ctxButtonL.closePath();
+  ctxButtonL.fill();
+
+  ctxButtonR.globalCompositeOperation = 'source-over';
+  ctxButtonR.fillStyle = 'rgba(240,240,255,0.6)';
+  ctxButtonR.beginPath();
+  ctxButtonR.arc(buttons.R.x*w, buttons.R.y*h, buttons.R.r*w, 0, 2 * Math.PI, false);
+  ctxButtonR.closePath();
+  ctxButtonR.fill();
+
+  ctxButtonS.globalCompositeOperation = 'source-over';
+  ctxButtonS.fillStyle = 'rgba(240,240,255,0.6)';
+  ctxButtonS.beginPath();
+  ctxButtonS.arc(buttons.S.x*w, buttons.S.y*h, buttons.S.r*w, 0, 2 * Math.PI, false);
+  ctxButtonS.closePath();
+  ctxButtonS.fill();
+}
+
+function renderLEDs() {
+  var dim = false;
+  for (x=0; x<3; x++){
+    for (y=0; y<3; y++){
       if (board[y][x] === 1 || (board[y][x] === 4 && (r25 % 8) >= 4)) {
-//         ctx1.drawImage(offscreen_canvas, x*0.068*w, y*0.071*h)
-        drawLEDMask(ctx1, x, y)
-      } else if (board[y][x] === 2) {
-//         ctx2.drawImage(offscreen_canvas, x*0.068*w, y*0.071*h)
-        drawLEDMask(ctx2, x, y)
+        show('LED'+x+y)
+      } else {
+        hide('LED'+x+y)
+        if (board[y][x] == 2) {
+          dim = true;
+        }
       }
     }
   }
-  // change composite mode to use that shape
-  ctx1.globalCompositeOperation = 'source-in';
-  ctx2.globalCompositeOperation = 'source-in';
-  // draw the image to be clipped
-  ctx1.filter = "brightness(120%)";
-  ctx2.filter = "hue-rotate(-20deg)";
-  ctx1.drawImage(on_img, 0, 0, w, h);
-  ctx2.drawImage(dim_img, 0, 0, w, h);
+  sh('dim', dim);
 }
 
 function loop() {
@@ -910,6 +932,7 @@ function init_ctx(id, w, h) {
 }
 
 function scale(id) {
+  //scale the canvas to fit the screen
   var elem = document.getElementById(id)
   // https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas#scaling_canvas_using_css_transforms
   var scaleX = (window.innerWidth*.9-35) / elem.width;
@@ -927,9 +950,6 @@ function scale(id) {
 var ctx0 = null;
 var ctx1 = null;
 var ctx2 = null;
-// var off_img_loaded = false;
-var dim_img_loaded = false;
-var on_img_loaded = false;
 var w;
 var h;
 //0=off, 1=on, 2=dim
@@ -938,6 +958,11 @@ var board = [
   [0,0,0],
   [0,0,0]
 ]
+
+var ctxs;
+var ctxButtonL;
+var ctxButtonR;
+var ctxButtonS;
 
 key_events = [];
 var buttonL = {pressed: false, prev: false, justPressed: false, justReleased: false}
@@ -962,26 +987,42 @@ function play() {
   w = Math.round(2777/2)
   h = Math.round(2694/2)
 
-//   ctx0 = init_ctx('game0', w, h) //background image
-  ctx1 = init_ctx('game1', w, h) //bright lights
-  ctx2 = init_ctx('game2', w, h) //dim lights
-  ctx3 = init_ctx('game3', w, h) //buttons
-
-  //scale the canvas to fit the screen
   scale('off_img')
-  scale('game1')
-  scale('game2')
-  var factor = scale('game3')
+  var ctxLED00 = init_ctx('LED00', w, h); scale('LED00');
+  var ctxLED10 = init_ctx('LED10', w, h); scale('LED10');
+  var ctxLED20 = init_ctx('LED20', w, h); scale('LED20');
+  var ctxLED01 = init_ctx('LED01', w, h); scale('LED01');
+  var ctxLED11 = init_ctx('LED11', w, h); scale('LED11');
+  var ctxLED21 = init_ctx('LED21', w, h); scale('LED21');
+  var ctxLED02 = init_ctx('LED02', w, h); scale('LED02');
+  var ctxLED12 = init_ctx('LED12', w, h); scale('LED12');
+  var ctxLED22 = init_ctx('LED22', w, h); scale('LED22');
 
-  canvas_height_on_page = document.getElementById('game3').height*factor+'px';
+  ctxs = [
+    [ctxLED00,ctxLED10,ctxLED20],
+    [ctxLED01,ctxLED11,ctxLED21],
+    [ctxLED02,ctxLED12,ctxLED22]
+  ]
+
+  ctxDim = init_ctx('dim', w, h); scale('dim');
+
+  ctxButtonL = init_ctx('buttonL', w, h); scale('buttonL');
+  ctxButtonR = init_ctx('buttonR', w, h); scale('buttonR');
+  ctxButtonS = init_ctx('buttonS', w, h); scale('buttonS');
+
+  ctxClick = init_ctx('click', w, h);
+  var factor = scale('click');
+
+  //scale the game canvas container div's height so the stuff below will not be underneath
+  canvas_height_on_page = document.getElementById('dim').height*factor+'px';
   document.getElementById('game').style.height = canvas_height_on_page;
 
 
-//   document.getElementById('game3').addEventListener('click', handle_click);
-  document.getElementById('game3').addEventListener('mousedown', handle_click);
-  document.getElementById('game3').addEventListener('mouseup', handle_click);
-  document.getElementById('game3').addEventListener('touchstart', handle_click);
-  document.getElementById('game3').addEventListener('touchend', handle_click);
+//   document.getElementById('click').addEventListener('click', handle_click);
+  document.getElementById('click').addEventListener('mousedown', handle_click);
+  document.getElementById('click').addEventListener('mouseup', handle_click);
+  // document.getElementById('click').addEventListener('touchstart', handle_click);
+  // document.getElementById('click').addEventListener('touchend', handle_click);
 
   on_img = document.getElementById('on_img');
   dim_img = document.getElementById('dim_img');
@@ -991,7 +1032,7 @@ function play() {
 
 //   document.getElementById('off_img').style.display = 'none';
 
-//   render_init();
+  render_init();
 
   FPS = 64
   setInterval(loop, 1000/FPS);
