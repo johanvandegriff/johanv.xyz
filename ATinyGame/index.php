@@ -904,7 +904,7 @@ function handle_key(e) {
 }
 
 var scrollEnabled = true;
-var lastScroll = window.scrollY;
+var lastScroll = 0;
 var scrollS = 0;
 var scrollR = 0;
 function handle_scroll() {
@@ -1012,6 +1012,8 @@ function play() {
   document.onkeyup = handle_key;
   window.onscroll = handle_scroll;
   window.onresize = handle_resize;
+
+  lastScroll = window.scrollY;
 
   w = Math.round(2777/2);
   h = Math.round(2694/2);
