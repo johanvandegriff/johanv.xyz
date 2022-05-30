@@ -31,12 +31,12 @@
   </div>
   <script>
 function fillRectCenterWH(ctx, x, y, w, h) {
-  ctx.fillRect(x-w/2, y-h/2, w, h)
+  ctx.fillRect(x-w/2, y-h/2, w, h);
 }
 
-function clearCanvas(ctx) {
-  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-}
+// function clearCanvas(ctx) {
+//   ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+// }
 
 
 function dist(x1, y1, x2, y2) {
@@ -47,7 +47,7 @@ const buttons = {
   L: {x: .3005, y: .3635, r: .0343},
   R: {x: .6820, y: .3800, r: .0343},
   S: {x: .6915, y: .5785, r: .0343},
-}
+};
 
 const vibrateLength = 5;
 function vibrate() {
@@ -126,11 +126,11 @@ function drawLEDMask(ctx, x, y) {
 //     ctx.fill();
 //   }
 
-  var opacity = 0.3
+  var opacity = 0.3;
   for (var r=1; r<7; r+=0.5) {
-    ctx.fillStyle = 'rgba(255,255,255,' + opacity + ')'
-    opacity *= 0.85
-    fillRectCenterWH(ctx, (.43+x*0.068)*w, (.339+y*0.071)*h, (.025+.01*r)*w, (.018+.01*r)*h)
+    ctx.fillStyle = 'rgba(255,255,255,' + opacity + ')';
+    opacity *= 0.85;
+    fillRectCenterWH(ctx, (.43+x*0.068)*w, (.339+y*0.071)*h, (.025+.01*r)*w, (.018+.01*r)*h);
   }
 }
 
@@ -141,10 +141,10 @@ function render_init() {
 
   // https://stackoverflow.com/questions/18379818/canvas-image-masking-overlapping
   ctxDim.globalCompositeOperation = 'source-over';
-  for (x=0; x<3; x++){
-    for (y=0; y<3; y++){
+  for (var x=0; x<3; x++){
+    for (var y=0; y<3; y++){
       var ctx = ctxs[y][x];
-      ctx.filter = "brightness(120%)";
+      ctx.filter = 'brightness(120%)';
       ctx.globalCompositeOperation = 'source-over';
       drawLEDMask(ctx, x, y);
       ctx.globalCompositeOperation = 'source-in';
@@ -155,7 +155,7 @@ function render_init() {
   }
   
   ctxDim.globalCompositeOperation = 'source-in';
-  ctxDim.filter = "hue-rotate(-20deg)";
+  ctxDim.filter = 'hue-rotate(-20deg)';
   ctxDim.drawImage(dim_img, 0, 0, w, h);
 
   ctxButtonL.globalCompositeOperation = 'source-over';
@@ -182,12 +182,12 @@ function render_init() {
 
 function renderLEDs() {
   var dim = false;
-  for (x=0; x<3; x++){
-    for (y=0; y<3; y++){
+  for (var x=0; x<3; x++){
+    for (var y=0; y<3; y++){
       if (board[y][x] === 1 || (board[y][x] === 4 && (r25 % 8) >= 4)) {
-        show('LED'+x+y)
+        show('LED'+x+y);
       } else {
-        hide('LED'+x+y)
+        hide('LED'+x+y);
         if (board[y][x] == 2) {
           dim = true;
         }
@@ -199,8 +199,8 @@ function renderLEDs() {
 
 function loop() {
   renderButtons();
-  var board_before = ''+board
-  game_logic()
+  var board_before = ''+board;
+  game_logic();
   buttonL.justPressed = false;
   buttonL.justReleased = false;
   buttonR.justPressed = false;
@@ -210,7 +210,7 @@ function loop() {
   //accounting for board changes and blinking LEDs
   if (board_before !== ''+board ||
   (((r25 % 8) === 0 || (r25 % 8) === 4) && board_before.includes('4'))) {
-    renderLEDs()
+    renderLEDs();
   }
   r25++;
   if (r25 >= 256) r25 = 0;
@@ -256,10 +256,10 @@ function random() {
   r31 = ~r31;            // com r31 ;invert to get the XNOR instead of XOR effect
 
   r30 = rng_number;      // lds r30, RNG ;load the RNG value from memory
-  C = (r31 & 128) / 128; // rol r31 ;put bit 7 of r30 into the carry flag
+  var C = (r31 & 128) / 128; // rol r31 ;put bit 7 of r30 into the carry flag
   r30 = r30 << 1;        // rol r30 ;put the carry flag into bit 0 of r30 and shift the rest left
   r30 = r30 & 0b1111_1111;
-  r30 = r30 | C
+  r30 = r30 | C;
   rng_number = r30;      // sts RNG, r30 ;store the new value back to memory
   return rng_number;
 }
@@ -270,8 +270,8 @@ var is_rng_seeded = false;
 var currentState = 'gameSelect';
 var nextState;
 var nextNextState;
-var game = 1
-var games = ['stackerInit', 'reactionInit', 'memoryInit', 'whackamoleInit', 'diceRoller']
+var game = 1;
+var games = ['stackerInit', 'reactionInit', 'memoryInit', 'whackamoleInit', 'diceRoller'];
 var timer = 0;
 var score = 0;
 var mole_location = 'L';
@@ -297,7 +297,7 @@ function game_logic() {
     // ldi r21, 0x10
     // rcall helpFillScreen
     // sbr r24, 0x10 ;avoid messing up the seeding and buttons
-    board = [[1,0,0],[1,1,1],[1,1,1]]
+    board = [[1,0,0],[1,1,1],[1,1,1]];
 
     timer = 0;                // clr r25             ;clear the loop counter for consistent movement
     stacker_row = 0b01110000; // ldi r26, 0b01110000 ;the moving top row
@@ -333,13 +333,13 @@ function game_logic() {
     //
     // ;fall thru to the next state on purpose
     // ;	rjmp statesEnd
-    game_logic() //since we can't fall-thru an if-else, we can call the next state now with recursion
+    game_logic(); //since we can't fall-thru an if-else, we can call the next state now with recursion
   } else if (currentState === 'reactionInit') {
     timer = random(); // rcall random
-                    // mov r25, r31
+    // mov r25, r31
     currentState = 'reactionWait'; // ldi r18, 19 ;change state to reactionWait
   } else if (currentState === 'memoryInit') {
-    memory_game_seed = random() //rcall random ;make sure the RNG is seeded, now we can use r25 after
+    memory_game_seed = random(); //rcall random ;make sure the RNG is seeded, now we can use r25 after
     //mov r26, r31 ;store the first number in the sequence so it can be recreated
 
     score = 1; //ldi r17, 1 ;the score (length of the memory sequence)
@@ -353,13 +353,13 @@ function game_logic() {
     score = 0; //ldi r17, 0 ;score (number of moles hit)
     currentState = 'whackamoleMole'; //ldi r18, 9 ;change state to whackamoleMole
   } else if (currentState === 'diceRoller') {
-    dice_num = (random() % 6)+1;
+    var dice_num = (random() % 6)+1;
     if (buttonR.justPressed) showScore(dice_num);
     if (buttonL.justPressed) currentState = 'transition';
     nextState = 'gameSelect';
     timer = 0;
   } else if (currentState === 'transition') {
-    board = [[2,2,2],[2,2,2],[2,2,2]]
+    board = [[2,2,2],[2,2,2],[2,2,2]];
     timer++;
     if (timer >= 32) { // it has been 1/2 second
       currentState = nextState;
@@ -367,10 +367,10 @@ function game_logic() {
       clearScreen();
     }
   } else if (currentState === 'memoryShow') {
-    mole_location = randomLED() //rcall randomLED
+    mole_location = randomLED(); //rcall randomLED
     timer = 0; //clr r25 ;reset the timer
     currentState = 'shortDelay'; //ldi r18, 14 ;change state to shortDelay
-    nextState = 'memoryShowBetween' //ldi r16, 17 ;then change state to memoryShowBetween
+    nextState = 'memoryShowBetween'; //ldi r16, 17 ;then change state to memoryShowBetween
   } else if (currentState === 'memoryPress') {
     // subi r19, 0
     if (buttonL.justPressed || buttonR.justPressed || buttonS.justPressed) { // breq memoryPressEnd ;if any button was just pressed:
@@ -378,9 +378,9 @@ function game_logic() {
       mole_location = randomLED(); // rcall randomLED ;puts the button mask into r28
       clearScreen(); // rcall clearScreen
       if (
-          // and r28, r19 ;see if the correct button was just pressed
-          // breq memoryPressGameOver
-          (mole_location === 'L' && buttonL.justPressed) ||
+      // and r28, r19 ;see if the correct button was just pressed
+      // breq memoryPressGameOver
+        (mole_location === 'L' && buttonL.justPressed) ||
           (mole_location === 'R' && buttonR.justPressed) ||
           (mole_location === 'S' && buttonS.justPressed)
       ) {
@@ -405,7 +405,7 @@ function game_logic() {
         timer = 0; // clr r27 ;clear the timer for the transition
         currentState = 'transition'; // ldi r18, 6 ;change state to transition
         nextState = 'generalScore'; // ldi r16, 12 ;after that, change state to generalScore
-        nextNextState = 'memoryInit' // ldi r26, 3 ;finally, it will be memoryInit
+        nextNextState = 'memoryInit'; // ldi r26, 3 ;finally, it will be memoryInit
       }
     }
   } else if (currentState === 'whackamoleMole') {
@@ -414,10 +414,10 @@ function game_logic() {
   } else if (currentState === 'whackamoleWait') {
     timer++; //inc r27 ;increment the timer
     if (timer >= 256) { //breq whackamoleTimeUp
-        timer = 0; //;timer is already cleared for the transition
-        currentState = 'transition'; //ldi r18, 6 ;change state to transition
-        nextState = 'generalScore'; //ldi r16, 12 ;after that, change state to generalScore
-        nextNextState = 'whackamoleInit'; //ldi r26, 4 ;finally, it will be whackamoleInit
+      timer = 0; //;timer is already cleared for the transition
+      currentState = 'transition'; //ldi r18, 6 ;change state to transition
+      nextState = 'generalScore'; //ldi r16, 12 ;after that, change state to generalScore
+      nextNextState = 'whackamoleInit'; //ldi r26, 4 ;finally, it will be whackamoleInit
     }
     //whackamoleWaitTimeLeft:
     if (buttonL.justPressed || buttonR.justPressed || buttonS.justPressed) {
@@ -428,8 +428,8 @@ function game_logic() {
         (mole_location === 'R' && buttonR.justPressed) ||
         (mole_location === 'S' && buttonS.justPressed)
       ) { //correct button
-        incScore() //rcall incScore ;add 1 to the score
-        clearScreen() //rcall clearScreen
+        incScore(); //rcall incScore ;add 1 to the score
+        clearScreen(); //rcall clearScreen
         currentState = 'whackamoleWhileAnyPressed'; //ldi r18, 16 ;change state to whackamoleWhileAnyPressed
         nextState = 'whackamoleMole'; //ldi r16, 9 ;after that, change state to whackamoleMole
       } else { //whackamoleWaitWrongButton:
@@ -443,7 +443,7 @@ function game_logic() {
   } else if (currentState === 'stackerMove') {
     if (buttonS.justPressed) { // sbrc r19, 0 ;if S was just pressed, run the next line
       currentState = 'stackerFall'; // rjmp stackerFall
-      game_logic() //more recursion to simulate fall-thru
+      game_logic(); //more recursion to simulate fall-thru
     }
     timer++; //this was done in the loop since it was r25
     //
@@ -456,7 +456,7 @@ function game_logic() {
         stacker_row = stacker_row << 1; // lsl r26
       }
       // ;bits 4, 3, and 2 of r26 are the top row
-      board[0] = [0,0,0] // rcall clearTopRow
+      board[0] = [0,0,0]; // rcall clearTopRow
       //
       if (stacker_row & (1<<4)) { // sbrc r26, 4   ;if bit 4 is set
         board[0][0] = 1; // sbr r20, 0x10 ;light up LED 0,0
@@ -493,7 +493,7 @@ function game_logic() {
 
   } else if (currentState === 'generalScore') {
     //mov r30, r17
-    showScore(score) //rcall showScore
+    showScore(score); //rcall showScore
     //cbr r19, 0b0000_0001 ;disregard S
     //subi r19, 0 ;if any button was pressed
     if (buttonL.justPressed || buttonR.justPressed) { //;either L or R was pressed
@@ -591,7 +591,7 @@ function game_logic() {
       nextNextState = 'whackamoleInit'; //ldi r26, 4 ;finally, it will be whackamoleInit
     } else {
       if (!(buttonL.pressed || buttonR.pressed || buttonS.pressed)) {
-        currentState = nextState //mov r18, r16 ;move to whatever next state was specified in r16
+        currentState = nextState; //mov r18, r16 ;move to whatever next state was specified in r16
       }
     }
   } else if (currentState === 'memoryShowBetween') {
@@ -641,13 +641,13 @@ function game_logic() {
       nextNextState = 'stackerInit'; // ldi r26, 1 ;finally, it will be stackerInit
     } else {
       // stackerFellGameContinue:
-      fallScreen() // rcall fallScreen
+      fallScreen(); // rcall fallScreen
       //
       // ;on every other one, go backwards
       if ((score & 1) === 1) { // sbrs r17, 0   ;if bit 0 of the score is 1
         // rjmp stackerFellBackwards
         board[0][0] = 1; // sbr r20, 0x10 ;set the top left LED to be on
-        stacker_row = stacker_row << 4 // swap r26      ;move the row to the left side
+        stacker_row = stacker_row << 4; // swap r26      ;move the row to the left side
         stacker_direction = 1; // ldi r28, 1    ;set the motion direction to be >>
         // rjmp stackerFellBackwardsAfter
       } else {
@@ -730,14 +730,14 @@ function game_logic() {
 //   }
 }
 
-function dec2bin(dec) {
-return (dec >>> 0).toString(2);
-}
+// function dec2bin(dec) {
+//   return (dec >>> 0).toString(2);
+// }
 
 function fallScreen() {
-  board[2] = board[1]
-  board[1] = board[0]
-  board[0] = [0,0,0]
+  board[2] = board[1];
+  board[1] = board[0];
+  board[0] = [0,0,0];
   // ;shift all pixels on the screen down by 1, replacing the top row with blank
   // ;NOTE: only works for solidly on pixels, not blinking or dim
   //
@@ -795,59 +795,59 @@ function incScore() {
 }
 
 function randomLED() {
-  r = random() % 6;
+  var r = random() % 6;
   if (r === 0 || r === 1) {
-    board[0][2] = 1
-    return 'R'
+    board[0][2] = 1;
+    return 'R';
   } else if (r === 2 || r === 3) {
-    board[2][2] = 1
-    return 'S'
+    board[2][2] = 1;
+    return 'S';
   } else {
-    board[0][0] = 1
-    return 'L'
+    board[0][0] = 1;
+    return 'L';
   }
 
 }
 
 function clearScreen() {
-  showScore(0)
+  showScore(0);
 }
 
 function showScore(score) {
-  if      (score ===  0) board = [[0,0,0],[0,0,0],[0,0,0]]
-  else if (score ===  1) board = [[0,0,0],[0,1,0],[0,0,0]]
-  else if (score ===  2) board = [[1,0,0],[0,0,0],[0,0,1]]
-  else if (score ===  3) board = [[1,0,0],[0,1,0],[0,0,1]]
-  else if (score ===  4) board = [[1,0,1],[0,0,0],[1,0,1]]
-  else if (score ===  5) board = [[1,0,1],[0,1,0],[1,0,1]]
-  else if (score ===  6) board = [[1,0,1],[1,0,1],[1,0,1]]
-  else if (score ===  7) board = [[1,0,1],[1,1,1],[1,0,1]]
-  else if (score ===  8) board = [[1,1,1],[1,0,1],[1,1,1]]
-  else if (score ===  9) board = [[1,1,1],[1,1,1],[1,1,1]]
+  if      (score ===  0) board = [[0,0,0],[0,0,0],[0,0,0]];
+  else if (score ===  1) board = [[0,0,0],[0,1,0],[0,0,0]];
+  else if (score ===  2) board = [[1,0,0],[0,0,0],[0,0,1]];
+  else if (score ===  3) board = [[1,0,0],[0,1,0],[0,0,1]];
+  else if (score ===  4) board = [[1,0,1],[0,0,0],[1,0,1]];
+  else if (score ===  5) board = [[1,0,1],[0,1,0],[1,0,1]];
+  else if (score ===  6) board = [[1,0,1],[1,0,1],[1,0,1]];
+  else if (score ===  7) board = [[1,0,1],[1,1,1],[1,0,1]];
+  else if (score ===  8) board = [[1,1,1],[1,0,1],[1,1,1]];
+  else if (score ===  9) board = [[1,1,1],[1,1,1],[1,1,1]];
 
-  else if (score === 10) board = [[0,1,0],[0,0,0],[0,0,0]]
-  else if (score === 11) board = [[0,0,0],[1,0,0],[0,0,0]]
-  else if (score === 12) board = [[0,1,0],[1,0,0],[0,0,0]]
-  else if (score === 13) board = [[0,0,0],[0,0,0],[0,1,0]]
-  else if (score === 14) board = [[0,1,0],[0,0,0],[0,1,0]]
-  else if (score === 15) board = [[0,0,0],[1,0,0],[0,1,0]]
-  else if (score === 16) board = [[0,1,0],[1,0,0],[0,1,0]]
-  else if (score === 17) board = [[0,0,0],[0,0,1],[0,0,0]]
-  else if (score === 18) board = [[0,1,0],[0,0,1],[0,0,0]]
-  else if (score === 19) board = [[0,0,0],[1,0,1],[0,0,0]]
-  else if (score === 20) board = [[0,1,0],[1,0,1],[0,0,0]]
-  else if (score === 21) board = [[0,0,0],[0,0,1],[0,1,0]]
-  else if (score === 22) board = [[0,1,0],[0,0,1],[0,1,0]]
-  else if (score === 23) board = [[0,0,0],[1,0,1],[0,1,0]]
-  else if (score === 24) board = [[0,1,0],[1,0,1],[0,1,0]]
-  else if (score >=  25) board = [[0,1,0],[1,1,1],[0,1,0]]
+  else if (score === 10) board = [[0,1,0],[0,0,0],[0,0,0]];
+  else if (score === 11) board = [[0,0,0],[1,0,0],[0,0,0]];
+  else if (score === 12) board = [[0,1,0],[1,0,0],[0,0,0]];
+  else if (score === 13) board = [[0,0,0],[0,0,0],[0,1,0]];
+  else if (score === 14) board = [[0,1,0],[0,0,0],[0,1,0]];
+  else if (score === 15) board = [[0,0,0],[1,0,0],[0,1,0]];
+  else if (score === 16) board = [[0,1,0],[1,0,0],[0,1,0]];
+  else if (score === 17) board = [[0,0,0],[0,0,1],[0,0,0]];
+  else if (score === 18) board = [[0,1,0],[0,0,1],[0,0,0]];
+  else if (score === 19) board = [[0,0,0],[1,0,1],[0,0,0]];
+  else if (score === 20) board = [[0,1,0],[1,0,1],[0,0,0]];
+  else if (score === 21) board = [[0,0,0],[0,0,1],[0,1,0]];
+  else if (score === 22) board = [[0,1,0],[0,0,1],[0,1,0]];
+  else if (score === 23) board = [[0,0,0],[1,0,1],[0,1,0]];
+  else if (score === 24) board = [[0,1,0],[1,0,1],[0,1,0]];
+  else if (score >=  25) board = [[0,1,0],[1,1,1],[0,1,0]];
 }
 
 function handle_key(e) {
   //when this function returns false, it disables the default event, such as spacebar scrolling the page
   e = e || window.event;
   if (!e.repeat) {
-    console.log(e.type, e.keyCode)
+    console.log(e.type, e.keyCode);
     if (
       e.keyCode === 76 || //L
       e.keyCode === 81 || //Q
@@ -907,7 +907,7 @@ var scrollEnabled = true;
 var lastScroll = window.scrollY;
 var scrollS = 0;
 var scrollR = 0;
-function handle_scroll(e) {
+function handle_scroll() {
   // console.log(window.scrollY, e)
   var scrollThreshold = 0;
   if (scrollEnabled) {
@@ -933,28 +933,25 @@ function init_ctx(id, w, h) {
   ctx.canvas.width = w;
   ctx.canvas.height = h;
 
-  return ctx
+  return ctx;
 }
 
 function scale(id) {
   //scale the canvas to fit the screen
-  var elem = document.getElementById(id)
+  var elem = document.getElementById(id);
   // https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas#scaling_canvas_using_css_transforms
   var scaleX = (window.innerWidth*.85-35) / elem.width;
   var scaleY = (window.innerHeight*.85-35) / elem.height;
 
   var scaleToFit = Math.min(scaleX, scaleY);
-  var scaleToCover = Math.max(scaleX, scaleY);
+  //   var scaleToCover = Math.max(scaleX, scaleY);
 
   elem.style.transformOrigin = '0 0'; //scale from top left
   elem.style.transform = 'scale(' + scaleToFit + ')';
   elem.style.left = (window.innerWidth - elem.width*scaleToFit)/2+'px';
-  return scaleToFit
+  return scaleToFit;
 }
 
-var ctx0 = null;
-var ctx1 = null;
-var ctx2 = null;
 var w;
 var h;
 //0=off, 1=on, 2=dim
@@ -962,17 +959,20 @@ var board = [
   [0,0,0],
   [0,0,0],
   [0,0,0]
-]
+];
+
+var on_img;
+var dim_img;
 
 var ctxs;
+var ctxDim;
 var ctxButtonL;
 var ctxButtonR;
 var ctxButtonS;
 
-key_events = [];
-var buttonL = {pressed: false, prev: false, justPressed: false, justReleased: false}
-var buttonR = {pressed: false, prev: false, justPressed: false, justReleased: false}
-var buttonS = {pressed: false, prev: false, justPressed: false, justReleased: false}
+var buttonL = {pressed: false, prev: false, justPressed: false, justReleased: false};
+var buttonR = {pressed: false, prev: false, justPressed: false, justReleased: false};
+var buttonS = {pressed: false, prev: false, justPressed: false, justReleased: false};
 
 function press(button) {
   if (!button.pressed) button.justPressed = true;
@@ -985,7 +985,7 @@ function release(button) {
 }
 
 function handle_resize() {
-  scale('off_img')
+  scale('off_img');
   scale('LED00');
   scale('LED10');
   scale('LED20');
@@ -1003,7 +1003,7 @@ function handle_resize() {
   var factor = scale('click');
 
   //scale the game canvas container div's height so the stuff below will not be underneath
-  canvas_height_on_page = document.getElementById('dim').height*factor+'px';
+  var canvas_height_on_page = document.getElementById('dim').height*factor+'px';
   document.getElementById('game').style.height = canvas_height_on_page;
 }
 
@@ -1013,8 +1013,8 @@ function play() {
   window.onscroll = handle_scroll;
   window.onresize = handle_resize;
 
-  w = Math.round(2777/2)
-  h = Math.round(2694/2)
+  w = Math.round(2777/2);
+  h = Math.round(2694/2);
 
   var ctxLED00 = init_ctx('LED00', w, h);
   var ctxLED10 = init_ctx('LED10', w, h);
@@ -1030,7 +1030,7 @@ function play() {
     [ctxLED00,ctxLED10,ctxLED20],
     [ctxLED01,ctxLED11,ctxLED21],
     [ctxLED02,ctxLED12,ctxLED22]
-  ]
+  ];
 
   ctxDim = init_ctx('dim', w, h);
 
@@ -1038,10 +1038,10 @@ function play() {
   ctxButtonR = init_ctx('buttonR', w, h);
   ctxButtonS = init_ctx('buttonS', w, h);
 
-  ctxClick = init_ctx('click', w, h);
+  init_ctx('click', w, h);
   handle_resize();
 
-//   document.getElementById('click').addEventListener('click', handle_click);
+  //   document.getElementById('click').addEventListener('click', handle_click);
   document.getElementById('click').addEventListener('mousedown', handle_click);
   document.getElementById('click').addEventListener('mouseup', handle_click);
   // document.getElementById('click').addEventListener('touchstart', handle_click);
@@ -1053,11 +1053,11 @@ function play() {
   document.getElementById('off_img').style.display = 'initial';
   document.getElementById('off_img_noscript').style.display = 'none';
 
-//   document.getElementById('off_img').style.display = 'none';
+  //   document.getElementById('off_img').style.display = 'none';
 
   render_init();
 
-  FPS = 64
+  var FPS = 64;
   setInterval(loop, 1000/FPS);
 }
 window.onload = play;
