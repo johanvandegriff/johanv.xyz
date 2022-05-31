@@ -55,6 +55,19 @@ function vibrate() {
 }
 
 function handle_click(e) {
+  if (e.type === 'touchstart' || e.type === 'touchend') {
+    var t = e.type;
+
+    // https://stackoverflow.com/questions/17130940/retrieve-the-same-offsetx-on-touch-like-mouse-event/66858288#66858288
+    const {x, y, width, height} = e.target.getBoundingClientRect();
+    const offsetX = (e.changedTouches[0].clientX-x)/width*e.target.offsetWidth;
+    const offsetY = (e.changedTouches[0].clientY-y)/height*e.target.offsetHeight;
+
+    e = e.changedTouches[0];
+    e.type = t;
+    e.offsetX = offsetX;
+    e.offsetY = offsetY;
+  }
   console.log(e.type, 'client=('+e.clientX+','+e.clientY+') layer=('+e.layerX+','+e.layerY+') offset=('+e.offsetX+','+e.offsetY+')');
   var x = e.offsetX;
   var y = e.offsetY;
@@ -64,8 +77,8 @@ function handle_click(e) {
   if (dist(w*buttons.L.x, h*buttons.L.y, x, y) < w*buttons.L.r*radiusFactor) {
     if (e.type === 'mousedown' || e.type === 'touchstart') {
       vibrate();
-      press(buttonL);
       scrollEnabled = false;
+      press(buttonL);
     } else {
       release(buttonL);
     }
@@ -73,8 +86,8 @@ function handle_click(e) {
   if (dist(w*buttons.R.x, h*buttons.R.y, x, y) < w*buttons.R.r*radiusFactor) {
     if (e.type === 'mousedown' || e.type === 'touchstart') {
       vibrate();
-      press(buttonR);
       scrollEnabled = false;
+      press(buttonR);
     } else {
       release(buttonR);
     }
@@ -82,8 +95,8 @@ function handle_click(e) {
   if (dist(w*buttons.S.x, h*buttons.S.y, x, y) < w*buttons.S.r*radiusFactor) {
     if (e.type === 'mousedown' || e.type === 'touchstart') {
       vibrate();
-      press(buttonS);
       scrollEnabled = false;
+      press(buttonS);
     } else {
       release(buttonS);
     }
@@ -857,8 +870,8 @@ function handle_key(e) {
       false
     ) {
       if (e.type === 'keydown') {
-        press(buttonL);
         scrollEnabled = false;
+        press(buttonL);
       } else {
         release(buttonL);
       }
@@ -874,8 +887,8 @@ function handle_key(e) {
       false
     ) { //W
       if (e.type === 'keydown') {
-        press(buttonR);
         scrollEnabled = false;
+        press(buttonR);
       } else {
         release(buttonR);
       }
@@ -891,8 +904,8 @@ function handle_key(e) {
       false
     ) {
       if (e.type === 'keydown') {
-        press(buttonS);
         scrollEnabled = false;
+        press(buttonS);
       } else {
         release(buttonS);
       }
@@ -964,6 +977,9 @@ var board = [
 var on_img;
 var dim_img;
 
+var audio_press;
+var audio_release;
+
 var ctxs;
 var ctxDim;
 var ctxButtonL;
@@ -975,12 +991,18 @@ var buttonR = {pressed: false, prev: false, justPressed: false, justReleased: fa
 var buttonS = {pressed: false, prev: false, justPressed: false, justReleased: false};
 
 function press(button) {
-  if (!button.pressed) button.justPressed = true;
+  if (!button.pressed) {
+    button.justPressed = true;
+    if (!scrollEnabled) new Audio(audio_press).play();
+  }
   button.pressed = true;
 }
 
 function release(button) {
-  if (button.pressed) button.justReleased = true;
+  if (button.pressed) {
+    button.justReleased = true;
+    if (!scrollEnabled) new Audio(audio_release).play();
+  }
   button.pressed = false;
 }
 
@@ -1046,8 +1068,8 @@ function play() {
   //   document.getElementById('click').addEventListener('click', handle_click);
   document.getElementById('click').addEventListener('mousedown', handle_click);
   document.getElementById('click').addEventListener('mouseup', handle_click);
-  // document.getElementById('click').addEventListener('touchstart', handle_click);
-  // document.getElementById('click').addEventListener('touchend', handle_click);
+  document.getElementById('click').addEventListener('touchstart', handle_click);
+  document.getElementById('click').addEventListener('touchend', handle_click);
 
   on_img = document.getElementById('on_img');
   dim_img = document.getElementById('dim_img');
@@ -1058,6 +1080,20 @@ function play() {
   //   document.getElementById('off_img').style.display = 'none';
 
   render_init();
+
+  fetch("/ATinyGame/press.wav")
+    .then(function(response) {return response.blob()})
+    .then(function(blob) {
+      audio_press=URL.createObjectURL(blob);
+      new Audio(audio_press); // forces a request for the blob
+  });
+
+  fetch("/ATinyGame/release.wav")
+    .then(function(response) {return response.blob()})
+    .then(function(blob) {
+      audio_release=URL.createObjectURL(blob);
+      new Audio(audio_release); // forces a request for the blob
+  });
 
   var FPS = 64;
   setInterval(loop, 1000/FPS);
