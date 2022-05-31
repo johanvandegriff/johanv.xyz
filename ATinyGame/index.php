@@ -75,7 +75,7 @@ function handle_click(e) {
   // fillRectCenterWH(ctxClick, x, y, .01*w, .01*h);
   var radiusFactor = 3;
   if (dist(w*buttons.L.x, h*buttons.L.y, x, y) < w*buttons.L.r*radiusFactor) {
-    if (e.type === 'mousedown' || e.type === 'touchstart') {
+    if (e.type === 'mousedown' || e.type === 'touchstart' || e.type === 'pointerdown') {
       vibrate();
       scrollEnabled = false;
       press(buttonL);
@@ -84,7 +84,7 @@ function handle_click(e) {
     }
   }
   if (dist(w*buttons.R.x, h*buttons.R.y, x, y) < w*buttons.R.r*radiusFactor) {
-    if (e.type === 'mousedown' || e.type === 'touchstart') {
+    if (e.type === 'mousedown' || e.type === 'touchstart' || e.type === 'pointerdown') {
       vibrate();
       scrollEnabled = false;
       press(buttonR);
@@ -93,7 +93,7 @@ function handle_click(e) {
     }
   }
   if (dist(w*buttons.S.x, h*buttons.S.y, x, y) < w*buttons.S.r*radiusFactor) {
-    if (e.type === 'mousedown' || e.type === 'touchstart') {
+    if (e.type === 'mousedown' || e.type === 'touchstart' || e.type === 'pointerdown') {
       vibrate();
       scrollEnabled = false;
       press(buttonS);
@@ -1066,10 +1066,12 @@ function play() {
   handle_resize();
 
   //   document.getElementById('click').addEventListener('click', handle_click);
-  document.getElementById('click').addEventListener('mousedown', handle_click);
-  document.getElementById('click').addEventListener('mouseup', handle_click);
-  document.getElementById('click').addEventListener('touchstart', handle_click);
-  document.getElementById('click').addEventListener('touchend', handle_click);
+  document.getElementById('click').addEventListener('pointerdown', handle_click);
+  document.getElementById('click').addEventListener('pointerup', handle_click);
+  // document.getElementById('click').addEventListener('mousedown', handle_click);
+  // document.getElementById('click').addEventListener('mouseup', handle_click);
+  // document.getElementById('click').addEventListener('touchstart', handle_click);
+  // document.getElementById('click').addEventListener('touchend', handle_click);
 
   on_img = document.getElementById('on_img');
   dim_img = document.getElementById('dim_img');
