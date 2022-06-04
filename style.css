@@ -59,7 +59,7 @@ a.svg {
 #ribbon {
   background-color: #000000;
   clear: both;
-  height: 155px;
+  height: 180px;
   margin: 0;
   position: absolute;
   text-align: center;
@@ -73,7 +73,7 @@ a.svg {
 
 #main {
   margin: 0;
-  margin-top: 185px;
+  margin-top: 205px;
   padding: 0;
 }
 
@@ -300,10 +300,10 @@ nav:hover #navDropdown {
     display: none;
   }
   #main {
-    margin-top: 115px;
+    margin-top: 135px;
   }
   #ribbon {
-    height: 115px;
+    height: 135px;
   }
 }
 
@@ -337,10 +337,10 @@ nav:hover #navDropdown {
     display: none;
   }
   #ribbon {
-    height: 75px;
+    height: 80px;
   }
   #main {
-    margin-top: 75px;
+    margin-top: 80px;
   }
 
   nav {

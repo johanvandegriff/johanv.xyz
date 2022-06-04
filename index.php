@@ -29,9 +29,8 @@ body {
     <h2>welcome to johanv.xyz</h2>
     <p>Hi, I'm <a href="https://blog.johanv.xyz/about-me">Johan Vandegriff</a> and this is my website, which STINKS: <b>S</b>tores <b>T</b>hings <b>I</b> <b>N</b>eed to <b>K</b>eep <b>S</b>omewhere :)</p>
 
-    <p>My most recent project is a livestream hosted on <a href="https://live.johanv.xyz">live.johanv.xyz</a>!
-    For announcements when I go live, mostly streaming music production, coding, and some obscure games,
-    follow me on <a target="_blank" rel="me" href="https://fosstodon.org/@johanv">Mastodon</a>.</p>
+    <img class="popup" style="width:30%; display:block; float: right; max-width: 300px; border-radius: 12px; margin: 5px" src="/ATinyGame/off.jpg">
+    <p>My most recent project is <a href="/ATinyGame">ATinyGame</a>, a $1 handheld game console with 5 different games, including whack-a-mole, stacker (like at an arcade), and a memory game. It only has 1kB of storage, and 32B of ram (bytes, not gigabytes or megabytes), so I had to write the code in assembly.</p>
 
     <p>Here's a random interesting fact about me:</p>
     <p id="fact" class="purple"><?php include $_SERVER['DOCUMENT_ROOT'].'/fact/index.php'; ?></p>
@@ -40,7 +39,7 @@ body {
 
   <div class="box">
     <h2>boggle</h2>
-    <img class="popup" style="width:25%; display:block; float: right; max-width: 300px" src="https://games.johanv.xyz/static/boggle/5x5.png">
+    <img class="popup" style="width:25%; display:block; float: right; max-width: 300px; margin: 5px" src="https://games.johanv.xyz/static/boggle/5x5.png">
 
     <p>This is probably the reason you ended up on my site, to play this awesome game and ignore all the other stuff here.
       But who could blame you, after all BOGGLE is the <b>BO</b>mb di<b>GG</b>ety <b>LE</b>tter game!</p>
@@ -52,7 +51,7 @@ body {
   
   <div class="box">
     <h2 id="drawings">drawings</h2>
-    <?php echo getThumbImg("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'id="drawing" style="width:66%; display:block; float: right; border-radius: 12px" alt="Draing of the Erasable Inc Improv Group at UMD and Friends"'); ?>
+    <?php echo getThumbImg("/f/galleries/Drawings/0_2019-05-13_ErasableIncAndFriends.png", 'id="drawing" style="width:66%; display:block; float: right; border-radius: 12px; margin: 5px" alt="Draing of the Erasable Inc Improv Group at UMD and Friends"'); ?>
     <p>This is a drawing I made of the <a target="_blank" href="https://twitter.com/ErasableInc">Erasable Inc.</a> improv group at the University of Maryland (UMD) after their 24-hour show. (click the image for full size)</p>
     <p>For this drawing and others, I used the free and open source drawing software <a target="_blank" href="https://krita.org/">Krita</a> and a Wacom tablet on Linux.</p>
     <a class="greenButton" href="/gallery/?g=Drawings" onmouseover="this.innerHTML=this.innerHTML.replace(/.$/,'▸')" onmouseleave="this.innerHTML=this.innerHTML.replace(/.$/,'▹')">see more ▹</a>
@@ -60,7 +59,7 @@ body {
 
   <div class="box">
     <h2 id="videos">videos</h2>
-    <a href="https://odysee.com/@johanv:5/makers-case-gemstone-commercial:e"><img style="width:66%; display:block; float: right; border-radius: 12px" src="makers-case.jpg"></a>
+    <a href="https://odysee.com/@johanv:5/makers-case-gemstone-commercial:e"><img style="width:66%; display:block; float: right; border-radius: 12px; margin: 5px" src="makers-case.jpg"></a>
     <p>I publish my videos on <a target="_blank" href="https://odysee.com/@johanv:5">Odysee</a>, an awesome new platform that solves the demonitization issues of YouTube! <a target="_blank" href="https://odysee.com/$/invite/@johanv:5">Follow me with my invite link</a>. This video is for a propsed research project for Gemstone at UMD. I ended up joining another project instead, but I still have the initial version and plan to make it into a product someday.</p>
     <a class="greenButton" href="/videos/" onmouseover="this.innerHTML=this.innerHTML.replace(/.$/,'▸')" onmouseleave="this.innerHTML=this.innerHTML.replace(/.$/,'▹')">watch more ▹</a>
   </div>
@@ -101,7 +100,7 @@ body {
 
   <div class="box">
     <h2 id="resume">resume</h2>
-    <?php echo getThumbImg("/f/galleries/Random/GSFC.jpg", 'style="width:40%; display:block; float: right; border-radius: 12px" alt="me with my internship mentors and poster"'); ?>
+    <?php echo getThumbImg("/f/galleries/Random/GSFC.jpg", 'style="width:40%; display:block; float: right; border-radius: 12px; margin: 5px" alt="me with my internship mentors and poster"'); ?>
     <h3>NASA GSFC Internship</h3>
     <h4>summer 2017</h4>
     <p>I fixed bugs in C code for <a target="_blank" href="https://cfs.gsfc.nasa.gov/">NASA’s core Flight System</a> by writing unit tests on a CentOS Linux virtual machine (using VirtualBox). To help write unit tests, I wrote some bash scripts to generate skeleton functions, then filled them in manually with code to test each case. At the end of the summer, I created a <a target="_blank" href="/resume/images/GSFC_poster.png">poster</a> and presented it at a lab-wide showcase day.</p>
@@ -110,7 +109,7 @@ body {
 
   <div class="box">
     <h2 id="contact">contact</h2>
-    <?php echo getThumbImg("/f/galleries/Random/IMG_20190301_154227.jpg", 'style="width:20%; display:block; float: right; border-radius: 12px" alt="picture of me"'); ?>
+    <?php echo getThumbImg("/f/galleries/Random/IMG_20190301_154227.jpg", 'style="width:20%; display:block; float: right; border-radius: 12px; margin: 5px" alt="picture of me"'); ?>
     <p>Feel free to contact me, I have multiple ways to <a href="/contact/">get in touch securely</a>. You can also follow me on <a rel="me" href="https://fosstodon.org/@johanv">Mastodon</a> or find me at any of the other links on the right sidebar of this page.</p>
     <a class="greenButton" href="/contact/" onmouseover="this.innerHTML=this.innerHTML.replace(/.$/,'▸')" onmouseleave="this.innerHTML=this.innerHTML.replace(/.$/,'▹')">contact me ▹</a>
     </form>

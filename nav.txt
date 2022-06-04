@@ -2,7 +2,7 @@ home	/
 links	/links/
 games	https://games.johanv.xyz/
 blog	https://blog.johanv.xyz/
-live	https://live.johanv.xyz/
+live	https://johanv.tv/
 videos	/videos/
 gallery	/gallery/
 resume	/resume/
