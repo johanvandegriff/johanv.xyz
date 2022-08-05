@@ -18,4 +18,4 @@ easyeda	https://easyeda.com/jjvan
 scratch	https://scratch.mit.edu/users/jjvan/
 peertube	https://diode.zone/c/johanv/videos
 confuzer	https://confuzer.cloud/
-ftc team	https://github.com/FTC7393
+ftc team	https://ftc7393.org
